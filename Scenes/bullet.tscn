@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://585daw83uxn5"]
 
-[ext_resource type="Script" path="res://Scripts/Bullet.cs" id="1_34vd6"]
 [ext_resource type="Texture2D" uid="uid://dbm2k3wypad03" path="res://Images/bullet_plasma_green.png" id="1_mmvkx"]
+[ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_si7na"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1ilx0"]
 radius = 45.0444
 
 [node name="Bullet" type="Area2D"]
 position = Vector2(625, 316)
-script = ExtResource("1_34vd6")
+script = ExtResource("1_si7na")
 
 [node name="BulletCollision" type="CollisionShape2D" parent="."]
 position = Vector2(-0.26001, -0.26001)
@@ -21,4 +21,4 @@ texture = ExtResource("1_mmvkx")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
-[connection signal="Hit" from="." to="." method="_on_hit"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]

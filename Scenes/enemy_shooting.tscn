@@ -1,18 +1,18 @@
 [gd_scene load_steps=6 format=3 uid="uid://btc4de2wglob2"]
 
-[ext_resource type="Script" path="res://Scripts/EnemyShooting.cs" id="1_222p2"]
+[ext_resource type="Script" path="res://Scripts/emeny_shooting.gd" id="1_86lml"]
 [ext_resource type="Texture2D" uid="uid://cimxd08utiagq" path="res://Images/enemy1.png" id="2_54spk"]
-[ext_resource type="PackedScene" uid="uid://585daw83uxn5" path="res://Scenes/Bullet.tscn" id="3_2sy5x"]
+[ext_resource type="PackedScene" uid="uid://585daw83uxn5" path="res://Scenes/bullet.tscn" id="3_2sy5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7fnvt"]
 size = Vector2(308.87, 314.435)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mx4r"]
 
-[node name="Enemy_Shooting" type="CharacterBody2D"]
+[node name="Enemy_Shooting" type="Area2D"]
 position = Vector2(584, 316)
 scale = Vector2(0.359375, 0.359375)
-script = ExtResource("1_222p2")
+script = ExtResource("1_86lml")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
