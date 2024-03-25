@@ -29,7 +29,7 @@ func _ready():
 	# Access the character and weapon sprites
 	player_sprite = $CharacterSprite
 	weapon = $Weapon
-	background = get_parent()
+
 
 
 	# Create timer for attack cooldown
@@ -89,11 +89,10 @@ func _physics_process(_delta):
 		track_rotation = rotationAmount
 		print("Attack")
 		weapon.emit_signal("Attacking", true)
-		background.emit_signal("summon_attack")
+
 
 	if Input.is_action_just_pressed("dash"):
 		print("dash")
-		position = background.get_local_mouse_position()
 
 	move_and_slide()
 
