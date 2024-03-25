@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://8fjb1k1ned34"]
+
+[ext_resource type="Script" path="res://Scripts/Interface.gd" id="1_56evq"]
+[ext_resource type="Texture2D" uid="uid://ckhdj2j2d42j5" path="res://Images/heart.png" id="2_00rqx"]
+
+[sub_resource type="Gradient" id="Gradient_g8sr4"]
+offsets = PackedFloat32Array(0, 0.996479)
+colors = PackedColorArray(0.123817, 0.576693, 0.789266, 1, 0.261806, 0.542973, 0.865125, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xo2cr"]
+gradient = SubResource("Gradient_g8sr4")
+
+[sub_resource type="Gradient" id="Gradient_qxs1c"]
+colors = PackedColorArray(1, 0, 0, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oxocq"]
+gradient = SubResource("Gradient_qxs1c")
+
+[node name="Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_56evq")
+
+[node name="Heart" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -49.0
+offset_top = -48.0
+offset_right = 51.0
+offset_bottom = 52.0
+texture = ExtResource("2_00rqx")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = -27.0
+offset_top = 30.0
+offset_right = 430.0
+offset_bottom = 70.0
+value = 50.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture2D_xo2cr")
+texture_progress = SubResource("GradientTexture2D_oxocq")
+texture_progress_offset = Vector2(2.08165e-12, 2.08165e-12)

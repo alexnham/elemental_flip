@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2liaqqm8p74l"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController.gd" id="1_uh1by"]
+[ext_resource type="PackedScene" uid="uid://8fjb1k1ned34" path="res://Scenes/Interface.tscn" id="2_7usfp"]
+[ext_resource type="Texture2D" uid="uid://bkfka15kxmol8" path="res://Images/Knight.png" id="2_e0wjh"]
+[ext_resource type="Texture2D" uid="uid://2u4rsl4ngvqw" path="res://Images/Sword.png" id="3_b536q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b2p1v"]
+size = Vector2(50, 74)
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+position = Vector2(540, 298)
+scale = Vector2(2, 2)
+script = ExtResource("1_uh1by")
+
+[node name="Interface" parent="." instance=ExtResource("2_7usfp")]
+offset_left = -531.5
+offset_top = -275.0
+offset_right = -531.5
+offset_bottom = -275.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterSprite" type="Sprite2D" parent="."]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_e0wjh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 9)
+shape = SubResource("RectangleShape2D_b2p1v")
+
+[node name="Weapon" type="Sprite2D" parent="."]
+position = Vector2(0, 34.5)
+scale = Vector2(4, 4)
+texture = ExtResource("3_b536q")
+offset = Vector2(2, -11)
+
+[node name="Camera2D" type="Camera2D" parent="."]

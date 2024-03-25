@@ -1,0 +1,9 @@
+res://Scenes/Build.tscn::34b3e7a5c264f44c43d7b91692268119::1711346603::res://.godot/exported/133200997/export-b4aadb8abd036d8ed898d6922c5d7b08-Build.scn
+res://Scenes/bullet.tscn::8bfb2029e2dfa372d6a527d0c88e3117::1711308386::res://.godot/exported/133200997/export-ebb3521b4f0ab2fc80eef1183e18e924-bullet.scn
+res://Scenes/Dungeon.tscn::5ecafb6f4b19d842db78e866802f8704::1711308386::res://.godot/exported/133200997/export-445c75a5f41152bd0321dd5116e52646-Dungeon.scn
+res://Scenes/enemy_melee.tscn::79f7dafcfd27c32d1496b594ebb38585::1711346584::res://.godot/exported/133200997/export-59efc67d95e3af78eee9ef99d97889e4-enemy_melee.scn
+res://Scenes/enemy_shooting.tscn::c02b5a6ce114a5b9ea39b3e045aef528::1711308386::res://.godot/exported/133200997/export-626fdef7000289ef0b3e02a7ac67d559-enemy_shooting.scn
+res://Scenes/Interface.tscn::d7999f078231088894133f89a87f3e5e::1711346584::res://.godot/exported/133200997/export-80d851c32c1effa0eb2f65fa5b7cc80c-Interface.scn
+res://Scenes/MainCharacter.tscn::6964a130d1a2c567e5176ec0254f824c::1711346584::res://.godot/exported/133200997/export-adffc9633491077de21e1923327a2baf-MainCharacter.scn
+res://Scenes/MainCharacter_withHearts.tscn::f9fe3b3be8ea29a59d29bf4475636e82::1711308386::res://.godot/exported/133200997/export-4337c2ae0a8523783762d9627f3c510b-MainCharacter_withHearts.scn
+res://Scenes/slash.tscn::a12da0f3d68fadabd0d2940fc47be2b8::1711346584::res://.godot/exported/133200997/export-26c60e1d91d1aa43eabff8f2965b38c9-slash.scn

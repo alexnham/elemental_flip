@@ -1,0 +1,8 @@
+res://Scenes/Build.tscn
+res://Scenes/MainCharacter.tscn
+res://Scenes/enemy_melee.tscn
+res://Scenes/Interface.tscn
+res://Scenes/slash.tscn
+res://Scripts/Interface.gd
+res://Scripts/PlayerController.gd
+res://Scripts/Build.gd

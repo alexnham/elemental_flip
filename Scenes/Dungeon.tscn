@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://c44v6yuxcck7x"]
+
+[ext_resource type="Script" path="res://Scripts/Dungeon.cs" id="1_r1skq"]
+[ext_resource type="Texture2D" uid="uid://cimxd08utiagq" path="res://Images/enemy1.png" id="2_ig557"]
+[ext_resource type="PackedScene" uid="uid://btc4de2wglob2" path="res://Scenes/enemy_shooting.tscn" id="4_1kh28"]
+[ext_resource type="Texture2D" uid="uid://dadje6lmmq12r" path="res://Images/melee_enemy.png" id="4_srxry"]
+[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemy_melee.tscn" id="5_0ersg"]
+[ext_resource type="PackedScene" uid="uid://c2liaqqm8p74l" path="res://Scenes/MainCharacter.tscn" id="6_a7bnx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_r1skq")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(296.25, 150.75)
+scale = Vector2(2.715, 1.845)
+texture = ExtResource("4_srxry")
+
+[node name="Enemy" type="Sprite2D" parent="."]
+position = Vector2(540, 67)
+scale = Vector2(0.179297, 0.160299)
+texture = ExtResource("2_ig557")
+
+[node name="Enemy2" parent="." instance=ExtResource("5_0ersg")]
+position = Vector2(992, 81)
+
+[node name="Enemy_Shooting" parent="." instance=ExtResource("4_1kh28")]
+position = Vector2(940, 484)
+
+[node name="MainCharacter" parent="." instance=ExtResource("6_a7bnx")]
+position = Vector2(238, 363)

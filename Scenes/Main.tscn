@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://77w0f8fhp55l"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="1_oyy4p"]
+[ext_resource type="Texture2D" uid="uid://bkfka15kxmol8" path="res://Images/Knight.png" id="2_8flqf"]
+[ext_resource type="Texture2D" uid="uid://2u4rsl4ngvqw" path="res://Images/Sword.png" id="3_t6qhq"]
+[ext_resource type="Texture2D" uid="uid://dohg0c2a6cn2t" path="res://Images/DevGrid.png" id="5_swauc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xwkc"]
+size = Vector2(50, 75)
+[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemy_melee.tscn" id="1_yu2vk"]
+[ext_resource type="PackedScene" uid="uid://c2liaqqm8p74l" path="res://Scenes/MainCharacter.tscn" id="2_u57i4"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(580, 320)
+script = ExtResource("1_oyy4p")
+attackCooldown = 1.0
+
+[node name="CharacterSprite" type="Sprite2D" parent="Player"]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("2_8flqf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+visible = false
+position = Vector2(-2, 6.5)
+shape = SubResource("RectangleShape2D_0xwkc")
+
+[node name="Weapon" type="Sprite2D" parent="Player"]
+position = Vector2(0, 35)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_t6qhq")
+offset = Vector2(0, -11)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -100
+offset_right = 1166.0
+offset_bottom = 668.0
+texture = ExtResource("5_swauc")
+expand_mode = 1
+stretch_mode = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+
+[node name="MainCharacter" parent="." instance=ExtResource("2_u57i4")]
+position = Vector2(540, 298)
+scale = Vector2(2, 2)
+
+[node name="Enemy" parent="." instance=ExtResource("1_yu2vk")]
+
