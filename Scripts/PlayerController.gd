@@ -66,12 +66,16 @@ func _physics_process(_delta):
 		rotationAmount = 45
 		if weapon.scale.x < 0:
 			weapon.scale.x *= -1
-			#something about y needs to change weapon.scale.y = -weapon.scale.y
+		if not can_attack and weapon.scale.x < 0:
+			weapon.scale.y *= -1
 	elif direction.x < 0:
 		player_sprite.flip_h = true
 		rotationAmount = -45
 		if weapon.scale.x > 0:
 			weapon.scale.x *= -1
+		if not can_attack and weapon.scale.x > 0:
+			weapon.scale.y *= -1
+
 
 
 

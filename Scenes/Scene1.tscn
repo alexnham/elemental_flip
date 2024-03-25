@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://vknhg6ig2d26"]
+
+[ext_resource type="Texture2D" uid="uid://khuyq0lpg5a8" path="res://Images/max__15_-removebg-preview.png" id="1_j6ybk"]
+
+[node name="Spawn" type="StaticBody2D"]
+
+[node name="SpawnRoom" type="Sprite2D" parent="."]
+position = Vector2(598.25, 352.75)
+scale = Vector2(1.41, 1.41)
+texture = ExtResource("1_j6ybk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(528, 1, 528, 106, 317, 106, 317, 352, 387, 352, 388, 423, 458, 423, 458, 563, 530, 563, 530, 633, 668, 633, 668, 563, 738, 563, 739, 423, 809, 423, 809, 352, 879, 352, 879, 150, 879, 106, 667, 105, 667, 0)

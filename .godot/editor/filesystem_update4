@@ -6,3 +6,7 @@ res://Scenes/slash.tscn
 res://Scripts/Interface.gd
 res://Scripts/PlayerController.gd
 res://Scripts/Build.gd
+res://Scripts/enemy_melee.gd
+res://Scenes/MegaScene.tscn
+res://Scenes/Scene1.tscn
+res://Scenes/Scene2.tscn
