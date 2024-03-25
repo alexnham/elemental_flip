@@ -1,4 +1,18 @@
+<<<<<<< HEAD
 res://Scripts/emeny_shooting.gd
 res://Scenes/enemy_shooting.tscn
 res://Scripts/bullet.gd
 res://Scenes/bullet.tscn
+=======
+res://Scenes/Build.tscn
+res://Scenes/MainCharacter.tscn
+res://Scenes/enemy_melee.tscn
+res://Scenes/Interface.tscn
+res://Scenes/slash.tscn
+res://Scenes/Boss.tscn
+res://Scenes/MegaScene.tscn
+res://Scenes/Scene1.tscn
+res://Scenes/Scene2.tscn
+res://Scenes/enemy_shooting.tscn
+res://Scripts/PlayerController.gd
+>>>>>>> ca301470c548d067f032a25c401e2ceadf3728af

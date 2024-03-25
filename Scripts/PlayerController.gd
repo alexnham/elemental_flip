@@ -26,10 +26,17 @@ var attack_length: Timer
 var background: Node2D
 
 func _ready():
+<<<<<<< HEAD
     # Access the character and weapon sprites
     player_sprite = $CharacterSprite
     weapon = $Weapon
     background = get_parent()
+=======
+	# Access the character and weapon sprites
+	player_sprite = $CharacterSprite
+	weapon = $Weapon
+
+>>>>>>> ca301470c548d067f032a25c401e2ceadf3728af
 
 
     # Create timer for attack cooldown
@@ -80,6 +87,7 @@ func _physics_process(_delta):
 
 
 
+<<<<<<< HEAD
     # Handle Attacking
     if Input.is_action_just_pressed("attack") and can_attack:
         attack_timer.start() # Start cooldown timer
@@ -94,6 +102,21 @@ func _physics_process(_delta):
     if Input.is_action_just_pressed("dash"):
         print("dash")
         position = background.get_local_mouse_position()
+=======
+	# Handle Attacking
+	if Input.is_action_just_pressed("attack") and can_attack:
+		attack_timer.start() # Start cooldown timer
+		attack_length.start()
+		toggle_can_attack() # Toggle can attack
+		weapon.rotate(rotationAmount)
+		track_rotation = rotationAmount
+		print("Attack")
+		weapon.emit_signal("Attacking", true)
+
+
+	if Input.is_action_just_pressed("dash"):
+		print("dash")
+>>>>>>> ca301470c548d067f032a25c401e2ceadf3728af
 
     move_and_slide()
 
