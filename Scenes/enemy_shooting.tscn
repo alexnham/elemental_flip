@@ -34,5 +34,6 @@ position = Vector2(0, -1.33514e-05)
 
 [node name="ReloadTime" type="Timer" parent="."]
 
+[connection signal="shot" from="." to="." method="_on_shot"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="timeout" from="ReloadTime" to="." method="_on_reload_time_timeout"]
