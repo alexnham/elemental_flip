@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_1ilx0"]
 radius = 45.0444
 
-[node name="Bullet" type="CharacterBody2D"]
+[node name="Bullet" type="Area2D"]
 position = Vector2(625, 316)
 script = ExtResource("1_34vd6")
 
@@ -18,3 +18,7 @@ shape = SubResource("CircleShape2D_1ilx0")
 position = Vector2(-0.76001, -0.76001)
 scale = Vector2(0.091, 0.091)
 texture = ExtResource("1_mmvkx")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="Hit" from="." to="." method="_on_hit"]

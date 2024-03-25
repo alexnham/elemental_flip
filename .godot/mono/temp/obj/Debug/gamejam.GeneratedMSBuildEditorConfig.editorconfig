@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = /Users/alexnham/Desktop/cs/gamejam_GD/
+build_property.GodotProjectDir = C:\Sam\Godot\ElementalFlip\elemental_flip\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,6 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = gamejam
-build_property.ProjectDir = /Users/alexnham/Desktop/cs/gamejam_GD/
+build_property.ProjectDir = C:\Sam\Godot\ElementalFlip\elemental_flip\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
