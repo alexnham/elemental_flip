@@ -7,7 +7,7 @@ var reloadTime
 signal shot
 
 func _ready():
-    _mainChar = get_node("../MainCharacter")
+    _mainChar = get_node("../Player")
     _bullet = get_node("Bullet")
     reloadTime = get_node("ReloadTime")
     reloadTime.start()
@@ -19,7 +19,7 @@ func _physics_process(delta):
     global_position = global_position.move_toward(_mainChar.global_position, delta * speed)
     
     # Bullet move towards where main character was
-    
+    _bullet.global_position = global_position.move_toward(_mainChar.global_position, delta * speed * 2)
     #pass
 
 

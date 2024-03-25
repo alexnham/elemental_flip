@@ -9,5 +9,4 @@ res://Scenes/Boss.tscn
 res://Scenes/MegaScene.tscn
 res://Scenes/Scene1.tscn
 res://Scenes/Scene2.tscn
-res://Scripts/bullet.gd
 res://Scripts/emeny_shooting.gd
