@@ -103,8 +103,8 @@ func end_attack():
 func toggle_can_attack():
 	can_attack = !can_attack
 
-func take_damage(amount: int):
+func take_damage(amount: float):
 	health -= amount
 	if health <= 0:
 		queue_free()
-	ui.emit_signal("ealth_depleted", health)
+	ui.emit_signal("health_depleted", health)

@@ -25,4 +25,4 @@ func _on_body_entered(body: Node2D) -> void:
 		die_event.emit()
 	if body.is_in_group("Player"):
 		print("ouch")
-		main_char.emit_signal("enemy_damage", 1)
+		main_char.emit_signal("enemy_damage", .1)
