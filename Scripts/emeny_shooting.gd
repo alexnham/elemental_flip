@@ -12,24 +12,24 @@ signal shot
 var ui: Control
 
 func _ready():
-	_mainChar = get_node("../Player")
-	#_bullet = get_node("Bullet")
-	_bulletScene = preload("res://Scenes/bullet.tscn")
-	reloadTime = get_node("ReloadTime")
-	
-	reloadTime.wait_time = 1
-	reloadTime.start()
-	#shot = false
-	#reloadTime.stop()
-	ui = get_node("Interface")
-	#reloadTime.start()
-	connect("die_event",die)
+    _mainChar = get_node("../Player")
+    #_bullet = get_node("Bullet")
+    _bulletScene = preload("res://Scenes/bullet.tscn")
+    reloadTime = get_node("ReloadTime")
+    
+    reloadTime.wait_time = 1
+    reloadTime.start()
+    #shot = false
+    #reloadTime.stop()
+    ui = get_node("Interface")
+    #reloadTime.start()
+    connect("die_event",die)
 
 func die(amount: int) -> void:
-	health -= amount
-	if health <= 0:
-		queue_free()
-	ui.emit_signal("health_depleted", health)
+    health -= amount
+    if health <= 0:
+        queue_free()
+    ui.emit_signal("health_depleted", health)
 
 
 var speed = 1.0
@@ -69,28 +69,28 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 
 
 func _on_reload_time_timeout():
-	#if _bullet.global_position != global_position:
-	emit_signal("shot")
-	#print("Bullet global position = ", _bullet.global_position)
+    #if _bullet.global_position != global_position:
+    emit_signal("shot")
+    #print("Bullet global position = ", _bullet.global_position)
 
-	#pass # Replace with function body.
-	
+    #pass # Replace with function body.
+    
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Slash"):
-		die_event.emit(1)
-	
+    if body.is_in_group("Slash"):
+        die_event.emit(1)
+    
 func _on_shot():
-	#if _bullet.global_position != global_position:
-	#_bullet.visible = true
-	#shot = true
-	#add_child(_bullet)
-	#print("Added bullet to enemy shooting")
-	#pass # Replace with function body.
-	var bullet = _bulletScene.instantiate()
-	add_child(bullet)
-	bullet.scale = Vector2(0.3,0.3)
-	bullet.global_position = $Node2D/BulletSpawn.global_position
-	bullet.bulletVelocity = _mainChar.global_position - bullet.global_position
-	#pass
+    #if _bullet.global_position != global_position:
+    #_bullet.visible = true
+    #shot = true
+    #add_child(_bullet)
+    #print("Added bullet to enemy shooting")
+    #pass # Replace with function body.
+    var bullet = _bulletScene.instantiate()
+    add_child(bullet)
+    bullet.scale = Vector2(0.3,0.3)
+    bullet.global_position = $Node2D/BulletSpawn.global_position
+    bullet.bulletVelocity = _mainChar.global_position - bullet.global_position
+    #pass
 
 
