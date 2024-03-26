@@ -1,8 +1,5 @@
 res://Scenes/Boss.tscn
-res://Scenes/Build.tscn
-res://Scripts/Interface.gd
-res://Scripts/enemy_melee.gd
-res://Scripts/emeny_shooting.gd
-res://Scenes/bullet.tscn
-res://Scenes/HUD.tscn
-res://Scenes/enemy_shooting.tscn
+res://Scenes/MegaScene.tscn
+res://Scenes/Scene1.tscn
+res://Scenes/Scene2.tscn
+res://Scripts/Build.gd
