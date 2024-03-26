@@ -11,3 +11,8 @@ res://Scenes/Scene1.tscn
 res://Scenes/Scene2.tscn
 res://Scripts/emeny_shooting.gd
 res://Scripts/enemy_melee.gd
+res://Scripts/Build.gd
+res://Scripts/bullet.gd
+res://Scripts/Interface.gd
+res://Scripts/PlayerController.gd
+res://Scripts/Weapon.gd

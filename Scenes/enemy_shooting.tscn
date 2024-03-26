@@ -38,6 +38,7 @@ position = Vector2(147.478, 0)
 
 [node name="Interface" parent="." instance=ExtResource("3_ye4jh")]
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="shot" from="." to="." method="_on_shot"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
