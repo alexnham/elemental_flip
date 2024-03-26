@@ -1,39 +1,43 @@
-[gd_scene load_steps=6 format=3 uid="uid://btc4de2wglob2"]
+[gd_scene load_steps=5 format=3 uid="uid://btc4de2wglob2"]
 
 [ext_resource type="Script" path="res://Scripts/emeny_shooting.gd" id="1_25mvw"]
 [ext_resource type="Texture2D" uid="uid://cimxd08utiagq" path="res://Images/enemy1.png" id="2_54spk"]
-[ext_resource type="PackedScene" uid="uid://585daw83uxn5" path="res://Scenes/bullet.tscn" id="3_2sy5x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7fnvt"]
-size = Vector2(308.87, 314.435)
+size = Vector2(139.131, 133.565)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mx4r"]
 
 [node name="Enemy_Shooting" type="Area2D"]
 position = Vector2(584, 316)
 scale = Vector2(0.359375, 0.359375)
+collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_25mvw")
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.19617e-05, 4.19617e-05)
+scale = Vector2(0.434783, 0.434783)
 texture = ExtResource("2_54spk")
 
 [node name="EnemyCollision" type="CollisionShape2D" parent="."]
-position = Vector2(-1.39136, -1.39136)
 shape = SubResource("RectangleShape2D_7fnvt")
 
 [node name="EnemyView" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_8mx4r")
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="BulletSpawn" type="Marker2D" parent="Node2D"]
+position = Vector2(147.478, 0)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
-[node name="Bullet" parent="." instance=ExtResource("3_2sy5x")]
-position = Vector2(0, -1.33514e-05)
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 
 [node name="ReloadTime" type="Timer" parent="."]
 
 [connection signal="shot" from="." to="." method="_on_shot"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
 [connection signal="timeout" from="ReloadTime" to="." method="_on_reload_time_timeout"]
