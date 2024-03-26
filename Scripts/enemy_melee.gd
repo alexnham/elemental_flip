@@ -11,13 +11,6 @@ var ui: Control
 signal die_event
 
 func _ready():
-<<<<<<< HEAD
-    main_char = get_node("../Player")
-    connect("die_event",die)
-
-func die() -> void:
-    queue_free()
-=======
 	main_char = get_node("../Player")
 	connect("die_event",die)
 	ui = get_node("Interface")
@@ -28,7 +21,6 @@ func die(amount: int) -> void:
 		queue_free()
 	ui.emit_signal("health_depleted", health)
 
->>>>>>> 36d313d110882f87cb2410f5807a43104bc32f90
 
 func _physics_process(delta: float) -> void:
     if(position != main_char.position):
