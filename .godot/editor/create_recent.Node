@@ -1,8 +1,9 @@
+Button
+RichTextLabel
 ColorRect
 TextureRect
 Node
 Label
-Button
 CanvasLayer
 CollisionShape2D
 Area2D
