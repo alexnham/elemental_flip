@@ -6,3 +6,6 @@ res://Scripts/emeny_shooting.gd
 res://Scenes/bullet.tscn
 res://Scenes/HUD.tscn
 res://Scenes/enemy_shooting.tscn
+res://Scripts/HUD.gd
+res://Scenes/MainTesting.tscn
+res://Scripts/MainTesting.gd

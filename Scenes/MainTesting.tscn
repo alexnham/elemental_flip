@@ -1,0 +1,134 @@
+[gd_scene load_steps=13 format=3 uid="uid://bssv42gdiooir"]
+
+[ext_resource type="Script" path="res://Scripts/MainTesting.gd" id="1_2nft2"]
+[ext_resource type="Texture2D" uid="uid://dl6wo6f7dwbit" path="res://Images/test.jpg" id="2_r0ex8"]
+[ext_resource type="PackedScene" uid="uid://c2liaqqm8p74l" path="res://Scenes/MainCharacter.tscn" id="3_yi6sj"]
+[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemy_melee.tscn" id="4_xgcbr"]
+[ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemy_shooting.tscn" id="5_4ouof"]
+[ext_resource type="PackedScene" uid="uid://dgdxd452t7r61" path="res://Scenes/HUD.tscn" id="6_ebf4f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ne20k"]
+size = Vector2(51.6296, 246.59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1jed"]
+size = Vector2(96.8512, 467.385)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xfw7i"]
+size = Vector2(68.0315, 159.388)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4p17"]
+size = Vector2(34.3991, 302.313)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6to1a"]
+size = Vector2(174.765, 44.0214)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oiw70"]
+size = Vector2(640.09, 51.3456)
+
+[node name="Build" type="Node2D"]
+script = ExtResource("1_2nft2")
+
+[node name="Test_Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.4, 0.509804, 0.345098, 1)
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(755, 543)
+scale = Vector2(9.12813, 8.175)
+texture = ExtResource("2_r0ex8")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D4"]
+position = Vector2(-66.6467, 112.057)
+shape = SubResource("RectangleShape2D_ne20k")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D"]
+position = Vector2(-270.267, -0.191116)
+shape = SubResource("RectangleShape2D_b1jed")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D2"]
+position = Vector2(-93.3379, 63.6697)
+shape = SubResource("RectangleShape2D_xfw7i")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D3"]
+position = Vector2(-206.943, -44.7706)
+shape = SubResource("RectangleShape2D_p4p17")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D5"]
+position = Vector2(-120.726, -133.456)
+shape = SubResource("RectangleShape2D_6to1a")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D6"]
+position = Vector2(2.80341, 228.731)
+shape = SubResource("RectangleShape2D_oiw70")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D7"]
+position = Vector2(-1.20506, -229.847)
+shape = SubResource("RectangleShape2D_oiw70")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="background"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="background/StaticBody2D8"]
+position = Vector2(298.09, 8.80734)
+shape = SubResource("RectangleShape2D_b1jed")
+
+[node name="Player" parent="." instance=ExtResource("3_yi6sj")]
+position = Vector2(-728, 2122)
+scale = Vector2(1, 1)
+
+[node name="Enemy_Melee" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(1041, -125)
+
+[node name="Enemy_Melee2" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(397, 27)
+
+[node name="Enemy_Melee3" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(-213, 495)
+
+[node name="Enemy_Melee4" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(820, 83)
+
+[node name="Enemy_Melee6" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(1425, 678)
+
+[node name="Enemy_Melee7" parent="." instance=ExtResource("4_xgcbr")]
+position = Vector2(645, -111)
+
+[node name="Enemy_Shooting" parent="." instance=ExtResource("5_4ouof")]
+
+[node name="HUD" parent="." instance=ExtResource("6_ebf4f")]
+
+[connection signal="start_game" from="HUD" to="." method="new_game"]
