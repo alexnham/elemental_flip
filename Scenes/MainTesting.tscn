@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bssv42gdiooir"]
+[gd_scene load_steps=12 format=3 uid="uid://bssv42gdiooir"]
 
 [ext_resource type="Script" path="res://Scripts/MainTesting.gd" id="1_2nft2"]
 [ext_resource type="Texture2D" uid="uid://dl6wo6f7dwbit" path="res://Images/test.jpg" id="2_r0ex8"]
 [ext_resource type="PackedScene" uid="uid://c2liaqqm8p74l" path="res://Scenes/MainCharacter.tscn" id="3_yi6sj"]
 [ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemy_melee.tscn" id="4_xgcbr"]
 [ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemy_shooting.tscn" id="5_4ouof"]
-[ext_resource type="PackedScene" uid="uid://dgdxd452t7r61" path="res://Scenes/HUD.tscn" id="6_ebf4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne20k"]
 size = Vector2(51.6296, 246.59)
@@ -128,7 +127,3 @@ position = Vector2(1425, 678)
 position = Vector2(645, -111)
 
 [node name="Enemy_Shooting" parent="." instance=ExtResource("5_4ouof")]
-
-[node name="HUD" parent="." instance=ExtResource("6_ebf4f")]
-
-[connection signal="start_game" from="HUD" to="." method="new_game"]
