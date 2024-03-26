@@ -1,4 +1,5 @@
 res://Scenes/Boss.tscn
+<<<<<<< HEAD
 res://Scenes/Build.tscn
 res://Scripts/Interface.gd
 res://Scripts/enemy_melee.gd
@@ -9,3 +10,9 @@ res://Scenes/enemy_shooting.tscn
 res://Scripts/HUD.gd
 res://Scenes/MainTesting.tscn
 res://Scripts/MainTesting.gd
+=======
+res://Scenes/MegaScene.tscn
+res://Scenes/Scene1.tscn
+res://Scenes/Scene2.tscn
+res://Scripts/Build.gd
+>>>>>>> 5b53b092145b6398db1089bd71b38a2d30b77265
