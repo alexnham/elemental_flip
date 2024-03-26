@@ -11,15 +11,15 @@ var ui: Control
 signal die_event
 
 func _ready():
-	main_char = get_node("../Player")
-	connect("die_event",die)
-	ui = get_node("Interface")
+    main_char = get_node("../Player")
+    connect("die_event",die)
+    ui = get_node("Interface")
 
 func die(amount: int) -> void:
-	health -= amount
-	if health <= 0:
-		queue_free()
-	ui.emit_signal("health_depleted", health)
+    health -= amount
+    if health <= 0:
+        queue_free()
+    ui.emit_signal("health_depleted", health)
 
 
 func _physics_process(delta: float) -> void:
@@ -27,19 +27,16 @@ func _physics_process(delta: float) -> void:
         position = position.move_toward(main_char.position,SPEED);
 
 func _on_body_entered(body: Node2D) -> void:
-<<<<<<< HEAD
+
     if body.is_in_group("Slash"):
         die_event.emit()
     if body.is_in_group("Player"):
         print("ouch")
         main_char.emit_signal("enemy_damage", .1)
-=======
-	if body.is_in_group("Slash"):
-		die_event.emit(1)
-	if body.is_in_group("Player"):
-		print("ouch")
-		main_char.emit_signal("enemy_damage", .5)
+        
+    if body.is_in_group("Slash"):
+        die_event.emit(1)
+    if body.is_in_group("Player"):
+        print("ouch")
+        main_char.emit_signal("enemy_damage", .5)
 
-	
-
->>>>>>> 36d313d110882f87cb2410f5807a43104bc32f90

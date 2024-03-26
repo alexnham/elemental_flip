@@ -12,18 +12,6 @@ signal shot
 var ui: Control
 
 func _ready():
-<<<<<<< HEAD
-    _mainChar = get_node("../Player")
-    #_bullet = get_node("Bullet")
-    _bulletScene = preload("res://Scenes/bullet.tscn")
-    reloadTime = get_node("ReloadTime")
-    
-    reloadTime.wait_time = 1
-    reloadTime.start()
-    #shot = false
-    #reloadTime.stop()
-    #reloadTime.start()
-=======
 	_mainChar = get_node("../Player")
 	#_bullet = get_node("Bullet")
 	_bulletScene = preload("res://Scenes/bullet.tscn")
@@ -42,7 +30,6 @@ func die(amount: int) -> void:
 	if health <= 0:
 		queue_free()
 	ui.emit_signal("health_depleted", health)
->>>>>>> 36d313d110882f87cb2410f5807a43104bc32f90
 
 
 var speed = 1.0
