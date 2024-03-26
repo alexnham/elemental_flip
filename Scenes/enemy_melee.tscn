@@ -1,14 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cekbeijp5t485"]
+[gd_scene load_steps=5 format=3 uid="uid://cekbeijp5t485"]
 
 [ext_resource type="Script" path="res://Scripts/enemy_melee.gd" id="1_h5c25"]
 [ext_resource type="Texture2D" uid="uid://dadje6lmmq12r" path="res://Images/melee_enemy.png" id="2_fgo88"]
+[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/enemy_interface.tscn" id="3_3xm67"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xubmh"]
 size = Vector2(93, 58.5)
 
 [node name="Enemy_Melee" type="Area2D" groups=["Enemy"]]
-collision_layer = 4
-collision_mask = 3
 script = ExtResource("1_h5c25")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -19,5 +18,17 @@ texture = ExtResource("2_fgo88")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(61.5, 36.75)
 shape = SubResource("RectangleShape2D_xubmh")
+
+[node name="Interface" parent="." instance=ExtResource("3_3xm67")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 25.0
+offset_top = 75.0
+offset_right = 25.0
+offset_bottom = 75.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.2, 0.2)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
