@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dl6wo6f7dwbit" path="res://Images/test.jpg" id="2_5msul"]
 [ext_resource type="PackedScene" uid="uid://c2liaqqm8p74l" path="res://Scenes/MainCharacter.tscn" id="3_b68lf"]
 [ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemy_melee.tscn" id="4_c6n81"]
-[ext_resource type="PackedScene" uid="uid://btc4de2wglob2" path="res://Scenes/enemy_shooting.tscn" id="5_s2hss"]
+[ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemy_shooting.tscn" id="5_s2hss"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ne20k"]
 size = Vector2(51.6296, 246.59)
