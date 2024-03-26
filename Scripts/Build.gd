@@ -13,7 +13,6 @@ func _ready():
 
 func spawn_attack() -> void:
     print("hello")
-    print(sword.global_position) 
     attack = slash.instantiate()
     attack.global_position = sword.global_position
     attack.scale = sword.scale

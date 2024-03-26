@@ -23,7 +23,7 @@ func _ready():
 
 var speed = 1.0
 func _physics_process(delta):
-    print(_mainChar.global_position)
+
     
     # Shooting enemy move towards current position of main character
     global_position = global_position.move_toward(_mainChar.global_position, speed)
