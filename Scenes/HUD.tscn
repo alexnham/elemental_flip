@@ -1,3 +1,50 @@
-[gd_scene format=3 uid="uid://dgdxd452t7r61"]
+[gd_scene load_steps=2 format=3 uid="uid://dgdxd452t7r61"]
+
+[ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_kn15m"]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_kn15m")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -439.5
+offset_top = 75.0
+offset_right = 439.5
+offset_bottom = 250.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 128
+text = "Elemental-Flip"
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = 26.0
+offset_right = 400.0
+offset_bottom = 126.0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 64
+text = "Start"
+
+[node name="ExitButton" type="Button" parent="."]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = 26.0
+offset_right = -200.0
+offset_bottom = 126.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 64
+text = "Exit"
