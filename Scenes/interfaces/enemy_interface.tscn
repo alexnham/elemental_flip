@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx1qu7c56boqq"]
+[gd_scene load_steps=4 format=3 uid="uid://bx1qu7c56boqq"]
 
 [ext_resource type="Script" path="res://Scripts/Interface.gd" id="1_3ro52"]
-[ext_resource type="Texture2D" uid="uid://ckhdj2j2d42j5" path="res://Images/heart.png" id="2_0xwk1"]
+[ext_resource type="Texture2D" uid="uid://b12mdtp5sagqs" path="res://Images/HeartsEmpty.png" id="2_ervi4"]
+[ext_resource type="Texture2D" uid="uid://c5xf7kfew47qs" path="res://Images/HeartsFull.png" id="3_2rdve"]
 
 [node name="Interface" type="Control"]
 layout_mode = 3
@@ -14,12 +15,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3ro52")
 
-[node name="Heart" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = -49.0
-offset_top = -48.0
-offset_right = 51.0
-offset_bottom = 52.0
-texture = ExtResource("2_0xwk1")
+[node name="HeartEmpty" type="TextureRect" parent="."]
+offset_top = 8.0
+offset_right = 16.0
+offset_bottom = 21.0
+scale = Vector2(6, 6)
+texture = ExtResource("2_ervi4")
 expand_mode = 2
+stretch_mode = 1
+
+[node name="HeartFull" type="TextureRect" parent="."]
+offset_top = 7.0
+offset_right = 16.0
+offset_bottom = 20.0
+scale = Vector2(6, 6)
+texture = ExtResource("3_2rdve")
+expand_mode = 1
 stretch_mode = 1

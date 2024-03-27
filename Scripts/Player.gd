@@ -164,6 +164,7 @@ func playing_slash():
 	else:
 		return false
 
+
 func take_damage(amount: float):
 	if(not is_dashing):
 		health -= amount

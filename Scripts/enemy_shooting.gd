@@ -18,8 +18,8 @@ var ui: Control
 func _ready():
 	_mainChar = get_node("../Player")
 	#_bullet = get_node("Bullet")
-	_bulletScene = preload("res://Scenes/bullet.tscn")
-	_projectileScene = preload("res://Scenes/fan_projectile.tscn")
+	_bulletScene = preload("res://Scenes/bullets/bullet.tscn")
+	_projectileScene = preload("res://Scenes/bullets/fan_projectile.tscn")
 	reloadTime = get_node("ReloadTime")
 	
 	reloadTime.wait_time = 1

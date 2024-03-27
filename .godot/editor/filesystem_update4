@@ -22,3 +22,8 @@ res://Scenes/Scene1.tscn
 res://Scenes/Landscape/StartingScene.tscn
 res://Scripts/enemy_melee.gd
 res://Scenes/enemies/enemy_melee.tscn
+res://Scenes/interfaces/Interface.tscn
+res://Scripts/Interface.gd
+res://Scenes/interfaces/enemy_interface.tscn
+res://Scenes/enemies/enemy_shooting.tscn
+res://Scripts/enemy_shooting.gd

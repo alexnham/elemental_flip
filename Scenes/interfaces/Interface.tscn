@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://8fjb1k1ned34"]
+[gd_scene load_steps=8 format=3 uid="uid://8fjb1k1ned34"]
 
 [ext_resource type="Script" path="res://Scripts/Interface.gd" id="1_56evq"]
-[ext_resource type="Texture2D" uid="uid://ckhdj2j2d42j5" path="res://Images/heart.png" id="2_00rqx"]
+[ext_resource type="Texture2D" uid="uid://b12mdtp5sagqs" path="res://Images/HeartsEmpty.png" id="2_uli4u"]
+[ext_resource type="Texture2D" uid="uid://c5xf7kfew47qs" path="res://Images/HeartsFull.png" id="3_5hiqw"]
 
 [sub_resource type="Gradient" id="Gradient_g8sr4"]
 offsets = PackedFloat32Array(0, 0.996479)
@@ -21,20 +22,34 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 5.0
-offset_right = 5.0
+offset_left = -109.0
+offset_top = -100.0
+offset_right = -109.0
+offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_56evq")
 
-[node name="Heart" type="TextureRect" parent="."]
+[node name="HeartEmpty" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -49.0
-offset_top = -48.0
-offset_right = 51.0
-offset_bottom = 52.0
-texture = ExtResource("2_00rqx")
+offset_left = -28.0
+offset_top = -53.0
+offset_right = -12.0
+offset_bottom = -40.0
+scale = Vector2(6, 6)
+texture = ExtResource("2_uli4u")
 expand_mode = 2
+stretch_mode = 1
+
+[node name="HeartFull" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -28.0
+offset_top = -54.0
+offset_right = -12.0
+offset_bottom = -41.0
+scale = Vector2(6, 6)
+texture = ExtResource("3_5hiqw")
+expand_mode = 1
 stretch_mode = 1
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]

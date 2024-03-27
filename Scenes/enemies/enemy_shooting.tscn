@@ -133,15 +133,15 @@ collision_mask = 3
 script = ExtResource("1_7fl6s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2.78271, -105.739)
-scale = Vector2(1.73, 1.67)
+position = Vector2(-69.8939, -191.706)
+scale = Vector2(2.7394, 2.86399)
 texture = ExtResource("3_dsjkh")
 hframes = 12
 vframes = 8
 frame = 57
 
 [node name="EnemyCollision" type="CollisionShape2D" parent="."]
-position = Vector2(5.56522, -30.6087)
+position = Vector2(-66.7826, -77.913)
 shape = SubResource("RectangleShape2D_7fnvt")
 
 [node name="EnemyView" type="CollisionShape2D" parent="."]
@@ -159,11 +159,12 @@ position = Vector2(147.478, 0)
 [node name="Interface" parent="." instance=ExtResource("3_ye4jh")]
 anchors_preset = 10
 anchor_bottom = 0.0
-offset_left = -13.913
-offset_top = 41.7391
-offset_right = -13.913
-offset_bottom = 41.7391
+offset_left = -175.304
+offset_top = 25.0434
+offset_right = -175.304
+offset_bottom = 25.0434
 grow_vertical = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sam\\.nuget\\packages\\": {}
+    "/Users/alexnham/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sam\\Godot\\ElementalFlip\\elemental_flip_local\\gamejam.csproj",
+      "projectUniqueName": "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj",
       "projectName": "gamejam",
-      "projectPath": "C:\\Sam\\Godot\\ElementalFlip\\elemental_flip_local\\gamejam.csproj",
-      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-      "outputPath": "C:\\Sam\\Godot\\ElementalFlip\\elemental_flip_local\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj",
+      "packagesPath": "/Users/alexnham/.nuget/packages/",
+      "outputPath": "/Users/alexnham/Desktop/cs/gamejam_GD/.godot/mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/alexnham/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -161,10 +161,6 @@
           {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[6.0.28, 6.0.28]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.28, 6.0.28]"
           }
         ],
         "frameworkReferences": {
@@ -172,7 +168,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

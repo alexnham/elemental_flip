@@ -1,6 +1,7 @@
+AnimationPlayer
+Sprite2D
 ColorRect
 Label
-Sprite2D
 CollisionPolygon2D
 CharacterBody2D
 Button
