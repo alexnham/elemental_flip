@@ -1,10 +1,13 @@
 extends Area2D
 
 var _mainChar
-#var _bullet
+#var bullet
 var _bulletScene
 var _projectileScene
+var normalBullet
+var bossBullet
 var reloadTime
+var bulletTracking = false
 #var shot
 
 var health: int = 3
@@ -40,6 +43,8 @@ func _physics_process(delta):
     
     # Shooting enemy move towards current position of main character
     global_position = global_position.move_toward(_mainChar.global_position, speed)
+    
+        #bulletTracking = false
     
     
     # Bullet move towards where main character was
@@ -90,17 +95,24 @@ func _on_shot():
     #print("Added bullet to enemy shooting")
     #pass # Replace with function body.
     var randomNumber = randi_range(0, 1)
+    
     var bullet
     if randomNumber == 0:
-        bullet = _bulletScene.instantiate()
-    else:
+        bulletTracking = false
         bullet = _projectileScene.instantiate()
+        
+    else:
+        bulletTracking = true
+        bullet = _bulletScene.instantiate()
     
     add_child(bullet)
     bullet.scale = Vector2(0.3,0.3)
     bullet.global_position = $Node2D/BulletSpawn.global_position
     bullet.global_rotation = $Node2D/BulletSpawn.global_rotation
     bullet.bulletVelocity = _mainChar.global_position - bullet.global_position
+        #bullet = _projectileScene.instantiate()
+    print("My name is: ", bullet.name)
+    
     #pass
 
 
