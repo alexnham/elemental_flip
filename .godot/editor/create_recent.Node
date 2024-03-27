@@ -1,12 +1,12 @@
+ColorRect
+Label
 Sprite2D
 CollisionPolygon2D
 CharacterBody2D
 Button
 RichTextLabel
-ColorRect
 TextureRect
 Node
-Label
 CanvasLayer
 CollisionShape2D
 Area2D
