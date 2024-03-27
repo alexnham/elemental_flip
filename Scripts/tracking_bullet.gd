@@ -11,6 +11,9 @@ func _ready():
     pass # Replace with function body.
 
 func _physics_process(delta):
+    # THIS 1 LINE OF CODE BELOW MAKES BULLET TRACKS
+    bulletVelocity = main_char.global_position - global_position
+    
     # If node type is changed to area2d, then change move and collide to move towards
     var collision_info = move_and_collide(bulletVelocity.normalized() * delta * speed)
     if collision_info:

@@ -4,8 +4,9 @@ var _mainChar
 #var bullet
 var _bulletScene
 var _projectileScene
-var normalBullet
-var bossBullet
+var _trackingBulletScene
+#var normalBullet
+#var bossBullet
 var reloadTime
 var bulletTracking = false
 #var shot
@@ -20,6 +21,7 @@ func _ready():
     #_bullet = get_node("Bullet")
     _bulletScene = preload("res://Scenes/bullet.tscn")
     _projectileScene = preload("res://Scenes/fan_projectile.tscn")
+    _trackingBulletScene = preload("res://Scenes/tracking_bullet.tscn")
     reloadTime = get_node("ReloadTime")
     
     reloadTime.wait_time = 1
@@ -94,16 +96,20 @@ func _on_shot():
     #add_child(_bullet)
     #print("Added bullet to enemy shooting")
     #pass # Replace with function body.
-    var randomNumber = randi_range(0, 1)
+    var randomNumber = randi_range(0, 2)
     
     var bullet
     if randomNumber == 0:
         bulletTracking = false
         bullet = _projectileScene.instantiate()
         
+    elif randomNumber == 1:
+        bulletTracking = false
+        bullet = _bulletScene.instantiate()
     else:
         bulletTracking = true
-        bullet = _bulletScene.instantiate()
+        bullet = _trackingBulletScene.instantiate()
+    
     
     add_child(bullet)
     bullet.scale = Vector2(0.3,0.3)
