@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2tk5cok7togp"]
+
+[ext_resource type="PackedScene" uid="uid://b8jgkpke1qbqv" path="res://Scenes/Landscape/Dungeon.tscn" id="1_ye252"]
+[ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_08cq7"]
+[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="3_athoh"]
+
+[node name="Game" type="Node2D"]
+
+[node name="MegaScene" parent="." instance=ExtResource("1_ye252")]
+scale = Vector2(3, 3)
+
+[node name="Player" parent="." instance=ExtResource("2_08cq7")]
+position = Vector2(1809, 773)
+
+[node name="Enemy_Melee" parent="." instance=ExtResource("3_athoh")]
+position = Vector2(1781, -36)

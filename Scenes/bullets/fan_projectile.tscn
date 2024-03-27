@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmn0kwxsnf5ay"]
+[gd_scene load_steps=3 format=3 uid="uid://ba8i3eror1rl7"]
 
 [ext_resource type="Script" path="res://Scripts/FanProjectile.gd" id="1_bjmyo"]
 [ext_resource type="Texture2D" uid="uid://cwmt1t285un1r" path="res://Images/fan_shaped_projectile_thin.png" id="2_xvcsd"]

@@ -24,7 +24,8 @@ func die(amount: int) -> void:
 
 func _physics_process(delta: float) -> void:
 	if(position != main_char.position):
-		position = position.move_toward(main_char.position,SPEED);
+		position = position.move_toward(main_char.position-Vector2(80,120),SPEED);
+		#$AnimationPlayer.play("fire_down")
 
 func _on_body_entered(body: Node2D) -> void:
 

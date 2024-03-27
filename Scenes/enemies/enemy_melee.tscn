@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cekbeijp5t485"]
 
 [ext_resource type="Script" path="res://Scripts/enemy_melee.gd" id="1_h5c25"]
-[ext_resource type="Texture2D" uid="uid://dadje6lmmq12r" path="res://Images/melee_enemy.png" id="2_fgo88"]
-[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/enemy_interface.tscn" id="3_3xm67"]
+[ext_resource type="Texture2D" uid="uid://3kgmsmdrq0qi" path="res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png" id="2_w3gkx"]
+[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/interfaces/enemy_interface.tscn" id="3_3xm67"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xubmh"]
 size = Vector2(93, 58.5)
@@ -15,7 +15,10 @@ script = ExtResource("1_h5c25")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(60.5, 62.5)
 scale = Vector2(1.73, 1.67)
-texture = ExtResource("2_fgo88")
+texture = ExtResource("2_w3gkx")
+hframes = 12
+vframes = 8
+frame = 57
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(61.5, 36.75)

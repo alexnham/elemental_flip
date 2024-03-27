@@ -1,0 +1,177 @@
+[gd_scene load_steps=14 format=3 uid="uid://f84twyg3pf4k"]
+
+[ext_resource type="Script" path="res://Scripts/enemy_shooting.gd" id="1_7fl6s"]
+[ext_resource type="Texture2D" uid="uid://3kgmsmdrq0qi" path="res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png" id="3_dsjkh"]
+[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/interfaces/enemy_interface.tscn" id="3_ye4jh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fnvt"]
+size = Vector2(139.131, 133.565)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mx4r"]
+
+[sub_resource type="Animation" id="Animation_km843"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [57]
+}
+
+[sub_resource type="Animation" id="Animation_06f5r"]
+resource_name = "fire_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [57, 58, 59]
+}
+
+[sub_resource type="Animation" id="Animation_p8rf2"]
+resource_name = "fire_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [69, 70, 71]
+}
+
+[sub_resource type="Animation" id="Animation_8pb2w"]
+resource_name = "fire_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [94, 95]
+}
+
+[sub_resource type="Animation" id="Animation_ec7ij"]
+resource_name = "ice_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [48, 49, 50]
+}
+
+[sub_resource type="Animation" id="Animation_el04d"]
+resource_name = "ice_side"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [62]
+}
+
+[sub_resource type="Animation" id="Animation_nn2d8"]
+resource_name = "ice_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [86]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tl8m4"]
+_data = {
+"RESET": SubResource("Animation_km843"),
+"fire_down": SubResource("Animation_06f5r"),
+"fire_side": SubResource("Animation_p8rf2"),
+"fire_up": SubResource("Animation_8pb2w"),
+"ice_down": SubResource("Animation_ec7ij"),
+"ice_side": SubResource("Animation_el04d"),
+"ice_up": SubResource("Animation_nn2d8")
+}
+
+[node name="Enemy_Shooting" type="Area2D"]
+position = Vector2(584, 316)
+scale = Vector2(0.359375, 0.359375)
+collision_layer = 5
+collision_mask = 3
+script = ExtResource("1_7fl6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.78271, -105.739)
+scale = Vector2(1.73, 1.67)
+texture = ExtResource("3_dsjkh")
+hframes = 12
+vframes = 8
+frame = 57
+
+[node name="EnemyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(5.56522, -30.6087)
+shape = SubResource("RectangleShape2D_7fnvt")
+
+[node name="EnemyView" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8mx4r")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="BulletSpawn" type="Marker2D" parent="Node2D"]
+position = Vector2(147.478, 0)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="ReloadTime" type="Timer" parent="."]
+
+[node name="Interface" parent="." instance=ExtResource("3_ye4jh")]
+anchors_preset = 10
+anchor_bottom = 0.0
+offset_left = -13.913
+offset_top = 41.7391
+offset_right = -13.913
+offset_bottom = 41.7391
+grow_vertical = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tl8m4")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="shot" from="." to="." method="_on_shot"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="ReloadTime" to="." method="_on_reload_time_timeout"]

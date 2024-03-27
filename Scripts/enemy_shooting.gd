@@ -4,9 +4,8 @@ var _mainChar
 #var bullet
 var _bulletScene
 var _projectileScene
-var _trackingBulletScene
-#var normalBullet
-#var bossBullet
+var normalBullet
+var bossBullet
 var reloadTime
 var bulletTracking = false
 #var shot
@@ -44,6 +43,7 @@ func _physics_process(delta):
 	
 	# Shooting enemy move towards current position of main character
 	global_position = global_position.move_toward(_mainChar.global_position, speed)
+	$AnimationPlayer.play("fire_down")
 	
 		#bulletTracking = false
 	
