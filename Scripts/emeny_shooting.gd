@@ -100,15 +100,15 @@ func _on_shot():
     
     var bullet
     if randomNumber == 0:
-        bulletTracking = false
         bullet = _projectileScene.instantiate()
+        bullet.bulletTracking = false
         
     elif randomNumber == 1:
-        bulletTracking = false
         bullet = _bulletScene.instantiate()
+        bullet.bulletTracking = false
     else:
-        bulletTracking = true
         bullet = _trackingBulletScene.instantiate()
+        bullet.bulletTracking = true
     
     
     add_child(bullet)

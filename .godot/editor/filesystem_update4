@@ -10,3 +10,4 @@ res://Scenes/StartingScene.tscn
 res://Scenes/MainTesting.tscn
 res://Scenes/fan_projectile.tscn
 res://Scenes/enemy_melee.tscn
+res://Scripts/FanProjectile.gd

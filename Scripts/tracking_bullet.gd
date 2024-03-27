@@ -4,6 +4,7 @@ extends CharacterBody2D
 var bulletVelocity = Vector2(1, 0)
 var speed = 100
 var main_char: CharacterBody2D
+var bulletTracking = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,7 +13,8 @@ func _ready():
 
 func _physics_process(delta):
     # THIS 1 LINE OF CODE BELOW MAKES BULLET TRACKS
-    bulletVelocity = main_char.global_position - global_position
+    if bulletTracking == true:
+        bulletVelocity = main_char.global_position - global_position
     
     # If node type is changed to area2d, then change move and collide to move towards
     var collision_info = move_and_collide(bulletVelocity.normalized() * delta * speed)
