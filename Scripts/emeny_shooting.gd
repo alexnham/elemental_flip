@@ -51,6 +51,7 @@ func _physics_process(delta):
     
 func _process(delta):
     get_node("Node2D").look_at(_mainChar.global_position)
+    #$Node2D/BulletSpawn.look_at(_mainChar.global_position)
     #pass
     
 #func shoot():
@@ -98,6 +99,7 @@ func _on_shot():
     add_child(bullet)
     bullet.scale = Vector2(0.3,0.3)
     bullet.global_position = $Node2D/BulletSpawn.global_position
+    bullet.global_rotation = $Node2D/BulletSpawn.global_rotation
     bullet.bulletVelocity = _mainChar.global_position - bullet.global_position
     #pass
 

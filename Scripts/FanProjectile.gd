@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 #signal hit
-var bulletVelocity = Vector2(1, 0)
+var bulletVelocity = Vector2(0, 0)
 #var projectileVelocity = bulletVelocity
 var speed = 100
 var main_char: CharacterBody2D
