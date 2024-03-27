@@ -27,10 +27,11 @@ extends CharacterBody2D
 # Represents if the player is currently dashing
 @onready var is_dashing = false;
 
-var health: float = 5
+# Represents the players current health
+var health = 5;
 
-signal enemy_damage
-
+# Reference to the hurtbox scene
+@onready var hurtbox_scene = preload("res://Scenes/Player_Attackbox.tscn")
 
 # Represents the current facing direction
 var direction = "down"
@@ -41,10 +42,8 @@ const SLASH_OFFSET_AMOUNT = 0
 # How long the player dashes for
 const DASH_TIME = 0.15
 
-func _ready():
-	connect("enemy_damage", take_damage)
-
-
+# Hurtbox offset from player
+const HURTBOX_OFFSET = 75
 
 # Physics process ran each frame
 func _physics_process(_delta):
@@ -132,6 +131,29 @@ func player_attack():
 			animation_player.play("slash_right")
 			velocity = Vector2(1, 0).normalized() * SLASH_OFFSET_AMOUNT
 
+		# Spawn in hurtbox and position
+		var hurtbox = hurtbox_scene.instantiate()
+		add_child(hurtbox)
+		match direction:
+			"right":
+				hurtbox.position = Vector2(HURTBOX_OFFSET, 0)
+			"left":
+				hurtbox.position = Vector2(-HURTBOX_OFFSET, 0)
+			"down":
+				hurtbox.position = Vector2(0, HURTBOX_OFFSET)
+			"up":
+				hurtbox.position = Vector2(0, -HURTBOX_OFFSET)
+
+		# Destroy hitbox after time
+		get_tree().create_timer(0.1).timeout.connect(func(): 
+			# Get colliding objects and deal damage
+			for node in hurtbox.get_overlapping_areas():
+				if node.is_in_group("Enemy"):
+					node.take_damage(1)
+
+			hurtbox.free()
+		)
+
 # Handles player dashing
 func player_dash():
 	if Input.is_action_pressed("dash") and can_dash and !is_dashing:
@@ -164,11 +186,9 @@ func playing_slash():
 	else:
 		return false
 
-
-func take_damage(amount: float):
+# Method to make the player take damage
+func take_damage(amount):
 	if(not is_dashing):
 		health -= amount
 	if health <= 0:
 		queue_free()
-	$Interface.emit_signal("health_depleted", health)
-	print(health)

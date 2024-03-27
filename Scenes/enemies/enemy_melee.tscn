@@ -1,71 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://cekbeijp5t485"]
+[gd_scene load_steps=14 format=3 uid="uid://cekbeijp5t485"]
 
 [ext_resource type="Script" path="res://Scripts/enemy_melee.gd" id="1_h5c25"]
 [ext_resource type="Texture2D" uid="uid://b7scmlt1khujf" path="res://Images/dungeon-pack-full_version/sprite/monsters_2.png" id="2_tkvup"]
-[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/interfaces/enemy_interface.tscn" id="3_3xm67"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xubmh"]
-size = Vector2(40, 37.25)
-
-[sub_resource type="Animation" id="Animation_glc7p"]
-resource_name = "fire_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [48, 48, 49, 50]
-}
-
-[sub_resource type="Animation" id="Animation_cbh0s"]
-resource_name = "fire_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [86]
-}
-
-[sub_resource type="Animation" id="Animation_j3nql"]
-resource_name = "ice_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [51, 52, 53, 54, 55, 56]
-}
-
-[sub_resource type="Animation" id="Animation_8c10v"]
-resource_name = "ice_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [92]
-}
+size = Vector2(60, 66)
 
 [sub_resource type="Animation" id="Animation_yc3gq"]
 length = 0.001
@@ -82,8 +21,8 @@ tracks/0/keys = {
 "values": [48]
 }
 
-[sub_resource type="Animation" id="Animation_240ph"]
-resource_name = "ice_left"
+[sub_resource type="Animation" id="Animation_glc7p"]
+resource_name = "fire_down"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -91,10 +30,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(1),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [68]
+"values": [48, 48, 49, 50]
 }
 
 [sub_resource type="Animation" id="Animation_2lcq0"]
@@ -127,6 +66,51 @@ tracks/0/keys = {
 "values": [74]
 }
 
+[sub_resource type="Animation" id="Animation_cbh0s"]
+resource_name = "fire_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [86]
+}
+
+[sub_resource type="Animation" id="Animation_j3nql"]
+resource_name = "ice_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [51, 52, 53, 54, 55, 56]
+}
+
+[sub_resource type="Animation" id="Animation_240ph"]
+resource_name = "ice_left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [68]
+}
+
 [sub_resource type="Animation" id="Animation_gp0yi"]
 resource_name = "ice_right"
 tracks/0/type = "value"
@@ -140,6 +124,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [80]
+}
+
+[sub_resource type="Animation" id="Animation_8c10v"]
+resource_name = "ice_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [92]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ks7gu"]
@@ -156,33 +155,19 @@ _data = {
 }
 
 [node name="Enemy_Melee" type="Area2D" groups=["Enemy"]]
-collision_layer = 4
-collision_mask = 67
 script = ExtResource("1_h5c25")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(30, 136)
-scale = Vector2(2.1801, 1.67)
+scale = Vector2(5, 3.83)
 texture = ExtResource("2_tkvup")
+offset = Vector2(0, -15)
 hframes = 12
 vframes = 8
 frame = 48
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(29, 161.625)
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_xubmh")
-
-[node name="Interface" parent="." instance=ExtResource("3_3xm67")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 7.0
-offset_top = 181.0
-offset_right = 7.0
-offset_bottom = 181.0
-grow_horizontal = 1
-grow_vertical = 1
-scale = Vector2(0.2, 0.2)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

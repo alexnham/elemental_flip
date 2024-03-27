@@ -1,5 +1,7 @@
-AnimationPlayer
 Sprite2D
+CollisionShape2D
+Area2D
+AnimationPlayer
 ColorRect
 Label
 CollisionPolygon2D
@@ -9,7 +11,4 @@ RichTextLabel
 TextureRect
 Node
 CanvasLayer
-CollisionShape2D
-Area2D
 Node2D
-VisibleOnScreenEnabler2D

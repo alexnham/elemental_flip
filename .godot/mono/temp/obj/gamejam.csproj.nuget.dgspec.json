@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj": {}
+    "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj": {}
   },
   "projects": {
-    "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj": {
+    "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj",
+        "projectUniqueName": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj",
         "projectName": "gamejam",
-        "projectPath": "/Users/alexnham/Desktop/cs/gamejam_GD/gamejam.csproj",
-        "packagesPath": "/Users/alexnham/.nuget/packages/",
-        "outputPath": "/Users/alexnham/Desktop/cs/gamejam_GD/.godot/mono/temp/obj/",
+        "projectPath": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj",
+        "packagesPath": "C:\\Users\\ashto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alexnham/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ashto\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -75,6 +75,10 @@
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
             }
           ],
           "frameworkReferences": {
@@ -82,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

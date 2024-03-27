@@ -237,13 +237,14 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4h1k2"]
-size = Vector2(19.6667, 33)
+size = Vector2(16, 30.6667)
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_hvesk")
 dash_distance = 2000
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 12)
 scale = Vector2(6, 6)
 texture = ExtResource("1_ywdwt")
 hframes = 12
@@ -256,7 +257,7 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5.5, -19.5)
+position = Vector2(0, -4)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_4h1k2")
 
