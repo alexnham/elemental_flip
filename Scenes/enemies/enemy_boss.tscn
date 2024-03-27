@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://caqs5eoyufh4q"]
 
-[ext_resource type="Script" path="res://Scripts/Shrek.gd" id="1_8e4oo"]
-[ext_resource type="Texture2D" uid="uid://hvno5litf0aa" path="res://Images/dungeon-pack-full_version/sprite/character_1.png" id="2_17wb6"]
+[ext_resource type="Script" path="res://Scripts/Boss.gd" id="1_8e4oo"]
+[ext_resource type="Texture2D" uid="uid://4d42j6huu65t" path="res://Images/dungeon-pack-full_version/sprite/character_1.png" id="2_17wb6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh0v1"]
 size = Vector2(167, 178)
@@ -58,15 +58,19 @@ _data = {
 "shoot_tracking_bullet": SubResource("Animation_nf1s2")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Boss" type="CharacterBody2D"]
+position = Vector2(370, 185)
+collision_layer = 4
+collision_mask = 67
 script = ExtResource("1_8e4oo")
+metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(487.5, 204)
+[node name="BossCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_sh0v1")
 
 [node name="Shrek" type="Sprite2D" parent="."]
-position = Vector2(485, 238)
+position = Vector2(-2.99997, 35)
 scale = Vector2(10, 10)
 texture = ExtResource("2_17wb6")
 hframes = 12
@@ -77,3 +81,27 @@ libraries = {
 "": SubResource("AnimationLibrary_lg3s2")
 }
 speed_scale = 3.0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="EnemySpawnPosition" type="Marker2D" parent="Node2D"]
+position = Vector2(84, 0)
+
+[node name="BulletSpawnRight" type="Marker2D" parent="Node2D"]
+position = Vector2(84, 0)
+
+[node name="BulletSpawnUp" type="Marker2D" parent="Node2D"]
+position = Vector2(0, -89)
+
+[node name="BulletSpawnLeft" type="Marker2D" parent="Node2D"]
+position = Vector2(-84, 0)
+
+[node name="BulletSpawnDown" type="Marker2D" parent="Node2D"]
+position = Vector2(0, 90)
+
+[node name="WaveTimer" type="Timer" parent="."]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
