@@ -2,12 +2,14 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1711481381
 export_presets.cfg::TextFile::-1::1711389389::0::1::::<><>::
 README.md::TextFile::-1::1711389389::0::1::::<><>::
-::res://Images/::1711481381
+::res://Images/::1711483456
 bullet_plasma_green.png::CompressedTexture2D::7255882150259797098::1711389389::1711389389::1::::<><>::
 DevGrid.png::CompressedTexture2D::8156765599892336669::1711389389::1711389389::1::::<><>::
 enemy1.png::CompressedTexture2D::5360527862751234700::1711389389::1711389389::1::::<><>::
 heart.png::CompressedTexture2D::5489380104434018292::1711389389::1711389389::1::::<><>::
 HUD_test_background.jpg::CompressedTexture2D::4022326866370549416::1711480530::1711480531::1::::<><>::
+HUD_Title.jpg::CompressedTexture2D::2732280133578981407::1711483373::1711483376::1::::<><>::
+HUD_Title_2.jpg::CompressedTexture2D::8284986679856515713::1711483457::1711483460::1::::<><>::
 icon.svg::CompressedTexture2D::1911281182880593071::1711389389::1711389389::1::::<><>::
 Knight.png::CompressedTexture2D::3099239591208202847::1711389389::1711389389::1::::<><>::
 max-removebg-preview.png::CompressedTexture2D::7669416042975053411::1711389389::1711389389::1::::<><>::
@@ -264,7 +266,7 @@ monsters_2.png::CompressedTexture2D::4669765951498723423::1711481382::1711481382
 poisoned1_waterfall_effects.png::CompressedTexture2D::8546371866423834357::1711481382::1711481382::1::::<><>::
 poisoned2_waterfall_effects.png::CompressedTexture2D::2845239428329070010::1711481382::1711481382::1::::<><>::
 waterfall_effects.png::CompressedTexture2D::1234260344314898212::1711481382::1711481382::1::::<><>::
-::res://Images/TILESET VILLAGE TOP DOWN/::1711481381
+::res://Images/TILESET VILLAGE TOP DOWN/::1711481461
 (THANK YOU).png::CompressedTexture2D::481929630878626378::1711481381::1711481461::1::::<><>::
 BRIDGE - DAY.png::CompressedTexture2D::6693136275848318075::1711481381::1711481461::1::::<><>::
 BRIDGE - NIGHT.png::CompressedTexture2D::8911386260104586292::1711481381::1711481461::1::::<><>::
@@ -340,22 +342,22 @@ WATER DETAIL 5 - DAY.png::CompressedTexture2D::2970688236681565411::1711481381::
 WATER DETAIL 5 - NIGHT.png::CompressedTexture2D::4074507456728472002::1711481381::1711481461::1::::<><>::
 WATER TILE - DAY.png::CompressedTexture2D::942769915165572482::1711481381::1711481461::1::::<><>::
 WATER TILE - NIGHT.png::CompressedTexture2D::590272967542216611::1711481381::1711481461::1::::<><>::
-::res://Scenes/::1711481382
+::res://Scenes/::1711482079
 Boss.tscn::PackedScene::101945944929410734::1711478278::0::1::::<><>::
-Build.tscn::PackedScene::7684176408285241930::1711481113::0::1::::<><>::res://Scripts/Build.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://c2liaqqm8p74l::::res://Scenes/MainCharacter.tscn<>uid://cekbeijp5t485::::res://Scenes/enemy_melee.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemy_shooting.tscn
-bullet.tscn::PackedScene::2175616677712949428::1711481114::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
+Build.tscn::PackedScene::7684176408285241930::1711481706::0::1::::<><>::res://Scripts/Build.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://c2liaqqm8p74l::::res://Scenes/MainCharacter.tscn<>uid://cekbeijp5t485::::res://Scenes/enemy_melee.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemy_shooting.tscn
+bullet.tscn::PackedScene::2175616677712949428::1711481706::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
 enemy_interface.tscn::PackedScene::4055446781977120032::1711477795::0::1::::<><>::res://Scripts/Interface.gd<>uid://ckhdj2j2d42j5::::res://Images/heart.png
 enemy_melee.tscn::PackedScene::5074308814459759244::1711477795::0::1::::<><>::res://Scripts/enemy_melee.gd<>uid://dadje6lmmq12r::::res://Images/melee_enemy.png<>uid://bx1qu7c56boqq::::res://Scenes/enemy_interface.tscn
-enemy_shooting.tscn::PackedScene::420864599848190448::1711481114::0::1::::<><>::res://Scripts/emeny_shooting.gd<>uid://cimxd08utiagq::::res://Images/enemy1.png<>uid://bx1qu7c56boqq::::res://Scenes/enemy_interface.tscn
+enemy_shooting.tscn::PackedScene::420864599848190448::1711481706::0::1::::<><>::res://Scripts/emeny_shooting.gd<>uid://cimxd08utiagq::::res://Images/enemy1.png<>uid://bx1qu7c56boqq::::res://Scenes/enemy_interface.tscn
 Interface.tscn::PackedScene::2327103349808173585::1711418572::0::1::::<><>::res://Scripts/Interface.gd<>uid://ckhdj2j2d42j5::::res://Images/heart.png
 MainCharacter.tscn::PackedScene::6691134902530290413::1711418572::0::1::::<><>::res://Scripts/PlayerController.gd<>uid://8fjb1k1ned34::::res://Scenes/Interface.tscn<>uid://bkfka15kxmol8::::res://Images/Knight.png<>uid://2u4rsl4ngvqw::::res://Images/Sword.png
 MegaScene.tscn::PackedScene::4721614886945768793::1711418573::0::1::::<><>::uid://vknhg6ig2d26::::res://Scenes/Scene1.tscn<>uid://b46bexet56xcd::::res://Scenes/Scene2.tscn<>uid://c2liaqqm8p74l::::res://Scenes/MainCharacter.tscn
-HUD.tscn::PackedScene::7587991665159732108::1711481114::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>res://Scripts/ExitButton.gd
-MainTesting.tscn::PackedScene::3688306941168941737::1711481141::0::1::::<><>::res://Scripts/MainTesting.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://c2liaqqm8p74l::::res://Scenes/MainCharacter.tscn<>uid://cekbeijp5t485::::res://Scenes/enemy_melee.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemy_shooting.tscn<>uid://dgdxd452t7r61::::res://Scenes/HUD.tscn
+HUD.tscn::PackedScene::7587991665159732108::1711482079::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>uid://2h3r0iocmxid::::res://Images/icon.svg<>res://Scripts/ExitButton.gd
+MainTesting.tscn::PackedScene::3688306941168941737::1711481706::0::1::::<><>::res://Scripts/MainTesting.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://c2liaqqm8p74l::::res://Scenes/MainCharacter.tscn<>uid://cekbeijp5t485::::res://Scenes/enemy_melee.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemy_shooting.tscn
 Scene1.tscn::PackedScene::1495411678804180921::1711418573::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png
 Scene2.tscn::PackedScene::4485961934861158491::1711418573::0::1::::<><>::uid://dhjefq66xp3g6::::res://Images/max-removebg-preview.png
 slash.tscn::PackedScene::8618692205065793029::1711418573::0::1::::<><>::res://Scripts/Weapon.gd<>uid://dn3ng8avmiiwu::::res://Images/slash.png
-StartingScene.tscn::PackedScene::-1::1711481382::0::1::::<><>::
+StartingScene.tscn::PackedScene::7643595593479964908::1711481707::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://dgdxd452t7r61::::res://Scenes/HUD.tscn
 ::res://Scripts/::1711480966
 Build.gd::GDScript::-1::1711418572::0::1::::<>Node2D<>::
 bullet.gd::GDScript::-1::1711418572::0::1::::<>CharacterBody2D<>::
@@ -368,4 +370,4 @@ ExitButton.gd::GDScript::-1::1711479595::0::1::::<>Button<>::
 MainTesting.gd::GDScript::-1::1711480966::0::1::::<>Node2D<>::
 StartButton.gd::GDScript::-1::1711479582::0::1::::<>Button<>::
 Weapon.gd::GDScript::-1::1711418572::0::1::::<>CharacterBody2D<>::
-::res://Sprites/::1711391584
+::res://Sprites/::1711482306

@@ -1,11 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgdxd452t7r61"]
+[gd_scene load_steps=5 format=3 uid="uid://dgdxd452t7r61"]
 
 [ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_kn15m"]
 [ext_resource type="Script" path="res://Scripts/StartButton.gd" id="2_5uclk"]
+[ext_resource type="Texture2D" uid="uid://dqbkrxkt6udhx" path="res://Images/HUD_Title_2.jpg" id="2_qt1ai"]
 [ext_resource type="Script" path="res://Scripts/ExitButton.gd" id="3_y844i"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_kn15m")
+
+[node name="TitleSprite" type="Sprite2D" parent="."]
+position = Vector2(548, 218)
+scale = Vector2(1.06445, 1.04785)
+texture = ExtResource("2_qt1ai")
 
 [node name="Title" type="Label" parent="."]
 anchors_preset = 5
