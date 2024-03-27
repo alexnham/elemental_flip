@@ -1,33 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgdxd452t7r61"]
+[gd_scene load_steps=5 format=3 uid="uid://dgdxd452t7r61"]
 
 [ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_kn15m"]
 [ext_resource type="Script" path="res://Scripts/StartButton.gd" id="2_5uclk"]
 [ext_resource type="Script" path="res://Scripts/ExitButton.gd" id="3_y844i"]
+[ext_resource type="Texture2D" uid="uid://cf21hpjswxomx" path="res://Images/Alex Logo.png" id="4_5ygq5"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_kn15m")
-
-[node name="Title" type="Label" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -439.5
-offset_top = 75.0
-offset_right = 439.5
-offset_bottom = 250.0
-grow_horizontal = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 128
-text = "Elemental-Flip"
 
 [node name="StartButton" type="Button" parent="."]
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 200.0
-offset_top = 26.0
-offset_right = 400.0
-offset_bottom = 126.0
+offset_left = 398.0
+offset_top = 43.0
+offset_right = 757.0
+offset_bottom = 143.0
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -41,10 +29,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -400.0
-offset_top = 26.0
-offset_right = -200.0
-offset_bottom = 126.0
+offset_left = -679.0
+offset_top = 168.0
+offset_right = -479.0
+offset_bottom = 268.0
 grow_horizontal = 0
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -52,6 +40,11 @@ size_flags_vertical = 4
 theme_override_font_sizes/font_size = 64
 text = "Exit"
 script = ExtResource("3_y844i")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(577, 142)
+scale = Vector2(0.435677, 0.437037)
+texture = ExtResource("4_5ygq5")
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
