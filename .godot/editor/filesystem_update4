@@ -1,9 +1,3 @@
-res://Scenes/enemy_shooting.tscn
+res://Scenes/tracking_bullet.tscn
+res://Scripts/tracking_bullet.gd
 res://Scripts/emeny_shooting.gd
-res://Scenes/Build.tscn
-res://Scenes/bullet.tscn
-res://Scenes/HUD.tscn
-res://Scenes/StartingScene.tscn
-res://Scenes/MainTesting.tscn
-res://Scenes/fan_projectile.tscn
-res://Scenes/enemy_melee.tscn
