@@ -1,7 +1,3 @@
-res://Scripts/enemy_melee.gd
 res://Scenes/Game.tscn
-res://Scenes/Player.tscn
-res://Scenes/enemies/enemy_melee.tscn
-res://Scenes/Player_Attackbox.tscn
-res://Scenes/interfaces/Interface.tscn
 res://Scripts/Player.gd
+res://Scenes/Player.tscn

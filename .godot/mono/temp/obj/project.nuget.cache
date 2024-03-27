@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "b7LSC+hAkNxjcJuotNR3MNAIfAyWQ7g9d7k8GCdW7IRUpD5A9qzzJ74uCl9JRe9MOyTi4x4NWldXqbhB2bp/2w==",
+  "dgSpecHash": "19EbuOuTdVCg9szRqiT08E21N1V6aTTsYVXUEQqnOYM8BU4mYY0L25OTHl+rg+cwRo3/aLmdyFAjjm6bTHJOcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj",
+  "projectFilePath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ashto\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\ashto\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\ashto\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512",
-    "C:\\Users\\ashto\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\ashto\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
-    "C:\\Users\\ashto\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "C:\\Users\\Sam\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
