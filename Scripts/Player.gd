@@ -164,20 +164,29 @@ func player_dash():
 		is_dashing = true
 		get_tree().create_timer(DASH_TIME).timeout.connect(func(): is_dashing = false)
 
-		# Apply velocity for dash in move direction
+		# Get particle emitter
+		var dash_particles = get_node("DashParticles")
+
+		# Apply directional variables and velocity
 		if direction == "right":
 			velocity = Vector2(1, 0).normalized() * dash_distance
 			animation_player.play("dash_right")
+			dash_particles.direction = Vector2(-1, 0)
 		elif direction == "left":
 			velocity = Vector2(-1, 0).normalized() * dash_distance
 			animation_player.play("dash_left")
+			dash_particles.direction = Vector2(1, 0)
 		elif direction == "up":
 			velocity = Vector2(0, -1).normalized() * dash_distance
 			animation_player.play("dash_up")
+			dash_particles.direction = Vector2(0, 1)
 		elif direction == "down":
 			velocity = Vector2(0, 1).normalized() * dash_distance
 			animation_player.play("dash_down")
+			dash_particles.direction = Vector2(0, -1)
 
+		# Start particle emitter
+		dash_particles.restart()
 # Check if the slash animation is playing
 func playing_slash():
 	var playing_animation = animation_player.get_current_animation()

@@ -7,7 +7,7 @@
 [node name="Game" type="Node2D"]
 
 [node name="MegaScene" parent="." instance=ExtResource("1_ye252")]
-scale = Vector2(3, 3)
+scale = Vector2(3, 3.00798)
 
 [node name="Player" parent="." instance=ExtResource("2_08cq7")]
 position = Vector2(1809, 773)

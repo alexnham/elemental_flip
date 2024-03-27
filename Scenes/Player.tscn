@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://db8wbmnwmxtm8"]
+[gd_scene load_steps=20 format=3 uid="uid://db8wbmnwmxtm8"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_hvesk"]
 [ext_resource type="Texture2D" uid="uid://dfl1lwr7bdxok" path="res://Images/dungeon-pack-full_version/sprite/free_character_0.png" id="1_ywdwt"]
@@ -239,7 +239,12 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4h1k2"]
 size = Vector2(16, 30.6667)
 
+[sub_resource type="Curve" id="Curve_l8rnh"]
+_data = [Vector2(0.0393258, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.197802), 0.0, 0.0, 0, 0]
+point_count = 2
+
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
+z_index = 5
 script = ExtResource("1_hvesk")
 dash_distance = 2000
 
@@ -262,9 +267,25 @@ scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_4h1k2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_speed = 10.0
 
 [node name="Interface" parent="." instance=ExtResource("3_5r4ts")]
 offset_left = -534.0
 offset_top = -247.0
 offset_right = -534.0
 offset_bottom = -247.0
+
+[node name="DashParticles" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 50
+lifetime = 0.5
+one_shot = true
+speed_scale = 1.5
+explosiveness = 0.8
+spread = 30.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 200.0
+initial_velocity_max = 200.0
+scale_amount_min = 5.0
+scale_amount_max = 15.0
+scale_amount_curve = SubResource("Curve_l8rnh")

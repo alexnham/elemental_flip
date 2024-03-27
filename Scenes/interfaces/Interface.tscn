@@ -28,6 +28,7 @@ offset_right = -109.0
 offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.384811, 0.384811)
 script = ExtResource("1_56evq")
 
 [node name="HeartEmpty" type="TextureRect" parent="."]
