@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsegucrs6n2uf"]
+
+[ext_resource type="Script" path="res://Scripts/swirling_projectile.gd" id="1_ujkga"]
+[ext_resource type="Texture2D" uid="uid://dcwfba1trarp1" path="res://Images/fan_shaped_swirling_projectile.png" id="2_pi677"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_da5l0"]
+size = Vector2(200, 293)
+
+[node name="SwirlingProjectile" type="CharacterBody2D"]
+position = Vector2(634, 322)
+collision_layer = 32
+collision_mask = 3
+script = ExtResource("1_ujkga")
+
+[node name="ProjectileCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0.5)
+shape = SubResource("RectangleShape2D_da5l0")
+
+[node name="ProjectileSprite" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 1.19209e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_pi677")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-2, 1.99999)
+scale = Vector2(10, 14.6)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 3
+
+[node name="ProjectileCollision2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 0.5)
+shape = SubResource("RectangleShape2D_da5l0")
+
+[node name="BulletDisappearTime" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="BulletDisappearTime" to="." method="_on_bullet_disappear_time_timeout"]

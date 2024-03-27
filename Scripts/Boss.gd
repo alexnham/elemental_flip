@@ -13,14 +13,17 @@ var trackingBulletScene
 var meleeEnemyScene
 var shootingEnemyScene
 
+var trackingBulletCounts = 5
+
 var attack1: Timer # a lot of 
 var attack2: Timer # spawn goons
 var attack3: Timer # waves user has to dash
 var wait: Timer
 var waveTimer
 var animation
-var numEnemies = 1
+@export var numEnemies = 10
 var waveCount = 0
+var timeCount = 1
 
 func _ready():
     #mainChar = get_node("../Player")
@@ -40,7 +43,7 @@ func _ready():
     
     attack2 = Timer.new()
     attack2.autostart = false
-    attack2.wait_time = 10
+    attack2.wait_time = 1
     attack2.one_shot = true
     
     attack3 = Timer.new()
@@ -60,7 +63,7 @@ func _ready():
     
      # Spawn enemies
     add_child(attack1)
-    numEnemies = 2
+    #numEnemies = 10
     
     # Attacks: Tracking bullets
     add_child(attack2)
@@ -68,7 +71,8 @@ func _ready():
     # Attacks: swirling grow bullets
     add_child(attack3)
     
-    $WaveTimer.start()
+    
+    #$WaveTimer.start()
     
     
 func _process(_delta):
@@ -81,7 +85,9 @@ func _process(_delta):
 
 func _on_visible_on_screen_notifier_2d_screen_entered():
     #pass # Replace with function body.
+    $WaveTimer.wait_time = 5
     $WaveTimer.start()
+    print("Wave timer started!")
     
     
 
@@ -92,8 +98,10 @@ func _on_wave_timer_timeout():
         print("Wave 1 started!")
         Wave1()
     elif currentWave == 1:
+        print("Wave 2 started!")
         Wave2()
     else:
+        print("Wave 3 started!")
         Wave3()
     
     waveCount = waveCount + 1
@@ -102,6 +110,7 @@ func _on_wave_timer_timeout():
 
 func Wave1():
     for n in range(numEnemies):
+        print("n = ", n)
         #var randomPositionSpawn = randi_range(1, 4)
         var randomEnemy = randi_range(1, 2)
         var enemyType = meleeEnemyScene.instantiate()
@@ -113,13 +122,61 @@ func Wave1():
         #enemyType.mainChar = mainChar
         
         get_parent().add_child(enemyType)
-        enemyType.global_position = $Node2D/EnemySpawnPosition.global_position
+        var randomSpawnPosition = randi_range(1, 4)
+        if randomSpawnPosition == 1:
+            enemyType.global_position = $Node2D/BulletSpawnUp.global_position
+        elif randomSpawnPosition == 2:
+            enemyType.global_position = $Node2D/BulletSpawnDown.global_position
+        elif randomSpawnPosition == 3:
+            enemyType.global_position = $Node2D/BulletSpawnLeft.global_position
+        elif randomSpawnPosition == 4:
+            enemyType.global_position = $Node2D/BulletSpawnRight.global_position
+            
         enemyType.global_rotation = $Node2D.global_rotation
         print("Enemy ", enemyType.name, " spawned from boss ", name)
     #pass
 
 func Wave2():
-    pass
+    var bulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
+    
+    for i in range(4):
+        var bullet = bulletScene.instantiate()
+        add_child(bullet)
+        
+        if i == 0:
+            bullet.global_position = $Node2D/BulletSpawnUp.global_position
+        elif i == 1:
+            bullet.global_position = $Node2D/BulletSpawnDown.global_position
+        elif i == 2:
+            bullet.global_position = $Node2D/BulletSpawnLeft.global_position
+        elif i == 3:
+            bullet.global_position = $Node2D/BulletSpawnRight.global_position
+        
+        bullet.scale = Vector2(0.3, 0.3)
+        bullet.global_rotation = $Node2D/GeneralSpawnPosition.global_rotation
+        bullet.bulletTracking = true
+        bullet.bulletVelocity = get_parent().get_node("Player").global_position - bullet.global_position       
+    
+    #pass
     
 func Wave3():
-    pass
+    var bulletScene = preload("res://Scenes/bullets/swirling_projectile.tscn")
+    for i in range(4):
+        var bullet = bulletScene.instantiate()
+        add_child(bullet)
+        
+        if i == 0:
+            bullet.global_position = $Node2D/BulletSpawnUp.global_position
+        elif i == 1:
+            bullet.global_position = $Node2D/BulletSpawnDown.global_position
+        elif i == 2:
+            bullet.global_position = $Node2D/BulletSpawnLeft.global_position
+        elif i == 3:
+            bullet.global_position = $Node2D/BulletSpawnRight.global_position
+        
+        bullet.scale = Vector2(0.3, 0.3)
+        #bullet.global_rotation = $Node2D/GeneralSpawnPosition.global_rotation
+        bullet.bulletTracking = false
+        bullet.bulletVelocity = bullet.global_position       
+    
+    #pass

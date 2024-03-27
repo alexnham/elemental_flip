@@ -84,7 +84,7 @@ speed_scale = 3.0
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="EnemySpawnPosition" type="Marker2D" parent="Node2D"]
+[node name="GeneralSpawnPosition" type="Marker2D" parent="Node2D"]
 position = Vector2(84, 0)
 
 [node name="BulletSpawnRight" type="Marker2D" parent="Node2D"]
@@ -100,6 +100,7 @@ position = Vector2(-84, 0)
 position = Vector2(0, 90)
 
 [node name="WaveTimer" type="Timer" parent="."]
+wait_time = 5.0
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

@@ -28,6 +28,11 @@ collision_mask = 3
 [node name="ProjectileCollision" type="CollisionPolygon2D" parent="Area2D"]
 polygon = PackedVector2Array(26, 138, 48, 133, 78, 117, 111, 85, 131, 45, 136, 10, 134, -22, 122, -58, 103, -89, 80, -108, 60, -118, 31, -131, 21, -133, 31, -122, 40, -104, 49, -85, 58, -53, 61, -23, 63, 17, 60, 41, 55, 75, 43, 112, 27, 137, 27, 137)
 
+[node name="BulletDisappearTime" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="BulletDisappearTime" to="." method="_on_bullet_disappear_time_timeout"]
