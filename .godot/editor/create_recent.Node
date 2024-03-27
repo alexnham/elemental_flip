@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-Sprite2D
-=======
+CollisionPolygon2D
+CharacterBody2D
 Button
 RichTextLabel
->>>>>>> 523159b4b5d24381cf60f2c9348221a73445c236
 ColorRect
 TextureRect
 Node
@@ -11,6 +9,5 @@ Label
 CanvasLayer
 CollisionShape2D
 Area2D
-CharacterBody2D
 Node2D
 VisibleOnScreenEnabler2D

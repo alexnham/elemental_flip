@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmn0kwxsnf5ay"]
+
+[ext_resource type="Script" path="res://Scripts/FanProjectile.gd" id="1_bjmyo"]
+[ext_resource type="Texture2D" uid="uid://cwmt1t285un1r" path="res://Images/fan_shaped_projectile_thin.png" id="2_xvcsd"]
+
+[node name="FanProjectile" type="CharacterBody2D"]
+position = Vector2(634, 322)
+collision_layer = 32
+collision_mask = 3
+script = ExtResource("1_bjmyo")
+
+[node name="ProjectileCollision" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(26, 138, 48, 133, 78, 117, 111, 85, 131, 45, 136, 10, 134, -22, 122, -58, 103, -89, 80, -108, 60, -118, 31, -131, 21, -133, 31, -122, 40, -104, 49, -85, 58, -53, 61, -23, 63, 17, 60, 41, 55, 75, 43, 112, 27, 137, 27, 137)
+
+[node name="ProjectileSprite" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 1.19209e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_xvcsd")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(75, 3.49999)
+scale = Vector2(6.2, 13.75)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 3
+
+[node name="ProjectileCollision" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(26, 138, 48, 133, 78, 117, 111, 85, 131, 45, 136, 10, 134, -22, 122, -58, 103, -89, 80, -108, 60, -118, 31, -131, 21, -133, 31, -122, 40, -104, 49, -85, 58, -53, 61, -23, 63, 17, 60, 41, 55, 75, 43, 112, 27, 137, 27, 137)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

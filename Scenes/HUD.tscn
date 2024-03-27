@@ -9,6 +9,7 @@
 script = ExtResource("1_kn15m")
 
 [node name="TitleSprite" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(548, 218)
 scale = Vector2(1.06445, 1.04785)
 texture = ExtResource("2_qt1ai")

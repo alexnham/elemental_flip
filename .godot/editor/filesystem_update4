@@ -1,4 +1,4 @@
-res://Scenes/StartingScene.tscn
+res://Scenes/Build.tscn
 res://Scripts/Build.gd
 res://Scripts/bullet.gd
 res://Scripts/emeny_shooting.gd
@@ -9,9 +9,13 @@ res://Scripts/Interface.gd
 res://Scripts/MainTesting.gd
 res://Scripts/PlayerController.gd
 res://Scripts/StartButton.gd
-res://Scenes/Build.tscn
+res://Scripts/StartingScene.gd
 res://Scenes/enemy_shooting.tscn
 res://Scenes/bullet.tscn
 res://Scenes/HUD.tscn
+res://Scenes/StartingScene.tscn
 res://Scenes/MainTesting.tscn
-res://Scripts/StartingScene.gd
+res://Scripts/FanProjectile.gd
+res://Scenes/fan_projectile.tscn
+res://Scenes/slash.tscn
+res://Scenes/enemy_melee.tscn

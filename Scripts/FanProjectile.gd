@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 #signal hit
 var bulletVelocity = Vector2(1, 0)
+#var projectileVelocity = bulletVelocity
 var speed = 100
 var main_char: CharacterBody2D
 
@@ -14,7 +15,7 @@ func _physics_process(delta):
     # If node type is changed to area2d, then change move and collide to move towards
     var collision_info = move_and_collide(bulletVelocity.normalized() * delta * speed)
     if collision_info:
-        print("Bullet collided with ", collision_info.get_collider().name)
+        print("Projectile collided with ", collision_info.get_collider().name)
     #velocity = velocity.slide(bulletVelocity.normalized() * delta * speed)
     #global_position = global_position.move_toward(bulletVelocity, delta)
     #pass

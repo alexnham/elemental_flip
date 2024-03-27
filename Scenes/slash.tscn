@@ -8,6 +8,8 @@ radius = 12.0
 height = 48.5715
 
 [node name="Weapon" type="CharacterBody2D" groups=["Slash"]]
+collision_layer = 64
+collision_mask = 12
 script = ExtResource("1_6j3aj")
 
 [node name="weapon_collision" type="CollisionShape2D" parent="." groups=["Weapon"]]
