@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # Determines the players walking speed
-@export var movement_speed = 500;
+@export var movement_speed:float = 500;
 
 # The time between attacks
 @export var attack_cooldown = 1.0;
@@ -107,6 +107,9 @@ func player_movement():
 			# Apply no velocity
 			velocity = Vector2(0,0)
 
+func set_speed(value:float):
+	movement_speed += value
+
 # Handles player attacking
 func player_attack():
 	if Input.is_action_pressed("attack") and can_attack and !is_dashing:
@@ -153,7 +156,6 @@ func player_attack():
 
 			hurtbox.free()
 		)
-
 # Handles player dashing
 func player_dash():
 	if Input.is_action_pressed("dash") and can_dash and !is_dashing:

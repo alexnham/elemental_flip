@@ -118,6 +118,6 @@ func _on_shot():
 func take_damage(damage_amount):
 	health -= damage_amount
 	if health <= 0:
-		die(1)
+		die()
 
 

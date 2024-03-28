@@ -17,9 +17,17 @@ func _process(delta):
 		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() + 5)
 	elif $Player.global_position.x < 0:
 		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() - 5)
-	
+	print($Player/Interface/TextureProgressBar.get_value())
 	progress.position = $Player.position
-	
+	if($Player/Interface/TextureProgressBar.get_value() > 9000):
+		$Player.take_damage(0.001)
+	elif($Player/Interface/TextureProgressBar.get_value() < 1000):
+		print($Player.movement_speed)
+		if($Player.movement_speed > 0):
+			$Player.set_speed(-1)
+	else:
+		if($Player.movement_speed < 500):
+				$Player.set_speed(1)
 	
 	if Input.is_action_just_pressed("swap"):
 		timer = Timer.new()
