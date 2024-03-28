@@ -1,7 +1,76 @@
-[gd_scene load_steps=13 format=3 uid="uid://cekbeijp5t485"]
+[gd_scene load_steps=14 format=3 uid="uid://cekbeijp5t485"]
 
 [ext_resource type="Script" path="res://Scripts/enemy_melee.gd" id="1_h5c25"]
 [ext_resource type="Texture2D" uid="uid://b7scmlt1khujf" path="res://Images/dungeon-pack-full_version/sprite/monsters_2.png" id="2_tkvup"]
+[ext_resource type="Texture2D" uid="uid://nfjs2nfkfwrf" path="res://Images/Sword_16.png" id="3_4ucg4"]
+
+[sub_resource type="Animation" id="Animation_g6iw5"]
+resource_name = "idle_right"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_bk85a"]
+resource_name = "idle_right"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+
+[sub_resource type="Animation" id="Animation_yxyy4"]
+resource_name = "idle_right"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [25]
+}
+
+[sub_resource type="Animation" id="Animation_roqma"]
+resource_name = "idle_right"
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [37]
+}
 
 [sub_resource type="Animation" id="Animation_ccwne"]
 resource_name = "idle_right"
@@ -37,23 +106,6 @@ tracks/0/keys = {
 "values": [12, 13, 14, 13]
 }
 
-[sub_resource type="Animation" id="Animation_pu2kn"]
-resource_name = "walk_left"
-length = 0.8
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [36, 37, 38, 37]
-}
-
 [sub_resource type="Animation" id="Animation_3x56n"]
 resource_name = "walk_left"
 length = 0.8
@@ -71,9 +123,9 @@ tracks/0/keys = {
 "values": [24, 25, 26, 25]
 }
 
-[sub_resource type="Animation" id="Animation_g6iw5"]
-resource_name = "idle_right"
-length = 0.1
+[sub_resource type="Animation" id="Animation_pu2kn"]
+resource_name = "walk_left"
+length = 0.8
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -82,61 +134,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [1]
-}
-
-[sub_resource type="Animation" id="Animation_yxyy4"]
-resource_name = "idle_right"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [25]
-}
-
-[sub_resource type="Animation" id="Animation_bk85a"]
-resource_name = "idle_right"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [13]
-}
-
-[sub_resource type="Animation" id="Animation_roqma"]
-resource_name = "idle_right"
-length = 0.1
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [37]
+"values": [36, 37, 38, 37]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lrsbn"]
@@ -152,14 +153,18 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74pxb"]
-size = Vector2(54, 72)
+size = Vector2(60, 95)
 
 [node name="Melee_Enemy" type="CharacterBody2D" groups=["Enemy"]]
 collision_layer = 2
+platform_floor_layers = 4294967040
 script = ExtResource("1_h5c25")
+move_speed = 350.0
+stop_distance = 100
+attack_range = 150
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(4.5, 4.5)
+scale = Vector2(5, 5)
 texture = ExtResource("2_tkvup")
 offset = Vector2(0, -17)
 hframes = 12
@@ -172,5 +177,13 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
+position = Vector2(0, -12.5)
 shape = SubResource("RectangleShape2D_74pxb")
+
+[node name="Sword" type="Sprite2D" parent="."]
+visible = false
+z_index = -1
+position = Vector2(1.35525e-20, 4.76837e-07)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("3_4ucg4")
+offset = Vector2(15, -15)

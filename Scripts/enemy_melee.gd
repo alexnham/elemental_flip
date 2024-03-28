@@ -27,15 +27,23 @@ extends CharacterBody2D
 # The enemies animation player
 @onready var animation_player = $AnimationPlayer
 
+# The enemies sword sprite
+@onready var sword_sprite = $Sword
+
 # The direction the enemy is facing
 var facing = "down"
 
 # Whether the enemy can attack this frame
 var can_attack = true
 
+# Whether or not the enemy can currently move
+var can_move = true
+
 # Physics process method ran every frame
 func _physics_process(_delta):
-	move_and_animate()
+	if can_move:
+		move_and_animate()
+
 	attack()
 
 
@@ -58,8 +66,27 @@ func take_damage(damage_amount):
 func attack():
 	# Check if enemy can attack and is alive
 	if can_attack and health > 0 and position.distance_to(player.global_position) <= attack_range:
+		# Disable attacking and movement
 		can_attack = false
+		can_move = false
+
+		# Create timer to handle attack cooldown
 		get_tree().create_timer(attack_cooldown).timeout.connect(func(): can_attack = true)
+
+		# Create timer to launch attack
+		get_tree().create_timer(0.15).timeout.connect(func(): 
+			sword_sprite.visible = true
+
+			var tween = create_tween()
+			tween.tween_property(sword_sprite, "rotation", deg_to_rad(360), .25)
+		
+			# Timer to enable movement and hide sword
+			get_tree().create_timer(.25).timeout.connect(func(): 
+				can_move = true
+				sword_sprite.visible = false
+				sword_sprite.rotation_degrees = deg_to_rad(45)
+			)
+		)
 
 
 # Method to kill the enemy
