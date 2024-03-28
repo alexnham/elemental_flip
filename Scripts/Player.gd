@@ -147,7 +147,7 @@ func player_attack():
 		# Destroy hitbox after time
 		get_tree().create_timer(0.1).timeout.connect(func(): 
 			# Get colliding objects and deal damage
-			for node in hurtbox.get_overlapping_areas():
+			for node in hurtbox.get_overlapping_bodies():
 				if node.is_in_group("Enemy"):
 					node.take_damage(1)
 
@@ -162,7 +162,15 @@ func player_dash():
 		get_tree().create_timer(dash_cooldown).timeout.connect(func(): can_dash = true)
 
 		is_dashing = true
-		get_tree().create_timer(DASH_TIME).timeout.connect(func(): is_dashing = false)
+		get_tree().create_timer(DASH_TIME).timeout.connect(func(): 
+			is_dashing = false
+			set_collision_mask_value(2, true)
+			set_collision_layer_value(1, true)
+		)
+
+		# Disable collisions with enemy
+		set_collision_mask_value(2, false)
+		set_collision_layer_value(1, false)
 
 		# Get particle emitter
 		var dash_particles = get_node("DashParticles")
@@ -187,6 +195,7 @@ func player_dash():
 
 		# Start particle emitter
 		dash_particles.restart()
+
 # Check if the slash animation is playing
 func playing_slash():
 	var playing_animation = animation_player.get_current_animation()
