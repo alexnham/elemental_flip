@@ -115,5 +115,9 @@ func _on_shot():
 	print("My name is: ", bullet.name)
 	
 	#pass
+func take_damage(damage_amount):
+	health -= damage_amount
+	if health <= 0:
+		die(1)
 
 

@@ -201,3 +201,4 @@ func take_damage(amount):
 		health -= amount
 	if health <= 0:
 		queue_free()
+	$Interface.set_hearts(health)

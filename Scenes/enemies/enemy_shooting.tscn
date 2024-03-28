@@ -125,7 +125,7 @@ _data = {
 "ice_up": SubResource("Animation_nn2d8")
 }
 
-[node name="Enemy_Shooting" type="Area2D"]
+[node name="Enemy_Shooting" type="Area2D" groups=["Enemy"]]
 position = Vector2(584, 316)
 scale = Vector2(0.359375, 0.359375)
 collision_layer = 5
@@ -140,7 +140,7 @@ hframes = 12
 vframes = 8
 frame = 57
 
-[node name="EnemyCollision" type="CollisionShape2D" parent="."]
+[node name="EnemyCollision" type="CollisionShape2D" parent="." groups=["Enemy"]]
 position = Vector2(-66.7826, -77.913)
 shape = SubResource("RectangleShape2D_7fnvt")
 

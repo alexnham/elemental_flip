@@ -43,3 +43,5 @@ func _on_body_entered(body: Node2D):
 	if body.is_in_group("Player"):
 		player_node.take_damage(0.5)
 
+
+

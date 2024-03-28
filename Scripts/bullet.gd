@@ -51,7 +51,7 @@ func _on_area_2d_body_entered(body):
 	queue_free()
 	if body.is_in_group("Player"):
 		print("ouch")
-		main_char.emit_signal("enemy_damage", 0.1)
+		main_char.take_damage(1)
 	#pass # Replace with function body.
 
 

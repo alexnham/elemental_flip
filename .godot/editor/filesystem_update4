@@ -12,3 +12,15 @@ res://Scenes/Player_Attackbox.tscn
 res://Scenes/interfaces/HUD.tscn
 res://Scenes/Player.tscn
 res://Scripts/Game.gd
+res://Scripts/bullet.gd
+res://Scripts/Interface.gd
+res://Scripts/Player.gd
+res://Scenes/bullets/tracking_bullet.tscn
+res://Scripts/FanProjectile.gd
+res://Scripts/swirling_projectile.gd
+res://Scripts/tracking_bullet.gd
+res://Scenes/bullets/bullet.tscn
+res://Scenes/bullets/fan_projectile.tscn
+res://Scenes/bullets/swirling_projectile.tscn
+res://Scripts/enemy_melee.gd
+res://Scripts/enemy_shooting.gd
