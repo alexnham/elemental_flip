@@ -1,0 +1,6 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2tk5cok7togp"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_y672y"]
+[ext_resource type="PackedScene" uid="uid://b8jgkpke1qbqv" path="res://Scenes/Landscape/Dungeon.tscn" id="1_ye252"]
+[ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_08cq7"]
+[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="3_athoh"]
