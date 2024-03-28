@@ -1,12 +1,9 @@
-<<<<<<< Updated upstream
+ProgressBar
 CollisionShape2D
 Timer
 CPUParticles2D
-=======
-ProgressBar
 SpinBox
 AnimationPlayer
->>>>>>> Stashed changes
 Sprite2D
 Area2D
 AnimationPlayer
@@ -15,12 +12,3 @@ Label
 CollisionPolygon2D
 CharacterBody2D
 Button
-RichTextLabel
-TextureRect
-Node
-<<<<<<< Updated upstream
-=======
-CanvasLayer
-CollisionShape2D
-Area2D
->>>>>>> Stashed changes

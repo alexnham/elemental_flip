@@ -16,6 +16,7 @@ grow_vertical = 2
 script = ExtResource("1_3ro52")
 
 [node name="HeartEmpty" type="TextureRect" parent="."]
+layout_mode = 0
 offset_top = 8.0
 offset_right = 16.0
 offset_bottom = 21.0
@@ -25,6 +26,7 @@ expand_mode = 2
 stretch_mode = 1
 
 [node name="HeartFull" type="TextureRect" parent="."]
+layout_mode = 0
 offset_top = 7.0
 offset_right = 16.0
 offset_bottom = 20.0

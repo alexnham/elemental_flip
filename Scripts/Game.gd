@@ -20,9 +20,6 @@ func _process(delta):
 	
 	progress.position = $Player.position
 	
-	print("e", $CharacterBody2D.global_position)
-	print("p", $Player.global_position)
-	
 	
 	if Input.is_action_just_pressed("swap"):
 		timer = Timer.new()
@@ -46,9 +43,9 @@ func _process(delta):
 
 func swap():
 	if($Player.global_position.x > 0):
-		$Player.global_position = Vector2($Player.global_position.x - 10100, $Player.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x - 8400, $Player.global_position.y)
 	else:
-		$Player.global_position = Vector2($Player.global_position.x + 10100, $Player.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x + 8400, $Player.global_position.y)
 
 	\
 	

@@ -1,48 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2tk5cok7togp"]
+[gd_scene load_steps=4 format=3 uid="uid://3sd5n1kvegag"]
 
-[ext_resource type="Script" path="res://Scenes/Game.gd" id="1_y672y"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_y672y"]
 [ext_resource type="PackedScene" uid="uid://b8jgkpke1qbqv" path="res://Scenes/Landscape/Dungeon.tscn" id="1_ye252"]
-[ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_08cq7"]
-[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="3_athoh"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="4_dxg2e"]
-=======
-[ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemies/enemy_shooting.tscn" id="4_h5elk"]
-[ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="6_fmfk0"]
->>>>>>> Stashed changes
+[ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_eeetj"]
 
 [node name="Game" type="Node2D"]
-position = Vector2(-4877, 427)
 script = ExtResource("1_y672y")
 
-[node name="MegaScene" parent="." instance=ExtResource("1_ye252")]
-<<<<<<< Updated upstream
-scale = Vector2(3, 3.00798)
-=======
-position = Vector2(8264, 908)
-scale = Vector2(3, 3)
->>>>>>> Stashed changes
+[node name="Dungeon" parent="." instance=ExtResource("1_ye252")]
+position = Vector2(2778, 430)
+scale = Vector2(2.5, 2.5)
 
-[node name="Player" parent="." instance=ExtResource("2_08cq7")]
-position = Vector2(-10, 2048)
-
-[node name="Enemy_Melee" parent="." instance=ExtResource("3_athoh")]
-position = Vector2(1969, 690)
-
-<<<<<<< Updated upstream
-[node name="Boss" parent="." instance=ExtResource("4_dxg2e")]
-position = Vector2(1783, -954)
-=======
-[node name="Enemy_Shooting" parent="." instance=ExtResource("4_h5elk")]
-position = Vector2(-850, -9.99997)
+[node name="Player" parent="." instance=ExtResource("2_eeetj")]
+position = Vector2(-4069, 1124)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 1686.0
-offset_top = 747.0
-offset_right = 1934.0
-offset_bottom = 774.0
-metadata/_edit_use_anchors_ = true
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("6_fmfk0")]
-position = Vector2(9595, 2063)
->>>>>>> Stashed changes
+offset_left = -1817.0
+offset_top = 645.0
+offset_right = -1498.0
+offset_bottom = 672.0

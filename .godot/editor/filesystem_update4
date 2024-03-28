@@ -1,21 +1,14 @@
-res://Scenes/Game.tscn
-res://Scripts/Player.gd
-res://Scenes/Player.tscn
-res://Scenes/enemies/enemy_boss.tscn
-res://Scripts/Boss.gd
+res://Scenes/slash.tscn
+res://Scenes/Scene1.tscn
+res://Scenes/Landscape/StartingScene.tscn
+res://Scenes/enemies/enemy_melee.tscn
+res://Scenes/Landscape/Dungeon.tscn
+res://Scenes/interfaces/Interface.tscn
+res://Scenes/interfaces/enemy_interface.tscn
 res://Scenes/enemies/enemy_shooting.tscn
-res://Scripts/enemy_shooting.gd
-<<<<<<< Updated upstream
-res://Scripts/FanProjectile.gd
-res://Scenes/bullets/bullet.tscn
-res://Scripts/bullet.gd
-res://Scripts/tracking_bullet.gd
-res://Scenes/bullets/tracking_bullet.tscn
-res://Scenes/swirling_projectile.tscn
-res://Scripts/swirling_projectile.gd
-res://Scenes/bullets/swirling_projectile.tscn
-res://Scenes/bullets/fan_projectile.tscn
-=======
-res://Scenes/Game.gd
 res://Scenes/enemies/enemy_boss.tscn
->>>>>>> Stashed changes
+res://Scenes/Game.tscn
+res://Scenes/Player_Attackbox.tscn
+res://Scenes/interfaces/HUD.tscn
+res://Scenes/Player.tscn
+res://Scripts/Game.gd
