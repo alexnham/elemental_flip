@@ -261,11 +261,14 @@ libraries = {
 "": SubResource("AnimationLibrary_6r1jy")
 }
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_4h1k2")
 
+=======
+>>>>>>> Stashed changes
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_speed = 10.0
 
@@ -275,6 +278,7 @@ offset_top = -247.0
 offset_right = -534.0
 offset_bottom = -247.0
 
+<<<<<<< Updated upstream
 [node name="DashParticles" type="CPUParticles2D" parent="."]
 emitting = false
 amount = 50
@@ -289,3 +293,9 @@ initial_velocity_max = 200.0
 scale_amount_min = 5.0
 scale_amount_max = 15.0
 scale_amount_curve = SubResource("Curve_l8rnh")
+=======
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, -19.5)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_4h1k2")
+>>>>>>> Stashed changes
