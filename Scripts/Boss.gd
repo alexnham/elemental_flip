@@ -44,15 +44,15 @@ func _ready():
 func _physics_process(delta):
     if(knockback):
         if player.direction == "down":
-            player.velocity = Vector2(0, -1).normalized() * 500
+            player.velocity = Vector2(0, -1).normalized() * 1000
         elif player.direction == "up":				
-            player.velocity = Vector2(0, 1).normalized() * 500
+            player.velocity = Vector2(0, 1).normalized() * 1000
         elif player.direction == "left":
-            player.velocity = Vector2(1, 0).normalized() * 500
+            player.velocity = Vector2(1, 0).normalized() * 1000
         elif player.direction == "right":
-            player.velocity = Vector2(-1, 0).normalized() * 500
+            player.velocity = Vector2(-1, 0).normalized() * 1000
         player.move_and_slide()
-        get_tree().create_timer(1).timeout.connect(func(): knockback = false)
+        get_tree().create_timer(2).timeout.connect(func(): knockback = false)
             
 
 
