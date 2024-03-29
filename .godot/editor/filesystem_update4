@@ -21,3 +21,5 @@ res://Scripts/Boss.gd
 res://Scripts/tracking_bullet.gd
 res://Scripts/Game.gd
 res://Scenes/Enemy_Attackbox.tscn
+res://Scripts/DeathScene.gd
+res://Scenes/Landscape/DeathScene.tscn

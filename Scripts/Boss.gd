@@ -69,7 +69,7 @@ func knockback_player():
 func _on_visible_on_screen_notifier_2d_screen_entered():
 	#pass # Replace with function body.
 	if bossActivated == false:
-		$WaveTimer.wait_time = 15
+		$WaveTimer.wait_time = 10
 		$WaveTimer.start()
 		print("Boss Wave Started!")
 		bossActivated = true

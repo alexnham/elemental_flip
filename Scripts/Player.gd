@@ -213,5 +213,5 @@ func take_damage(amount):
 	if(not is_dashing):
 		health -= amount
 	if health <= 0:
-		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/Landscape/DeathScene.tscn")
 	$Interface.set_hearts(health)
