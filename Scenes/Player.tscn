@@ -1,7 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://db8wbmnwmxtm8"]
+[gd_scene load_steps=22 format=3 uid="uid://db8wbmnwmxtm8"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_hvesk"]
 [ext_resource type="Texture2D" uid="uid://dfl1lwr7bdxok" path="res://Images/dungeon-pack-full_version/sprite/free_character_0.png" id="1_ywdwt"]
+[ext_resource type="Texture2D" uid="uid://cljn6qo2ooahx" path="res://Images/overheat.png" id="2_jcyws"]
+[ext_resource type="Texture2D" uid="uid://cckgt6axhoi4g" path="res://Images/overfreeze.png" id="2_qlqty"]
 [ext_resource type="PackedScene" uid="uid://8fjb1k1ned34" path="res://Scenes/interfaces/Interface.tscn" id="3_5r4ts"]
 
 [sub_resource type="Animation" id="Animation_sn1tu"]
@@ -251,6 +253,22 @@ platform_floor_layers = 4294967040
 script = ExtResource("1_hvesk")
 dash_distance = 2000
 
+[node name="overheat" type="TextureRect" parent="."]
+offset_left = -571.0
+offset_top = -325.0
+offset_right = 1733.0
+offset_bottom = 961.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_jcyws")
+
+[node name="overfreeze" type="TextureRect" parent="."]
+offset_left = -573.0
+offset_top = -325.0
+offset_right = 1731.0
+offset_bottom = 961.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_qlqty")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 12)
 scale = Vector2(6, 6)
@@ -277,6 +295,7 @@ offset_left = -534.0
 offset_top = -247.0
 offset_right = -534.0
 offset_bottom = -247.0
+metadata/_edit_use_anchors_ = true
 
 [node name="DashParticles" type="CPUParticles2D" parent="."]
 emitting = false

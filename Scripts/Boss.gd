@@ -1,11 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
 @onready
-var mainChar = get_node("../Player")
+#var mainChar = get_node("../Player")
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var normalBulletScene
 var fanBulletScene
@@ -14,19 +11,22 @@ var meleeEnemyScene
 var shootingEnemyScene
 
 var trackingBulletCounts = 5
-
-var attack1: Timer # a lot of 
-var attack2: Timer # spawn goons
-var attack3: Timer # waves user has to dash
-var wait: Timer
 var waveTimer
 var animation
-@export var numEnemies = 10
+@export var numEnemies = 5
 var waveCount = 0
 var timeCount = 1
+var health = 5
+var player
+var knockback = false
+var player_dir
+var knockback_dir
+var knockback_wait
+
+var bossActivated
 
 func _ready():
-	#mainChar = get_node("../Player")
+	player = get_node("../Player")
 	normalBulletScene = preload("res://Scenes/bullets/bullet.tscn")
 	fanBulletScene = preload("res://Scenes/bullets/fan_projectile.tscn")
 	trackingBulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
@@ -35,65 +35,50 @@ func _ready():
 	
 	animation = $AnimationPlayer
 	animation.play("RESET")
-	
-	attack1 = Timer.new()
-	attack1.autostart = false
-	attack1.wait_time = 10
-	attack1.one_shot = true
-	
-	attack2 = Timer.new()
-	attack2.autostart = false
-	attack2.wait_time = 1
-	attack2.one_shot = true
-	
-	attack3 = Timer.new()
-	attack3.autostart = false
-	attack3.wait_time = 10
-	attack3.one_shot = true
-	
-	wait = Timer.new()
-	wait.autostart = false
-	wait.wait_time = 10
-	wait.one_shot = true
-	
-	
-	wait.autostart = false
-	wait.wait_time = 10
-	wait.one_shot = true
-	
-	 # Spawn enemies
-	add_child(attack1)
-	#numEnemies = 10
-	
-	# Attacks: Tracking bullets
-	add_child(attack2)
-	
-	# Attacks: swirling grow bullets
-	add_child(attack3)
-	
-	
+
+
 	#$WaveTimer.start()
+	bossActivated = false
+
+
+func _physics_process(delta):
+	if(knockback):
+		if player.direction == "down":
+			player.velocity = Vector2(0, -1).normalized() * 2000
+		elif player.direction == "up":				
+			player.velocity = Vector2(0, 1).normalized() * 2000
+		elif player.direction == "left":
+			player.velocity = Vector2(1, 0).normalized() * 2000
+		elif player.direction == "right":
+			player.velocity = Vector2(-1, 0).normalized() * 2000
+		player.move_and_slide()
+		get_tree().create_timer(1).timeout.connect(func(): knockback = false)
+			
+
+
+
+func knockback_player():
+	if((player.global_position-global_position).length() < 200):
+		knockback = true
+
 	
-	
-func _process(_delta):
-	#$Node2D.look_at(mainChar.global_position)
-	
-	if Input.is_action_just_pressed("attack"):
-		animation.play("shoot waves")
-		
+
+
  
 
 func _on_visible_on_screen_notifier_2d_screen_entered():
 	#pass # Replace with function body.
-	$WaveTimer.wait_time = 5
-	$WaveTimer.start()
-	print("Wave timer started!")
+	if bossActivated == false:
+		$WaveTimer.wait_time = 5
+		$WaveTimer.start()
+		print("Boss Wave Started!")
+		bossActivated = true
 	
 	
 
 func _on_wave_timer_timeout():
 	var currentWave = waveCount % 3
-	
+	knockback_player()
 	if currentWave == 0:
 		print("Wave 1 started!")
 		Wave1()
@@ -109,6 +94,7 @@ func _on_wave_timer_timeout():
 	#pass # Replace with function body.
 
 func Wave1():
+
 	for n in range(numEnemies):
 		print("n = ", n)
 		#var randomPositionSpawn = randi_range(1, 4)
@@ -118,8 +104,6 @@ func Wave1():
 			enemyType = meleeEnemyScene.instantiate()
 		else:
 			enemyType = shootingEnemyScene.instantiate()
-		
-		#enemyType.mainChar = mainChar
 		
 		get_parent().add_child(enemyType)
 		var randomSpawnPosition = randi_range(1, 4)
@@ -138,8 +122,9 @@ func Wave1():
 
 func Wave2():
 	var bulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
-	
+
 	for i in range(4):
+		animation.play("shoot_tracking_bullet")
 		var bullet = bulletScene.instantiate()
 		add_child(bullet)
 		
@@ -162,6 +147,7 @@ func Wave2():
 func Wave3():
 	var bulletScene = preload("res://Scenes/bullets/swirling_projectile.tscn")
 	for i in range(4):
+		animation.play("shoot waves")
 		var bullet = bulletScene.instantiate()
 		add_child(bullet)
 		
@@ -177,6 +163,17 @@ func Wave3():
 		bullet.scale = Vector2(0.3, 0.3)
 		#bullet.global_rotation = $Node2D/GeneralSpawnPosition.global_rotation
 		bullet.bulletTracking = false
-		bullet.bulletVelocity = bullet.global_position       
+		bullet.bulletVelocity = get_parent().get_node("Player").global_position - bullet.global_position   
+		bullet.speed = 500 
 	
 	#pass
+func take_damage(damage_amount):
+
+	health -= damage_amount
+	$Interface.set_hearts(health)
+	if health <= 0:
+		die()
+
+# Method to kill the enemy
+func die():
+	queue_free()

@@ -22,50 +22,15 @@ extends CharacterBody2D
 @export var damage = 1;
 
 # Represents the player object
-@onready var player = get_tree().get_first_node_in_group("Player")
-
-# Load the blood particle scene
-@onready var blood_particles = preload("res://Scenes/ParticleEffects/Blood.tscn")
-
-# The enemies animation player
-@onready var animation_player = $AnimationPlayer
-
-# The enemies sword sprite
-@onready var sword_sprite = $Sword
-
-# Reference to the hurtbox scene
-@onready var hurtbox_scene = preload("res://Scenes/Enemy_Attackbox.tscn")
-
-# The direction the enemy is facing
-var facing = "down"
-
-# Whether the enemy can attack this frame
-var can_attack = true
-
-# Whether or not the enemy can currently move
-var can_move = true
-
-# Hurtbox offset from enemy
-const HURTBOX_OFFSET = 100
-
-# Physics process method ran every frame
-func _physics_process(_delta):
-	if player:
-		attack()
-
-		if can_move:
-			move_and_animate()
-
+@onready var player_node = get_node_or_null("../Player")
+var destination: Vector2
+var target_position
+var player_position
+@onready var animation = $AnimationPlayer
 
 # Method to make the enemy take damage, and destroy node if health
 func take_damage(damage_amount):
-	# Spawn blood particles on enemy
-	var particle_instance = blood_particles.instantiate()
-	get_parent().add_child(particle_instance)
-	particle_instance.position = get_global_position()
-	particle_instance.restart()
 
-	# Subtract damage from health
 	health -= damage_amount
 
 	# Call die method on health below 0
@@ -145,53 +110,29 @@ func attack():
 func die():
 	queue_free()
 
+# Physics process method ran every frame
+func _physics_process(_delta):
+	# Check if at current player position
+	if(position != player_node.position):
+		# Get distance on x axis from player
+		var x_distance = abs(position.x - player_node.position.x)
+		# Get distance on y axis from player
+		var y_distance = abs(position.y - player_node.position.y)
 
-# Method to move the enemy
-func move_and_animate():
-	if player:
-		# Get the distance to the player and check if they are within the alert range
-		var distance_to_player = global_position.distance_to(player.global_position)
-		if distance_to_player <= alert_range and distance_to_player > stop_distance:
-			# Get the direction to the player
-			var direction = position.direction_to(player.global_position)
-
-			# Play correct animation
-			if (direction.x > 0 and abs(direction.x) > abs(direction.y)):
-				animation_player.play("walk_right")
-				facing = "right"
-			elif (direction.x < 0 and abs(direction.x) > abs(direction.y)):
-				animation_player.play("walk_left")
-				facing = "left"
-			elif direction.y > 0:
-				animation_player.play("walk_down")
-				facing = "down"
-			elif direction.y < 0:
-				animation_player.play("walk_up")
-				facing = "up"
-
-			# Set the velocity to the direction * the move speed
-			velocity = direction * move_speed
-			move_and_slide()
+		# Move towards player on whatever axis is currently further
+		if (x_distance > y_distance):
+			animation.play("fire_left")
+			position = position.move_toward(Vector2(player_node.position.x, position.y), move_speed)
 		else:
-			# Play correct animation
-			if facing == "down":
-				animation_player.play("idle_down")
-			elif facing == "up":
-				animation_player.play("idle_up")
-			elif facing == "left":
-				animation_player.play("idle_left")
-			elif facing == "right":
-				animation_player.play("idle_right")
-	else:
-		# Play correct animation
-		if facing == "down":
-			animation_player.play("idle_down")
-		elif facing == "up":
-			animation_player.play("idle_up")
-		elif facing == "left":
-			animation_player.play("idle_left")
-		elif facing == "right":
-			animation_player.play("idle_right")
+			animation.play("fire_down")
+			position = position.move_toward(Vector2(position.x, player_node.position.y), move_speed)
+
+
+func _on_body_entered(body: Node2D):
+	if body.is_in_group("Player"):
+		player_node.take_damage(0.5)
+
+
 
 		# Set velocity to 0
 		velocity = Vector2.ZERO

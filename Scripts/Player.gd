@@ -150,16 +150,22 @@ func player_attack():
 		# Destroy hitbox after time
 		get_tree().create_timer(0.05).timeout.connect(func(): 
 			# Get colliding objects and deal damage
-			for node in hurtbox.get_overlapping_bodies():
+			
+			for node in hurtbox.get_overlapping_areas():
 				if node.is_in_group("Enemy"):
 					node.take_damage(1)
+				print("hello")
+			for node in hurtbox.get_overlapping_bodies():
+				if node.is_in_group("Enemy"):
+					node.take_damage(.25)
+				print("hello")
 
 			hurtbox.free()
 		)
 # Handles player dashing
 func player_dash():
 	if Input.is_action_pressed("dash") and can_dash and !is_dashing:
-		# Handle cooldown
+		# Handle csooldown
 		can_dash = false
 		get_tree().create_timer(dash_cooldown).timeout.connect(func(): can_dash = true)
 
@@ -211,5 +217,5 @@ func take_damage(amount):
 	if(not is_dashing):
 		health -= amount
 	if health <= 0:
-		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/Landscape/DeathScene.tscn")
 	$Interface.set_hearts(health)

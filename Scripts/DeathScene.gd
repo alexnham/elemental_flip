@@ -26,13 +26,9 @@ func intro():
 	timer.start()
 	timer2.start()
 	timer.timeout.connect(func():$ColorRect/Line2.visible = true)
-	timer2.timeout.connect(func():$ColorRect/Line3.visible = true)
 	timer2.timeout.connect(func():$ColorRect/Continue.visible = true)
 	
-	
-
-
 
 func _on_continue_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Game.tscn")
-
+	get_tree().change_scene_to_file("res://Scenes/Landscape/StartingScene.tscn")
+	
