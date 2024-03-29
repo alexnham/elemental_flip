@@ -28,7 +28,7 @@ extends CharacterBody2D
 @onready var is_dashing = false;
 
 # Represents the players current health
-var health = 5;
+var health = 100;
 
 # Reference to the hurtbox scene
 @onready var hurtbox_scene = preload("res://Scenes/Player_Attackbox.tscn")
@@ -145,7 +145,7 @@ func player_attack():
 				hurtbox.position = Vector2(0, -HURTBOX_OFFSET)
 
 		# Destroy hitbox after time
-		get_tree().create_timer(0.1).timeout.connect(func(): 
+		get_tree().create_timer(0.05).timeout.connect(func(): 
 			# Get colliding objects and deal damage
 			for node in hurtbox.get_overlapping_bodies():
 				if node.is_in_group("Enemy"):

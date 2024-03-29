@@ -161,7 +161,7 @@ platform_floor_layers = 4294967040
 script = ExtResource("1_h5c25")
 move_speed = 350.0
 stop_distance = 100
-attack_range = 150
+attack_range = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(5, 5)
