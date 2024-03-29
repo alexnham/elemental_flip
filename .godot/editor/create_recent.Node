@@ -1,6 +1,10 @@
-CPUParticles2D
-Sprite2D
+ProgressBar
 CollisionShape2D
+Timer
+CPUParticles2D
+SpinBox
+AnimationPlayer
+Sprite2D
 Area2D
 AnimationPlayer
 ColorRect
@@ -8,8 +12,3 @@ Label
 CollisionPolygon2D
 CharacterBody2D
 Button
-RichTextLabel
-TextureRect
-Node
-CanvasLayer
-Node2D

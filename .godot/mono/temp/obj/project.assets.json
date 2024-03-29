@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ashto\\.nuget\\packages\\": {}
+    "C:\\Users\\Sam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj",
+      "projectUniqueName": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
       "projectName": "gamejam",
-      "projectPath": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\gamejam.csproj",
-      "packagesPath": "C:\\Users\\ashto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ashto\\Documents\\godot_projects\\elemental_flip\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
+      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+      "outputPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ashto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

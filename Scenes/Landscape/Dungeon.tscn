@@ -7,13 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://duwmkt7ijue65" path="res://Images/door.png" id="9_eo6n6"]
 
 [node name="Dungeon" type="Node2D"]
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -1433.0
-offset_top = -2423.0
-offset_right = 5657.0
-offset_bottom = 1062.0
-color = Color(0, 0, 0, 1)
+position = Vector2(1021, 503)
 
 [node name="Fire Dungeon" type="Node2D" parent="."]
 
@@ -116,7 +110,7 @@ scale = Vector2(-0.494773, 0.634033)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomA1Static" type="StaticBody2D" parent="Fire Dungeon"]
-position = Vector2(-1414, -353)
+position = Vector2(-1509, -340)
 scale = Vector2(-1.41, 1)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomA1Static"]
@@ -177,7 +171,7 @@ scale = Vector2(0.494773, -0.631097)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomB1Static" type="StaticBody2D" parent="Fire Dungeon"]
-position = Vector2(-1414, -1057)
+position = Vector2(-1509, -1044)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
 
@@ -240,7 +234,7 @@ scale = Vector2(0.494773, -0.631097)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomC1Static" type="StaticBody2D" parent="Fire Dungeon"]
-position = Vector2(-1414, -1761)
+position = Vector2(-1509, -1748)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
 
@@ -304,13 +298,13 @@ polygon = PackedVector2Array(629, -704, 672, -704, 672, -715, 629, -715)
 [node name="Ice Dungeon" type="Node2D" parent="."]
 
 [node name="Spawn" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.5, 352.5)
+position = Vector2(-2755.5, 348.64)
 rotation = -0.000327896
 scale = Vector2(1.41, 1.41)
 texture = ExtResource("1_5f3n8")
 
 [node name="SpawnStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, 0)
+position = Vector2(-3359, -3.85974)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/SpawnStatic"]
 visible = false
@@ -333,29 +327,29 @@ polygon = PackedVector2Array(885, 104, 885, 352, 814, 352, 814, 423, 743, 423, 7
 visible = false
 polygon = PackedVector2Array(535, 633, 672, 633, 672, 646, 532, 645)
 
-[node name="TorchLeft3" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3797, 28)
+[node name="TorchLeft1" type="Sprite2D" parent="Ice Dungeon"]
+position = Vector2(-2986, 24.1403)
 texture = ExtResource("5_n6thb")
 
-[node name="TorchLeft4" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3899, 28)
+[node name="TorchLeft2" type="Sprite2D" parent="Ice Dungeon"]
+position = Vector2(-2884, 24.1403)
 texture = ExtResource("5_n6thb")
 
-[node name="TorchRight3" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4157, 28)
+[node name="TorchRight1" type="Sprite2D" parent="Ice Dungeon"]
+position = Vector2(-2626, 24.1403)
 texture = ExtResource("5_n6thb")
 
-[node name="TorchRight4" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4259, 28)
+[node name="TorchRight2" type="Sprite2D" parent="Ice Dungeon"]
+position = Vector2(-2524, 24.1403)
 texture = ExtResource("5_n6thb")
 
 [node name="RoomA" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.25, -353)
+position = Vector2(-2755.75, -356.86)
 scale = Vector2(1.399, 1.41)
 texture = ExtResource("2_wkmm1")
 
 [node name="RoomAStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, 0)
+position = Vector2(-3359, -3.85974)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Ice Dungeon/RoomAStatic"]
 visible = false
@@ -374,38 +368,38 @@ visible = false
 polygon = PackedVector2Array(952, -390, 881, -390, 881, -530, 673, -530, 673, -706, 683, -706, 683, -636, 893, -636, 894, -493, 953, -493)
 
 [node name="RoomA2" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4729.5, -353)
+position = Vector2(-2053.5, -356.86)
 rotation = -6.28319
 scale = Vector2(1.41, 1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomA2Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4471.84, -359.08)
+position = Vector2(-2311.16, -362.94)
 rotation = 3.14159
 scale = Vector2(0.486253, 0.629138)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomA2Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, 0)
+position = Vector2(-3359, -3.85974)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomA2Static"]
 visible = false
 polygon = PackedVector2Array(951, -284, 1014, -284, 1014, -330, 1025, -330, 1025, -284, 1094, -284, 1094, -144, 1164, -144, 1164, -71, 1445, -71, 1445, -143, 1515, -143, 1515, -214, 1586, -214, 1586, -389, 1516, -389, 1516, -459, 1444, -459, 1444, -529, 1164, -529, 1164, -460, 1094, -460, 1094, -390, 1023, -390, 1023, -484, 1013, -484, 1013, -390, 951, -390, 953, -495, 1082, -495, 1086, -566, 1155, -567, 1155, -637, 1453, -631, 1456, -566, 1525, -562, 1526, -494, 1599, -491, 1599, -199, 1527, -201, 1527, -128, 1456, -128, 1457, -58, 1147, -59, 1152, -129, 1085, -129, 1083, -272, 951, -272)
 
 [node name="RoomA1" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3325.5, -353)
+position = Vector2(-3457.5, -356.86)
 rotation = -6.28319
 scale = Vector2(-1.41, 1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomA1Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3583.12, -359.375)
+position = Vector2(-3199.88, -363.235)
 rotation = 3.14159
 scale = Vector2(-0.494773, 0.634033)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomA1Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(2010, -353)
+position = Vector2(-4749, -358.86)
 scale = Vector2(-1.41, 1)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomA1Static"]
@@ -413,12 +407,12 @@ visible = false
 polygon = PackedVector2Array(-1183.69, 69, -1140.43, 69, -1140.43, 24, -1131.91, 24, -1131.91, 69, -1082.98, 69, -1082.98, 210, -1033.33, 210, -1033.33, 281, -834.043, 281, -834.043, 210, -784.397, 210, -784.397, 140, -734.752, 140, -734.752, -36, -782.979, -36, -782.979, -107, -833.333, -107, -833.333, -177, -1033.33, -177, -1033.33, -106, -1082.98, -106, -1082.98, -36, -1133.33, -36, -1133.33, -131, -1141.13, -131, -1140.43, -36, -1183.69, -36, -1183.69, -141, -1092.91, -140, -1092.91, -216, -1039.01, -213, -1042.55, -254, -826.241, -256, -827.66, -208, -780.142, -211, -778.723, -142, -727.66, -138, -724.114, 151, -777.305, 152, -775.887, 226, -823.404, 222, -824.823, 294, -1041.13, 294, -1040.43, 224, -1094.33, 228, -1094.33, 83, -1187.94, 82)
 
 [node name="RoomB" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.25, -1057)
+position = Vector2(-2755.75, -1060.86)
 scale = Vector2(1.399, 1.41)
 texture = ExtResource("2_wkmm1")
 
 [node name="RoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, 0)
+position = Vector2(-3359, -3.85974)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomBStatic"]
 visible = false
@@ -437,18 +431,18 @@ visible = false
 polygon = PackedVector2Array(251, -1103, 253, -1093, 255, -1199, 313, -1198, 315, -1340, 523, -1340, 524, -1410, 536, -1410, 536, -1233, 326, -1233, 326, -1093, 254, -1093, 253, -1097)
 
 [node name="RoomB2" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4729.5, -1057)
+position = Vector2(-2053.5, -1060.86)
 scale = Vector2(1.41, 1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomB2Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4471.84, -1063.08)
+position = Vector2(-2311.16, -1066.94)
 rotation = 3.14159
 scale = Vector2(0.486253, 0.629138)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomB2Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, -704)
+position = Vector2(-3359, -707.86)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomB2Static"]
 visible = false
@@ -456,18 +450,18 @@ position = Vector2(0, 1)
 polygon = PackedVector2Array(951, -284, 1014, -284, 1014, -331, 1025, -331, 1025, -284, 1094, -284, 1094, -144, 1164, -144, 1164, -71, 1445, -71, 1445, -143, 1515, -143, 1515, -214, 1586, -214, 1586, -389, 1516, -389, 1516, -459, 1444, -459, 1444, -529, 1164, -529, 1164, -460, 1094, -460, 1094, -390, 1023, -390, 1023, -484, 1013, -484, 1013, -390, 951, -390, 953, -495, 1082, -495, 1086, -566, 1155, -567, 1155, -637, 1453, -631, 1456, -566, 1525, -562, 1526, -494, 1599, -491, 1599, -199, 1527, -201, 1527, -128, 1456, -128, 1457, -58, 1147, -59, 1152, -129, 1085, -129, 1083, -272, 951, -272)
 
 [node name="RoomB1" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3325.5, -1057)
+position = Vector2(-3457.5, -1060.86)
 rotation = 3.14159
 scale = Vector2(1.41, -1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomB1Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3583.12, -1063.79)
+position = Vector2(-3199.88, -1067.65)
 scale = Vector2(0.494773, -0.631097)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomB1Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(2010, -1057)
+position = Vector2(-4749, -1062.86)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
 
@@ -476,12 +470,12 @@ visible = false
 polygon = PackedVector2Array(-1183.69, 69, -1140.43, 69, -1140.43, 23, -1131.91, 23, -1131.91, 69, -1082.98, 69, -1082.98, 210, -1033.33, 210, -1033.33, 281, -834.043, 281, -834.043, 210, -784.397, 210, -784.397, 140, -734.752, 140, -734.752, -36, -782.979, -36, -782.979, -107, -833.333, -107, -833.333, -177, -1033.33, -177, -1033.33, -106, -1082.98, -106, -1082.98, -36, -1133.33, -36, -1133.33, -131, -1141.13, -131, -1140.43, -36, -1183.69, -36, -1183.69, -141, -1092.91, -140, -1092.91, -216, -1039.01, -213, -1042.55, -254, -826.241, -256, -827.66, -208, -780.142, -211, -778.723, -142, -727.66, -138, -724.114, 151, -777.305, 152, -775.887, 226, -823.404, 222, -824.823, 294, -1041.13, 294, -1040.43, 224, -1094.33, 228, -1094.33, 83, -1187.94, 82)
 
 [node name="RoomC" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.25, -1762)
+position = Vector2(-2755.75, -1765.86)
 scale = Vector2(1.399, 1.41)
 texture = ExtResource("2_wkmm1")
 
 [node name="RoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, -705)
+position = Vector2(-3359, -708.86)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomCStatic"]
 visible = false
@@ -500,18 +494,18 @@ visible = false
 polygon = PackedVector2Array(251, -1103, 253, -1093, 255, -1199, 313, -1198, 315, -1340, 523, -1340, 524, -1410, 536, -1410, 536, -1233, 326, -1233, 326, -1093, 254, -1093, 253, -1097)
 
 [node name="RoomC2" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4729.5, -1762)
+position = Vector2(-2053.5, -1765.86)
 scale = Vector2(1.41, 1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomC2Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4471.84, -1768.08)
+position = Vector2(-2311.16, -1771.94)
 rotation = 3.14159
 scale = Vector2(0.486253, 0.629138)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomC2Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, -1409)
+position = Vector2(-3359, -1412.86)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomC2Static"]
 visible = false
@@ -519,18 +513,18 @@ position = Vector2(0, 1)
 polygon = PackedVector2Array(951, -284, 1014, -284, 1014, -331, 1025, -331, 1025, -284, 1094, -284, 1094, -144, 1164, -144, 1164, -71, 1445, -71, 1445, -143, 1515, -143, 1515, -214, 1586, -214, 1586, -389, 1516, -389, 1516, -459, 1444, -459, 1444, -529, 1164, -529, 1164, -460, 1094, -460, 1094, -390, 1023, -390, 1023, -484, 1013, -484, 1013, -390, 951, -390, 953, -495, 1082, -495, 1086, -566, 1155, -567, 1155, -637, 1453, -631, 1456, -566, 1525, -562, 1526, -494, 1599, -491, 1599, -199, 1527, -201, 1527, -128, 1456, -128, 1457, -58, 1147, -59, 1152, -129, 1085, -129, 1083, -272, 951, -272)
 
 [node name="RoomC1" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3325.5, -1761)
+position = Vector2(-3457.5, -1764.86)
 rotation = 3.14159
 scale = Vector2(1.41, -1.41)
 texture = ExtResource("8_ei2f4")
 
 [node name="RoomC1Door" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(3583.12, -1767.79)
+position = Vector2(-3199.88, -1771.65)
 scale = Vector2(0.494773, -0.631097)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomC1Static" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(2010, -1761)
+position = Vector2(-4749, -1766.86)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
 
@@ -539,17 +533,17 @@ visible = false
 polygon = PackedVector2Array(-1182.98, 67.9998, -1141.13, 67.9998, -1140.43, 21.9998, -1131.91, 21.9998, -1131.91, 69, -1082.98, 69, -1082.98, 210, -1033.33, 210, -1033.33, 281, -834.043, 281, -834.043, 210, -784.397, 210, -784.397, 140, -734.752, 140, -734.752, -36, -782.979, -36, -782.979, -107, -833.333, -107, -833.333, -177, -1033.33, -177, -1033.33, -106, -1082.98, -106, -1082.98, -37.0002, -1133.33, -37.0002, -1133.33, -131, -1141.13, -131, -1140.43, -37.0002, -1183.69, -37.0002, -1183.69, -141, -1092.91, -140, -1092.91, -216, -1039.01, -213, -1042.55, -254, -826.241, -256, -827.66, -208, -780.142, -211, -778.723, -142, -727.66, -138, -724.114, 151, -777.305, 152, -775.887, 226, -823.404, 222, -824.823, 294, -1041.13, 294, -1040.43, 224, -1094.33, 228, -1094.33, 83, -1187.94, 82)
 
 [node name="DoorToRoomB" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.34, -740.153)
+position = Vector2(-2755.66, -744.013)
 rotation = -4.71239
 scale = Vector2(0.514144, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, 0)
+position = Vector2(-3359, -3.85974)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBStatic"]
 visible = false
-polygon = PackedVector2Array(631, -704, 534, -704, 534, -715, 631, -715)
+polygon = PackedVector2Array(633, -704, 534, -704, 534, -715, 633, -715)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBStatic"]
 visible = false
@@ -557,13 +551,13 @@ position = Vector2(1, 0)
 polygon = PackedVector2Array(629, -704, 672, -704, 672, -715, 629, -715)
 
 [node name="DoorToRoomC" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.34, -1445.15)
+position = Vector2(-2755.66, -1449.01)
 rotation = -4.71239
 scale = Vector2(0.514144, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, -705)
+position = Vector2(-3359, -708.86)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomCStatic"]
 visible = false
@@ -575,13 +569,13 @@ position = Vector2(1, 0)
 polygon = PackedVector2Array(629, -704, 672, -704, 672, -715, 629, -715)
 
 [node name="DoorToRoomBoss" type="Sprite2D" parent="Ice Dungeon"]
-position = Vector2(4027.34, -2150.15)
+position = Vector2(-2755.66, -2154.01)
 rotation = -4.71239
 scale = Vector2(0.514144, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBossStatic" type="StaticBody2D" parent="Ice Dungeon"]
-position = Vector2(3424, -1410)
+position = Vector2(-3359, -1413.86)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBossStatic"]
 visible = false
@@ -591,3 +585,19 @@ polygon = PackedVector2Array(630, -704, 534, -704, 534, -715, 630, -715)
 visible = false
 position = Vector2(1, 0)
 polygon = PackedVector2Array(629, -704, 672, -704, 672, -715, 629, -715)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8329.0
+offset_top = -2568.0
+offset_right = -1239.0
+offset_bottom = 917.0
+color = Color(0, 0.647059, 0.764706, 0.223529)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -1002.0
+offset_top = -2511.0
+offset_right = 6088.0
+offset_bottom = 974.0
+color = Color(0.854902, 0.282353, 0.301961, 0.223529)
+metadata/_edit_use_anchors_ = true

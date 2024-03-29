@@ -10,6 +10,7 @@ var heart_empty: TextureRect
 var main_char: CharacterBody2D
 
 func _ready():
+	print(get_parent().health)
 	health = get_parent().health
 	heart_empty = $HeartEmpty
 	heart_full = $HeartFull
