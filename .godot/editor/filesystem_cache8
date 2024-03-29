@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711683525
+::res://::1711585975
 export_presets.cfg::TextFile::-1::1711585408::0::1::::<><>::
 README.md::TextFile::-1::1711165603::0::1::::<><>::
-::res://Images/::1711652614
+::res://Images/::1711585408
 Alex Logo.png::CompressedTexture2D::5181115729906889855::1711515583::1711515596::1::::<><>::
 background box.png::CompressedTexture2D::7483259763432198840::1711509124::1711509124::1::::<><>::
 bullet_plasma_green.png::CompressedTexture2D::7255882150259797098::1711173469::1711343335::1::::<><>::
@@ -23,8 +23,6 @@ Knight.png::CompressedTexture2D::3099239591208202847::1711242450::1711343335::1:
 max-removebg-preview.png::CompressedTexture2D::7669416042975053411::1711388520::1711388549::1::::<><>::
 max__15_-removebg-preview.png::CompressedTexture2D::717597159081607001::1711388345::1711388345::1::::<><>::
 melee_enemy.png::CompressedTexture2D::7166010426230624271::1711239890::1711343335::1::::<><>::
-overfreeze.png::CompressedTexture2D::4934262693522440512::1711603395::1711603416::1::::<><>::
-overheat.png::CompressedTexture2D::5564343590954991925::1711604597::1711604617::1::::<><>::
 room-removebg-preview.png::CompressedTexture2D::6976798596418256834::1711554348::1711554362::1::::<><>::
 slash.png::CompressedTexture2D::8130321365397850432::1711260286::1711343335::1::::<><>::
 Sword.png::CompressedTexture2D::1938178448343092074::1711242450::1711343335::1::::<><>::
@@ -355,46 +353,43 @@ WATER DETAIL 5 - DAY.png::CompressedTexture2D::2970688236681565411::1711481345::
 WATER DETAIL 5 - NIGHT.png::CompressedTexture2D::4074507456728472002::1711481345::1711481770::1::::<><>::
 WATER TILE - DAY.png::CompressedTexture2D::942769915165572482::1711481345::1711481770::1::::<><>::
 WATER TILE - NIGHT.png::CompressedTexture2D::590272967542216611::1711481345::1711481770::1::::<><>::
-::res://Scenes/::1711675091
-Game.tscn::PackedScene::2002682869684477134::1711675091::0::1::::<><>::res://Scripts/Game.gd<>uid://b8jgkpke1qbqv::::res://Scenes/Landscape/Dungeon.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://cekbeijp5t485::::res://Scenes/enemies/enemy_melee.tscn<>uid://caqs5eoyufh4q::::res://Scenes/enemies/enemy_boss.tscn
+::res://Scenes/::1711585912
+Game.tscn::PackedScene::9094244877549967083::1711585912::0::1::::<><>::res://Scripts/Game.gd<>uid://b8jgkpke1qbqv::::res://Scenes/Landscape/Dungeon.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://cekbeijp5t485::::res://Scenes/enemies/enemy_melee.tscn<>uid://caqs5eoyufh4q::::res://Scenes/enemies/enemy_boss.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemies/enemy_shooting.tscn<>uid://caqs5eoyufh4q::::res://Scenes/enemies/enemy_boss.tscn
 MainTesting.tscn::PackedScene::3688306941168941737::1711557734::0::1::::<><>::res://Scripts/MainTesting.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://cekbeijp5t485::::res://Scenes/enemies/enemy_melee.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemies/enemy_shooting.tscn
-Player.tscn::PackedScene::7298913571615276157::1711675091::0::1::::<><>::res://Scripts/Player.gd<>uid://dfl1lwr7bdxok::::res://Images/dungeon-pack-full_version/sprite/free_character_0.png<>uid://cljn6qo2ooahx::::res://Images/overheat.png<>uid://cckgt6axhoi4g::::res://Images/overfreeze.png<>uid://8fjb1k1ned34::::res://Scenes/interfaces/Interface.tscn
-Player_Attackbox.tscn::PackedScene::8926965268458008429::1711675091::0::1::::<><>::
-Scene1.tscn::PackedScene::3613887776983679454::1711675090::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png
-slash.tscn::PackedScene::8618692205065793029::1711675090::0::1::::<><>::res://Scripts/Weapon.gd<>uid://dn3ng8avmiiwu::::res://Images/slash.png
-::res://Scenes/bullets/::1711675091
-bullet.tscn::PackedScene::2175616677712949428::1711675091::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
-fan_projectile.tscn::PackedScene::2455081124763473722::1711675091::0::1::::<><>::res://Scripts/FanProjectile.gd<>uid://cwmt1t285un1r::::res://Images/fan_shaped_projectile_thin.png
-swirling_projectile.tscn::PackedScene::8431318897583004145::1711675091::0::1::::<><>::res://Scripts/swirling_projectile.gd<>uid://dcwfba1trarp1::::res://Images/fan_shaped_swirling_projectile.png
-tracking_bullet.tscn::PackedScene::7332000844296329301::1711675091::0::1::::<><>::res://Scripts/tracking_bullet.gd<>uid://dopjsqtcutd4j::::res://Images/tracking_bullet_red.png
-::res://Scenes/enemies/::1711675091
-enemy_boss.tscn::PackedScene::4807018123976146670::1711675091::0::1::::<><>::res://Scripts/Boss.gd<>uid://4d42j6huu65t::::res://Images/dungeon-pack-full_version/sprite/character_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
-enemy_melee.tscn::PackedScene::5074308814459759244::1711675091::0::1::::<><>::res://Scripts/enemy_melee.gd<>uid://b7scmlt1khujf::::res://Images/dungeon-pack-full_version/sprite/monsters_2.png
-enemy_shooting.tscn::PackedScene::420864599848190448::1711675091::0::1::::<><>::res://Scripts/enemy_shooting.gd<>uid://3kgmsmdrq0qi::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
-::res://Scenes/interfaces/::1711675091
-enemy_interface.tscn::PackedScene::4055446781977120032::1711675091::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
-HUD.tscn::PackedScene::7587991665159732108::1711675091::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>res://Scripts/ExitButton.gd<>uid://cf21hpjswxomx::::res://Images/Alex Logo.png
-Interface.tscn::PackedScene::2327103349808173585::1711675091::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
-::res://Scenes/Landscape/::1711675091
-DeathScene.tscn::PackedScene::4991366767970770331::1711675091::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/DeathScene.gd
-Dungeon.tscn::PackedScene::4721614886945768793::1711675091::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png<>uid://dhjefq66xp3g6::::res://Images/max-removebg-preview.png<>uid://b54q6j8f6oh0y::::res://Images/torch.png<>uid://c6nu4ayk6pwys::::res://Images/room-removebg-preview.png<>uid://duwmkt7ijue65::::res://Images/door.png
-StartingScene.tscn::PackedScene::7643595593479964908::1711675091::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/StartingScene.gd<>uid://dgdxd452t7r61::::res://Scenes/interfaces/HUD.tscn
-Wave.tscn::PackedScene::2770135364956727716::1711675091::0::1::::<><>::uid://b8jgkpke1qbqv::::res://Scenes/Landscape/Dungeon.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn
-::res://Scripts/::1711669388
-Boss.gd::GDScript::-1::1711669388::0::1::::<>CharacterBody2D<>::
-bullet.gd::GDScript::-1::1711657618::0::1::::<>CharacterBody2D<>::
-DeathScene.gd::GDScript::-1::1711605240::0::1::::<>TileMap<>::
-enemy_melee.gd::GDScript::-1::1711593897::0::1::::<>Area2D<>::
-enemy_shooting.gd::GDScript::-1::1711655939::0::1::::<>Area2D<>::
+Player.tscn::PackedScene::7298913571615276157::1711585584::0::1::::<><>::res://Scripts/Player.gd<>uid://dfl1lwr7bdxok::::res://Images/dungeon-pack-full_version/sprite/free_character_0.png<>uid://8fjb1k1ned34::::res://Scenes/interfaces/Interface.tscn
+Player_Attackbox.tscn::PackedScene::-1::1711585408::0::1::::<><>::
+Scene1.tscn::PackedScene::3613887776983679454::1711570834::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png
+slash.tscn::PackedScene::8618692205065793029::1711570834::0::1::::<><>::res://Scripts/Weapon.gd<>uid://dn3ng8avmiiwu::::res://Images/slash.png
+::res://Scenes/bullets/::1711585408
+bullet.tscn::PackedScene::2175616677712949428::1711585408::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
+fan_projectile.tscn::PackedScene::2455081124763473722::1711585408::0::1::::<><>::res://Scripts/FanProjectile.gd<>uid://cwmt1t285un1r::::res://Images/fan_shaped_projectile_thin.png
+swirling_projectile.tscn::PackedScene::8431318897583004145::1711585408::0::1::::<><>::res://Scripts/swirling_projectile.gd<>uid://dcwfba1trarp1::::res://Images/fan_shaped_swirling_projectile.png
+tracking_bullet.tscn::PackedScene::7332000844296329301::1711585408::0::1::::<><>::res://Scripts/tracking_bullet.gd<>uid://dopjsqtcutd4j::::res://Images/tracking_bullet_red.png
+::res://Scenes/enemies/::1711585408
+enemy_boss.tscn::PackedScene::4807018123976146670::1711585408::0::1::::<><>::res://Scripts/Boss.gd<>uid://4d42j6huu65t::::res://Images/dungeon-pack-full_version/sprite/character_1.png
+enemy_melee.tscn::PackedScene::5074308814459759244::1711585408::0::1::::<><>::res://Scripts/enemy_melee.gd<>uid://b7scmlt1khujf::::res://Images/dungeon-pack-full_version/sprite/monsters_2.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
+enemy_shooting.tscn::PackedScene::420864599848190448::1711570834::0::1::::<><>::res://Scripts/enemy_shooting.gd<>uid://3kgmsmdrq0qi::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
+::res://Scenes/interfaces/::1711585584
+enemy_interface.tscn::PackedScene::4055446781977120032::1711570834::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
+HUD.tscn::PackedScene::7587991665159732108::1711554052::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>res://Scripts/ExitButton.gd<>uid://cf21hpjswxomx::::res://Images/Alex Logo.png
+Interface.tscn::PackedScene::2327103349808173585::1711585584::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
+::res://Scenes/Landscape/::1711585871
+Dungeon.tscn::PackedScene::4721614886945768793::1711585584::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png<>uid://dhjefq66xp3g6::::res://Images/max-removebg-preview.png<>uid://b54q6j8f6oh0y::::res://Images/torch.png<>uid://c6nu4ayk6pwys::::res://Images/room-removebg-preview.png<>uid://duwmkt7ijue65::::res://Images/door.png
+StartingScene.tscn::PackedScene::7643595593479964908::1711585871::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/StartingScene.gd<>uid://dgdxd452t7r61::::res://Scenes/interfaces/HUD.tscn
+::res://Scripts/::1711585871
+Boss.gd::GDScript::-1::1711585871::0::1::::<>CharacterBody2D<>::
+bullet.gd::GDScript::-1::1711585871::0::1::::<>CharacterBody2D<>::
+enemy_melee.gd::GDScript::-1::1711585408::0::1::::<>Area2D<>::
+enemy_shooting.gd::GDScript::-1::1711585871::0::1::::<>Area2D<>::
 ExitButton.gd::GDScript::-1::1711509124::0::1::::<>Button<>::
-FanProjectile.gd::GDScript::-1::1711587500::0::1::::<>CharacterBody2D<>::
-Game.gd::GDScript::-1::1711663694::0::1::::<>Node2D<>::
+FanProjectile.gd::GDScript::-1::1711585871::0::1::::<>CharacterBody2D<>::
+Game.gd::GDScript::-1::1711585584::0::1::::<>Node2D<>::
 HUD.gd::GDScript::-1::1711509124::0::1::::<>CanvasLayer<>::
-Interface.gd::GDScript::-1::1711587416::0::1::::<>Control<>::
-Player.gd::GDScript::-1::1711657183::0::1::::<>CharacterBody2D<>::
+Interface.gd::GDScript::-1::1711557136::0::1::::<>Control<>::
+Player.gd::GDScript::-1::1711585871::0::1::::<>CharacterBody2D<>::
 StartButton.gd::GDScript::-1::1711509124::0::1::::<>Button<>::
-StartingScene.gd::GDScript::-1::1711596262::0::1::::<>TileMap<>::
-swirling_projectile.gd::GDScript::-1::1711657468::0::1::::<>CharacterBody2D<>::
-tracking_bullet.gd::GDScript::-1::1711657792::0::1::::<>CharacterBody2D<>::
+StartingScene.gd::GDScript::-1::1711554301::0::1::::<>TileMap<>::
+swirling_projectile.gd::GDScript::-1::1711585408::0::1::::<>CharacterBody2D<>::
+tracking_bullet.gd::GDScript::-1::1711585871::0::1::::<>CharacterBody2D<>::
 Weapon.gd::GDScript::-1::1711554164::0::1::::<>CharacterBody2D<>::
 ::res://Sprites/::1711585408

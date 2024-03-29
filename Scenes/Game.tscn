@@ -1,23 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://3sd5n1kvegag"]
+[gd_scene load_steps=5 format=3 uid="uid://3sd5n1kvegag"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_y672y"]
 [ext_resource type="PackedScene" uid="uid://b8jgkpke1qbqv" path="res://Scenes/Landscape/Dungeon.tscn" id="1_ye252"]
 [ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_eeetj"]
 [ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="4_wmmn7"]
-[ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemies/enemy_shooting.tscn" id="5_bxah0"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y672y")
-
-[node name="Enemy_Melee2" parent="." instance=ExtResource("4_wmmn7")]
-position = Vector2(-8414, 477)
 
 [node name="Dungeon" parent="." instance=ExtResource("1_ye252")]
 position = Vector2(2778, 430)
 scale = Vector2(2.5, 2.5)
 
 [node name="Player" parent="." instance=ExtResource("2_eeetj")]
-position = Vector2(-4183, 1014)
+position = Vector2(-4069, 1124)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -1817.0
@@ -25,5 +21,11 @@ offset_top = 645.0
 offset_right = -1498.0
 offset_bottom = 672.0
 
-[node name="Enemy_Shooting" parent="." instance=ExtResource("5_bxah0")]
-position = Vector2(-3563, 876)
+[node name="Enemy_Melee" parent="." instance=ExtResource("4_wmmn7")]
+position = Vector2(-4295, 729)
+
+[node name="Enemy_Melee3" parent="." instance=ExtResource("4_wmmn7")]
+position = Vector2(-3845, 924)
+
+[node name="Enemy_Melee4" parent="." instance=ExtResource("4_wmmn7")]
+position = Vector2(-4389, 1040)

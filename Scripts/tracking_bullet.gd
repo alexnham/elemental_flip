@@ -6,7 +6,6 @@ var speed = 100
 var main_char: CharacterBody2D
 var bulletTracking = false
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	main_char = get_node("../../Player")
@@ -49,11 +48,10 @@ func _on_visible_on_screen_notifier_2d_screen_entered():
 
 
 func _on_area_2d_body_entered(body):
-
+	queue_free()
 	if body.is_in_group("Player"):
 		print("ouch")
 		main_char.take_damage(1)
-		queue_free()
 	#pass # Replace with function body.
 
 
@@ -66,11 +64,4 @@ func _on_bullet_disappear_time_timeout():
 	print("Bullet timeout")
 	visible = false
 	queue_free()
-	
-func take_damage(damage_amount):
-	queue_free()
-
-# Method to kill the enemy
-
-
 	#pass # Replace with function body.

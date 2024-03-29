@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Area2D
 
 var _mainChar
 #var bullet
@@ -22,7 +22,7 @@ func _ready():
 	_projectileScene = preload("res://Scenes/bullets/fan_projectile.tscn")
 	reloadTime = get_node("ReloadTime")
 	
-	reloadTime.wait_time = 3
+	reloadTime.wait_time = 1
 	reloadTime.start()
 	#shot = false
 	#reloadTime.stop()
@@ -42,7 +42,7 @@ func _physics_process(delta):
 
 	
 	# Shooting enemy move towards current position of main character
-	global_position = global_position.move_toward(_mainChar.global_position-Vector2(100,100), speed)
+	global_position = global_position.move_toward(_mainChar.global_position, speed)
 	$AnimationPlayer.play("fire_down")
 	
 		#bulletTracking = false
@@ -95,10 +95,16 @@ func _on_shot():
 	#add_child(_bullet)
 	#print("Added bullet to enemy shooting")
 	#pass # Replace with function body.
+	var randomNumber = randi_range(0, 1)
+	
 	var bullet
-	bulletTracking = false
-	bullet = _projectileScene.instantiate()
-
+	if randomNumber == 0:
+		bulletTracking = false
+		bullet = _projectileScene.instantiate()
+		
+	else:
+		bulletTracking = true
+		bullet = _bulletScene.instantiate()
 	
 	add_child(bullet)
 	bullet.scale = Vector2(0.3,0.3)
@@ -112,6 +118,6 @@ func _on_shot():
 func take_damage(damage_amount):
 	health -= damage_amount
 	if health <= 0:
-		die(1)
+		die()
 
 

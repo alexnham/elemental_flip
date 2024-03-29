@@ -1,6 +1,3 @@
-CharacterBody2D
-TextureRect
-TextEdit
 ProgressBar
 CollisionShape2D
 Timer
@@ -12,3 +9,6 @@ Area2D
 AnimationPlayer
 ColorRect
 Label
+CollisionPolygon2D
+CharacterBody2D
+Button
