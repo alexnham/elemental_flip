@@ -125,7 +125,7 @@ _data = {
 "ice_up": SubResource("Animation_nn2d8")
 }
 
-[node name="Enemy_Shooting" type="Area2D" groups=["Enemy"]]
+[node name="Enemy_Shooting" type="CharacterBody2D" groups=["Enemy"]]
 position = Vector2(584, 316)
 scale = Vector2(0.359375, 0.359375)
 collision_layer = 5
@@ -171,7 +171,6 @@ libraries = {
 "": SubResource("AnimationLibrary_tl8m4")
 }
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="shot" from="." to="." method="_on_shot"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

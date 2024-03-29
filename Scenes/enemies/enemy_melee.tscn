@@ -182,7 +182,7 @@ shape = SubResource("RectangleShape2D_74pxb")
 
 [node name="Sword" type="Sprite2D" parent="."]
 visible = false
-z_index = -1
+z_index = 1
 position = Vector2(1.35525e-20, 4.76837e-07)
 scale = Vector2(4.5, 4.5)
 texture = ExtResource("3_4ucg4")

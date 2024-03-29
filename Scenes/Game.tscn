@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_y672y"]
 [ext_resource type="PackedScene" uid="uid://b8jgkpke1qbqv" path="res://Scenes/Landscape/Dungeon.tscn" id="1_ye252"]
 [ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_eeetj"]
-[ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="4_wmmn7"]
+[ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="5_752rp"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y672y")
@@ -21,11 +21,5 @@ offset_top = 645.0
 offset_right = -1498.0
 offset_bottom = 672.0
 
-[node name="Enemy_Melee" parent="." instance=ExtResource("4_wmmn7")]
-position = Vector2(-4295, 729)
-
-[node name="Enemy_Melee3" parent="." instance=ExtResource("4_wmmn7")]
-position = Vector2(-3845, 924)
-
-[node name="Enemy_Melee4" parent="." instance=ExtResource("4_wmmn7")]
-position = Vector2(-4389, 1040)
+[node name="Boss" parent="." instance=ExtResource("5_752rp")]
+position = Vector2(-4102, -484)

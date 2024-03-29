@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 var _mainChar
 #var bullet
@@ -118,6 +118,6 @@ func _on_shot():
 func take_damage(damage_amount):
 	health -= damage_amount
 	if health <= 0:
-		die()
+		die(1)
 
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://caqs5eoyufh4q"]
+[gd_scene load_steps=9 format=3 uid="uid://caqs5eoyufh4q"]
 
 [ext_resource type="Script" path="res://Scripts/Boss.gd" id="1_8e4oo"]
 [ext_resource type="Texture2D" uid="uid://4d42j6huu65t" path="res://Images/dungeon-pack-full_version/sprite/character_1.png" id="2_17wb6"]
+[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/interfaces/enemy_interface.tscn" id="3_unhtu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh0v1"]
 size = Vector2(167, 178)
@@ -58,9 +59,9 @@ _data = {
 "shoot_tracking_bullet": SubResource("Animation_nf1s2")
 }
 
-[node name="Boss" type="CharacterBody2D"]
+[node name="Boss" type="CharacterBody2D" groups=["Boss"]]
 position = Vector2(370, 185)
-collision_layer = 4
+collision_layer = 69
 collision_mask = 67
 script = ExtResource("1_8e4oo")
 metadata/_edit_group_ = true
@@ -103,6 +104,18 @@ position = Vector2(0, 90)
 wait_time = 5.0
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Interface" parent="." groups=["Enemy"] instance=ExtResource("3_unhtu")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -125.0
+offset_top = 100.0
+offset_right = -125.0
+offset_bottom = 100.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.5, 0.5)
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]

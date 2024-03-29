@@ -1,8 +1,10 @@
-[gd_scene load_steps=20 format=3 uid="uid://db8wbmnwmxtm8"]
+[gd_scene load_steps=22 format=3 uid="uid://db8wbmnwmxtm8"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_hvesk"]
 [ext_resource type="Texture2D" uid="uid://dfl1lwr7bdxok" path="res://Images/dungeon-pack-full_version/sprite/free_character_0.png" id="1_ywdwt"]
+[ext_resource type="Texture2D" uid="uid://ddm286nc8ogo" path="res://Images/overheat.png" id="2_1nhby"]
 [ext_resource type="PackedScene" uid="uid://8fjb1k1ned34" path="res://Scenes/interfaces/Interface.tscn" id="3_5r4ts"]
+[ext_resource type="Texture2D" uid="uid://nen4s5ex3yeu" path="res://Images/overfreeze.png" id="3_do1ji"]
 
 [sub_resource type="Animation" id="Animation_sn1tu"]
 length = 0.001
@@ -15,7 +17,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
+"update": 0,
 "values": [1]
 }
 
@@ -32,7 +34,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [10, 1]
 }
 
@@ -49,7 +51,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [22, 13]
 }
 
@@ -66,7 +68,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [34, 25]
 }
 
@@ -83,7 +85,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.15),
 "transitions": PackedFloat32Array(1, 1),
-"update": 1,
+"update": 0,
 "values": [46, 37]
 }
 
@@ -99,7 +101,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [3, 4, 5, 1]
 }
 
@@ -115,7 +117,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [15, 16, 17, 13]
 }
 
@@ -131,7 +133,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [27, 28, 29, 25]
 }
 
@@ -147,7 +149,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [39, 40, 41, 37]
 }
 
@@ -164,7 +166,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [1, 2, 1, 0]
 }
 
@@ -181,7 +183,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [13, 14, 13, 12]
 }
 
@@ -198,7 +200,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [25, 26, 25, 24]
 }
 
@@ -215,7 +217,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
+"update": 0,
 "values": [37, 38, 37, 36]
 }
 
@@ -250,6 +252,22 @@ collision_mask = 3
 platform_floor_layers = 4294967040
 script = ExtResource("1_hvesk")
 dash_distance = 2000
+
+[node name="overheat" type="TextureRect" parent="."]
+offset_left = -571.0
+offset_top = -319.0
+offset_right = 1723.0
+offset_bottom = 951.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_1nhby")
+
+[node name="overfreeze" type="TextureRect" parent="."]
+offset_left = -575.0
+offset_top = -317.0
+offset_right = 1727.0
+offset_bottom = 963.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_do1ji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 12)

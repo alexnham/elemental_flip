@@ -28,7 +28,7 @@ extends CharacterBody2D
 @onready var is_dashing = false;
 
 # Represents the players current health
-var health = 100;
+var health = 5;
 
 # Reference to the hurtbox scene
 @onready var hurtbox_scene = preload("res://Scenes/Player_Attackbox.tscn")
@@ -153,6 +153,8 @@ func player_attack():
 			for node in hurtbox.get_overlapping_bodies():
 				if node.is_in_group("Enemy"):
 					node.take_damage(1)
+				if node.is_in_group("Boss"):
+					node.take_damage(.25)
 
 			hurtbox.free()
 		)

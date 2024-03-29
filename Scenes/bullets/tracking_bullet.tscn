@@ -6,9 +6,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_1ilx0"]
 radius = 120.004
 
-[node name="TrackingBullet" type="CharacterBody2D"]
+[node name="TrackingBullet" type="CharacterBody2D" groups=["Enemy"]]
 position = Vector2(634, 322)
-collision_layer = 8
+collision_layer = 9
 collision_mask = 3
 script = ExtResource("1_2x8n6")
 
