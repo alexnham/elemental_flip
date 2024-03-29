@@ -18,6 +18,8 @@ scale = Vector2(1.41, 1.41)
 texture = ExtResource("1_5f3n8")
 
 [node name="SpawnStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/SpawnStatic"]
 visible = false
@@ -62,6 +64,8 @@ scale = Vector2(1.399, 1.41)
 texture = ExtResource("2_wkmm1")
 
 [node name="RoomAStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Fire Dungeon/RoomAStatic"]
 visible = false
@@ -92,6 +96,8 @@ scale = Vector2(0.486253, 0.629138)
 texture = ExtResource("9_eo6n6")
 
 [node name="RoomA2Static" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomA2Static"]
 visible = false
@@ -123,6 +129,8 @@ scale = Vector2(1.399, 1.41)
 texture = ExtResource("2_wkmm1")
 
 [node name="RoomBStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomBStatic"]
 visible = false
@@ -153,6 +161,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="RoomB2Static" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -704)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomB2Static"]
 visible = false
@@ -174,6 +184,8 @@ texture = ExtResource("9_eo6n6")
 position = Vector2(-1509, -1044)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomB1Static"]
 visible = false
@@ -186,6 +198,8 @@ texture = ExtResource("2_wkmm1")
 
 [node name="RoomCStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomCStatic"]
 visible = false
@@ -216,6 +230,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="RoomC2Static" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -1409)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomC2Static"]
 visible = false
@@ -237,6 +253,8 @@ texture = ExtResource("9_eo6n6")
 position = Vector2(-1509, -1748)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomC1Static"]
 visible = false
@@ -249,6 +267,8 @@ scale = Vector2(0.514144, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToRoomBStatic"]
 visible = false
@@ -267,6 +287,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomCStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToRoomCStatic"]
 visible = false
@@ -285,6 +307,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBossStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -1410)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToRoomBossStatic"]
 visible = false
@@ -305,6 +329,8 @@ texture = ExtResource("1_5f3n8")
 
 [node name="SpawnStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -3.85974)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/SpawnStatic"]
 visible = false
@@ -350,6 +376,8 @@ texture = ExtResource("2_wkmm1")
 
 [node name="RoomAStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -3.85974)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Ice Dungeon/RoomAStatic"]
 visible = false
@@ -381,6 +409,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="RoomA2Static" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -3.85974)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomA2Static"]
 visible = false
@@ -401,6 +431,8 @@ texture = ExtResource("9_eo6n6")
 [node name="RoomA1Static" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-4749, -358.86)
 scale = Vector2(-1.41, 1)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomA1Static"]
 visible = false
@@ -413,6 +445,8 @@ texture = ExtResource("2_wkmm1")
 
 [node name="RoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -3.85974)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomBStatic"]
 visible = false
@@ -443,6 +477,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="RoomB2Static" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -707.86)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomB2Static"]
 visible = false
@@ -464,6 +500,8 @@ texture = ExtResource("9_eo6n6")
 position = Vector2(-4749, -1062.86)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomB1Static"]
 visible = false
@@ -476,6 +514,8 @@ texture = ExtResource("2_wkmm1")
 
 [node name="RoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -708.86)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomCStatic"]
 visible = false
@@ -506,6 +546,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="RoomC2Static" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -1412.86)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomC2Static"]
 visible = false
@@ -527,6 +569,8 @@ texture = ExtResource("9_eo6n6")
 position = Vector2(-4749, -1766.86)
 rotation = -3.14159
 scale = Vector2(1.41, -1)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomC1Static"]
 visible = false
@@ -540,6 +584,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -3.85974)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBStatic"]
 visible = false
@@ -558,6 +604,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -708.86)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomCStatic"]
 visible = false
@@ -576,6 +624,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBossStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(-3359, -1413.86)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBossStatic"]
 visible = false

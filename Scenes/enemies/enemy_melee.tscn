@@ -156,7 +156,8 @@ _data = {
 size = Vector2(60, 95)
 
 [node name="Melee_Enemy" type="CharacterBody2D" groups=["Enemy"]]
-collision_layer = 2
+collision_layer = 4
+collision_mask = 3
 platform_floor_layers = 4294967040
 script = ExtResource("1_h5c25")
 move_speed = 350.0

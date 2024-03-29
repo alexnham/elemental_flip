@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
+      "projectUniqueName": "C:\\Sam\\Godot\\ElementalFlip\\ElementalFlip\\elemental_flip\\gamejam.csproj",
       "projectName": "gamejam",
-      "projectPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
+      "projectPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalFlip\\elemental_flip\\gamejam.csproj",
       "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-      "outputPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalFlip\\elemental_flip\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config"

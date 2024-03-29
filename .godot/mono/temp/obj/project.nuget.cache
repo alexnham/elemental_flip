@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "19EbuOuTdVCg9szRqiT08E21N1V6aTTsYVXUEQqnOYM8BU4mYY0L25OTHl+rg+cwRo3/aLmdyFAjjm6bTHJOcw==",
+  "dgSpecHash": "mfYaSE7qf+mHZAafOVGervsfN6eeuXFZuhwROuY2V/mFfraKNOiYwAiQuwGjY9MRZYFQpYs4U07W2yPyK88itQ==",
   "success": true,
-  "projectFilePath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalfFlip\\elemental_flip\\gamejam.csproj",
+  "projectFilePath": "C:\\Sam\\Godot\\ElementalFlip\\ElementalFlip\\elemental_flip\\gamejam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sam\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
     "C:\\Users\\Sam\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
