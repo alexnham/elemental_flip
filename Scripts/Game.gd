@@ -17,19 +17,31 @@ func _ready():
 func _process(delta):
 
 	if $Player.global_position.x > 0:
+		if($Boss != null):
+			$Boss.state = "FIRE"
+			$Boss/fire_sprite.visible = true
+			$Boss/ice_sprite.visible = false
 		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() + 2)
 		$Player.state = "FIRE"
+
 		$Player/fire_sprite.visible = true
 		$Player/ice_sprite.visible = false
+		
 		if($Player/Interface/TextureProgressBar.get_value() < 1000):
 			$Player/Interface/TextureProgressBar.set_value(1000)
 			if($Player.movement_speed < 500):
 				$Player.set_speed(500)
 	elif $Player.global_position.x < 0:
+		if($Boss != null):
+			$Boss.state = "ICE"
+			$Boss/fire_sprite.visible = false
+		$Boss/ice_sprite.visible = true
 		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() - 2)
 		$Player.state = "ICE"
+		
 		$Player/ice_sprite.visible = true
 		$Player/fire_sprite.visible = false
+		
 		if($Player/Interface/TextureProgressBar.get_value() > 9000):
 			$Player/Interface/TextureProgressBar.set_value(9000)
 

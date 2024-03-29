@@ -12,7 +12,8 @@ var shootingEnemyScene
 
 var trackingBulletCounts = 5
 var waveTimer
-var animation
+var animation_fire
+var animation_ice
 @export var numEnemies = 5
 var waveCount = 0
 var timeCount = 1
@@ -22,6 +23,7 @@ var knockback = false
 var player_dir
 var knockback_dir
 var knockback_wait
+var state = "ICE"
 
 var bossActivated
 
@@ -32,9 +34,10 @@ func _ready():
 	trackingBulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
 	meleeEnemyScene = preload("res://Scenes/enemies/enemy_melee.tscn")
 	shootingEnemyScene = preload("res://Scenes/enemies/enemy_shooting.tscn")
-	
-	animation = $AnimationPlayer
-	animation.play("RESET")
+	animation_fire = $fire
+	animation_fire.play("RESET")
+	animation_ice = $ice
+	animation_ice.play("RESET")
 
 
 	#$WaveTimer.start()
@@ -44,21 +47,21 @@ func _ready():
 func _physics_process(delta):
 	if(knockback):
 		if player.direction == "down":
-			player.velocity = Vector2(0, -1).normalized() * 1000
-		elif player.direction == "up":				
-			player.velocity = Vector2(0, 1).normalized() * 1000
+			player.velocity = Vector2(0, -1).normalized() * 5000
+		elif player.direction == "up":
+			player.velocity = Vector2(0, 1).normalized() * 5000
 		elif player.direction == "left":
-			player.velocity = Vector2(1, 0).normalized() * 1000
+			player.velocity = Vector2(1, 0).normalized() * 5000
 		elif player.direction == "right":
-			player.velocity = Vector2(-1, 0).normalized() * 1000
+			player.velocity = Vector2(-1, 0).normalized() * 5000
 		player.move_and_slide()
-		get_tree().create_timer(2).timeout.connect(func(): knockback = false)
+		get_tree().create_timer(.1).timeout.connect(func(): knockback = false)
 			
 
 
 
 func knockback_player():
-	if((player.global_position-global_position).length() < 200):
+	if((player.global_position-global_position).length() < 300):
 		knockback = true
 
 	
@@ -125,7 +128,10 @@ func Wave2():
 	var bulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
 
 	for i in range(4):
-		animation.play("shoot_tracking_bullet")
+		if(state == "FIRE"):
+			animation_fire.play("shoot_tracking_bullet")
+		if(state == "ICE"):
+			animation_ice.play("shoot_tracking_bullet")
 		var bullet = bulletScene.instantiate()
 		add_child(bullet)
 		
@@ -148,7 +154,10 @@ func Wave2():
 func Wave3():
 	var bulletScene = preload("res://Scenes/bullets/swirling_projectile.tscn")
 	for i in range(4):
-		animation.play("shoot waves")
+		if(state == "FIRE"):
+			animation_fire.play("shoot waves")
+		if(state == "ICE"):
+			animation_ice.play("shoot waves")
 		var bullet = bulletScene.instantiate()
 		add_child(bullet)
 		

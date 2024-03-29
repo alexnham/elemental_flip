@@ -19,3 +19,4 @@ res://Scenes/bullets/swirling_projectile.tscn
 res://Scenes/bullets/tracking_bullet.tscn
 res://Scenes/Enemy_Attackbox.tscn
 res://Scenes/Landscape/DeathScene.tscn
+res://Scripts/Boss.gd
