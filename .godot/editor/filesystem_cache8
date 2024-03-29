@@ -1,403 +1,404 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711693960
-export_presets.cfg::TextFile::-1::1711690716::0::1::::<><>::
-README.md::TextFile::-1::1711690716::0::1::::<><>::
-::res://Images/::1711690716
-Alex Logo.png::CompressedTexture2D::5181115729906889855::1711690716::1711690716::1::::<><>::
-background box.png::CompressedTexture2D::7483259763432198840::1711690716::1711690716::1::::<><>::
-bullet_plasma_green.png::CompressedTexture2D::7255882150259797098::1711690716::1711690716::1::::<><>::
-DevGrid.png::CompressedTexture2D::8156765599892336669::1711690716::1711690716::1::::<><>::
-door.png::CompressedTexture2D::8609202744035208700::1711690716::1711690716::1::::<><>::
-enemy1.png::CompressedTexture2D::5360527862751234700::1711690716::1711690716::1::::<><>::
-fan_shaped_projectile.png::CompressedTexture2D::3918414934332300104::1711690716::1711690716::1::::<><>::
-fan_shaped_projectile_thin.png::CompressedTexture2D::6342969555169355033::1711690716::1711690716::1::::<><>::
-fan_shaped_swirling_projectile.png::CompressedTexture2D::7345361460753345996::1711690716::1711690716::1::::<><>::
-heart.png::CompressedTexture2D::5489380104434018292::1711690716::1711690716::1::::<><>::
-HeartsEmpty.png::CompressedTexture2D::4267803801439312490::1711690716::1711690716::1::::<><>::
-HeartsFull.png::CompressedTexture2D::6926348628409179450::1711690716::1711690716::1::::<><>::
-HUD_test_background.jpg::CompressedTexture2D::4022326866370549416::1711690716::1711690716::1::::<><>::
-HUD_Title.jpg::CompressedTexture2D::2732280133578981407::1711690716::1711690716::1::::<><>::
-HUD_Title_2.jpg::CompressedTexture2D::8284986679856515713::1711690716::1711690716::1::::<><>::
-icon.svg::CompressedTexture2D::1911281182880593071::1711690716::1711690716::1::::<><>::
-Knight.png::CompressedTexture2D::3099239591208202847::1711690716::1711690716::1::::<><>::
-max-removebg-preview.png::CompressedTexture2D::7669416042975053411::1711690716::1711690716::1::::<><>::
-max__15_-removebg-preview.png::CompressedTexture2D::717597159081607001::1711690716::1711690716::1::::<><>::
-melee_enemy.png::CompressedTexture2D::7166010426230624271::1711690716::1711690716::1::::<><>::
-overfreeze.png::CompressedTexture2D::921554579217907020::1711690716::1711690716::1::::<><>::
-overheat.png::CompressedTexture2D::217538266279044506::1711690716::1711690716::1::::<><>::
-room-removebg-preview.png::CompressedTexture2D::6976798596418256834::1711690716::1711690716::1::::<><>::
-slash.png::CompressedTexture2D::8130321365397850432::1711690716::1711690716::1::::<><>::
-Sword_16.png::CompressedTexture2D::923356891743580487::1711690716::1711690716::1::::<><>::
-test.jpg::CompressedTexture2D::7996697453835728455::1711690716::1711690716::1::::<><>::
-torch.png::CompressedTexture2D::4552980303154981062::1711690716::1711690716::1::::<><>::
-tracking_bullet_red.png::CompressedTexture2D::8173450995391074503::1711690716::1711690716::1::::<><>::
-White_Square.png::CompressedTexture2D::1362758129813042693::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/::1711690716
-atlas.png::CompressedTexture2D::5851708527423639216::1711690716::1711690716::1::::<><>::
-LICENCE.txt::TextFile::-1::1711690716::0::1::::<><>::
-README.txt::TextFile::-1::1711690716::0::1::::<><>::
-VERSION.txt::TextFile::-1::1711690716::0::1::::<><>::
-::res://Images/dungeon-pack-full_version/autotiles/::1711690716
-free_lavafall_tiles2.png::CompressedTexture2D::5464903429422776561::1711690716::1711690716::1::::<><>::
-free_lava_tiles1.png::CompressedTexture2D::7558814434052855719::1711690716::1711690716::1::::<><>::
-free_waterfall_tiles1.png::CompressedTexture2D::3764905751888930155::1711690716::1711690716::1::::<><>::
-free_water_tiles1.png::CompressedTexture2D::2672508677406706151::1711690716::1711690716::1::::<><>::
-free_water_tiles2.png::CompressedTexture2D::3110772557500634862::1711690716::1711690716::1::::<><>::
-lavafall_tiles1.png::CompressedTexture2D::416174562419764319::1711690716::1711690716::1::::<><>::
-lavafall_tiles3.png::CompressedTexture2D::436747070562309134::1711690716::1711690716::1::::<><>::
-waterfall_tiles2.png::CompressedTexture2D::8931540263533615168::1711690716::1711690716::1::::<><>::
-waterfall_tiles3.png::CompressedTexture2D::8432064713360751275::1711690716::1711690716::1::::<><>::
-water_tiles3.png::CompressedTexture2D::4404167557931501101::1711690716::1711690716::1::::<><>::
-water_tiles4.png::CompressedTexture2D::397313342569885068::1711690716::1711690716::1::::<><>::
-water_tiles5.png::CompressedTexture2D::5489468600966114784::1711690716::1711690716::1::::<><>::
-water_tiles6.png::CompressedTexture2D::7301377458113323437::1711690716::1711690716::1::::<><>::
-water_tiles7.png::CompressedTexture2D::4452522281705728341::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/godot_autotiles/::1711690716
-anim_autotile_0.png::CompressedTexture2D::5055733315916430808::1711690716::1711690716::1::::<><>::
-anim_autotile_1.png::CompressedTexture2D::8225810494454737193::1711690716::1711690716::1::::<><>::
-anim_autotile_4.png::CompressedTexture2D::7879377891807387547::1711690716::1711690716::1::::<><>::
-anim_autotile_5.png::CompressedTexture2D::3557340490465143778::1711690716::1711690716::1::::<><>::
-anim_autotile_6.png::CompressedTexture2D::7444691226371315897::1711690716::1711690716::1::::<><>::
-anim_autotile_8.png::CompressedTexture2D::2702846935341856128::1711690716::1711690716::1::::<><>::
-anim_autotile_15.png::CompressedTexture2D::9188276116581657911::1711690716::1711690716::1::::<><>::
-anim_autotile_19.png::CompressedTexture2D::56240191585769008::1711690716::1711690716::1::::<><>::
-anim_autotile_23.png::CompressedTexture2D::403655007940826949::1711690716::1711690716::1::::<><>::
-anim_autotile_27.png::CompressedTexture2D::4411848919922293776::1711690716::1711690716::1::::<><>::
-anim_autotile_31.png::CompressedTexture2D::6900690070398302197::1711690716::1711690716::1::::<><>::
-free_anim_autotile_2.png::CompressedTexture2D::2647457015589349937::1711690716::1711690716::1::::<><>::
-free_anim_autotile_7.png::CompressedTexture2D::208778431423950237::1711690716::1711690716::1::::<><>::
-free_anim_autotile_9.png::CompressedTexture2D::9187102175050293358::1711690716::1711690716::1::::<><>::
-free_ground_autotile_2.png::CompressedTexture2D::4630475176875149710::1711690716::1711690716::1::::<><>::
-free_ground_autotile_13.png::CompressedTexture2D::6377392953444940741::1711690716::1711690716::1::::<><>::
-free_ground_autotile_17.png::CompressedTexture2D::7572470219099392144::1711690716::1711690716::1::::<><>::
-free_ground_autotile_20.png::CompressedTexture2D::1484766875938376376::1711690716::1711690716::1::::<><>::
-free_ground_autotile_21.png::CompressedTexture2D::79535082390512373::1711690716::1711690716::1::::<><>::
-free_ground_autotile_29.png::CompressedTexture2D::2762597251722669264::1711690716::1711690716::1::::<><>::
-free_ground_dungeon_autotile_8.png::CompressedTexture2D::1703220423337545576::1711690716::1711690716::1::::<><>::
-free_ground_dungeon_autotile_9.png::CompressedTexture2D::2854771983952350483::1711690716::1711690716::1::::<><>::
-free_ground_dungeon_autotile_14.png::CompressedTexture2D::8878884795074985355::1711690716::1711690716::1::::<><>::
-free_template_ground.png::CompressedTexture2D::2093098490570346356::1711690716::1711690716::1::::<><>::
-free_template_house.png::CompressedTexture2D::8718403431379698828::1711690716::1711690716::1::::<><>::
-free_template_wall.png::CompressedTexture2D::2241332875732290038::1711690716::1711690716::1::::<><>::
-free_template_waterfall.png::CompressedTexture2D::4074851345830201997::1711690716::1711690716::1::::<><>::
-free_wall_dungeon_autotile_8.png::CompressedTexture2D::767307458523299320::1711690716::1711690716::1::::<><>::
-free_wall_dungeon_autotile_14.png::CompressedTexture2D::3424703271298280404::1711690716::1711690716::1::::<><>::
-ground_autotile_0.png::CompressedTexture2D::8886538310176668911::1711690716::1711690716::1::::<><>::
-ground_autotile_1.png::CompressedTexture2D::632420367203217832::1711690716::1711690716::1::::<><>::
-ground_autotile_3.png::CompressedTexture2D::5231050357751618618::1711690716::1711690716::1::::<><>::
-ground_autotile_4.png::CompressedTexture2D::6084458107952301324::1711690716::1711690716::1::::<><>::
-ground_autotile_5.png::CompressedTexture2D::2321513670583495334::1711690716::1711690716::1::::<><>::
-ground_autotile_6.png::CompressedTexture2D::7850144071718565815::1711690716::1711690716::1::::<><>::
-ground_autotile_7.png::CompressedTexture2D::4834536337889222049::1711690716::1711690716::1::::<><>::
-ground_autotile_8.png::CompressedTexture2D::8574405513764197625::1711690716::1711690716::1::::<><>::
-ground_autotile_9.png::CompressedTexture2D::5979305690267490604::1711690716::1711690716::1::::<><>::
-ground_autotile_10.png::CompressedTexture2D::4662897431532435547::1711690716::1711690716::1::::<><>::
-ground_autotile_11.png::CompressedTexture2D::6121073718138697331::1711690716::1711690716::1::::<><>::
-ground_autotile_12.png::CompressedTexture2D::1641891778941424360::1711690716::1711690716::1::::<><>::
-ground_autotile_14.png::CompressedTexture2D::3705351278349489127::1711690716::1711690716::1::::<><>::
-ground_autotile_15.png::CompressedTexture2D::2882185079166755076::1711690716::1711690716::1::::<><>::
-ground_autotile_16.png::CompressedTexture2D::4925943913638507711::1711690716::1711690716::1::::<><>::
-ground_autotile_18.png::CompressedTexture2D::3561568352898156057::1711690716::1711690716::1::::<><>::
-ground_autotile_19.png::CompressedTexture2D::9053910122378937991::1711690716::1711690716::1::::<><>::
-ground_autotile_22.png::CompressedTexture2D::5979359814370627763::1711690716::1711690716::1::::<><>::
-ground_autotile_23.png::CompressedTexture2D::7295373673435284732::1711690716::1711690716::1::::<><>::
-ground_autotile_24.png::CompressedTexture2D::2490543145615079096::1711690716::1711690716::1::::<><>::
-ground_autotile_25.png::CompressedTexture2D::6871026963412514480::1711690716::1711690716::1::::<><>::
-ground_autotile_26.png::CompressedTexture2D::8248620278083503889::1711690716::1711690716::1::::<><>::
-ground_autotile_27.png::CompressedTexture2D::949138248638630179::1711690716::1711690716::1::::<><>::
-ground_autotile_28.png::CompressedTexture2D::4409577197607337105::1711690716::1711690716::1::::<><>::
-ground_autotile_30.png::CompressedTexture2D::1710656134827439644::1711690716::1711690716::1::::<><>::
-ground_autotile_31.png::CompressedTexture2D::8122860257390541062::1711690716::1711690716::1::::<><>::
-ground_autotile_32.png::CompressedTexture2D::8098255184916784111::1711690716::1711690716::1::::<><>::
-ground_autotile_33.png::CompressedTexture2D::3166109069772254498::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_0.png::CompressedTexture2D::1681439146651398287::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_1.png::CompressedTexture2D::1103776594311493033::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_2.png::CompressedTexture2D::1612102138894165840::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_3.png::CompressedTexture2D::8122776574955900394::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_4.png::CompressedTexture2D::4117994159998979854::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_5.png::CompressedTexture2D::2102435970273194078::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_10.png::CompressedTexture2D::4629093279009238810::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_11.png::CompressedTexture2D::1187340807525195942::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_12.png::CompressedTexture2D::8858372777946390867::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_13.png::CompressedTexture2D::6684265857398287930::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_15.png::CompressedTexture2D::3285416370641571096::1711690716::1711690716::1::::<><>::
-ground_dungeon_autotile_16.png::CompressedTexture2D::7217757123161881432::1711690716::1711690716::1::::<><>::
-house_autotile_0_0.png::CompressedTexture2D::8129444433042846712::1711690716::1711690716::1::::<><>::
-house_autotile_0_1.png::CompressedTexture2D::8407954308748503084::1711690716::1711690716::1::::<><>::
-house_autotile_1_0.png::CompressedTexture2D::1285550393904380801::1711690716::1711690716::1::::<><>::
-house_autotile_1_1.png::CompressedTexture2D::8585572203450421434::1711690716::1711690716::1::::<><>::
-house_autotile_2_0.png::CompressedTexture2D::1614539135149546362::1711690716::1711690716::1::::<><>::
-house_autotile_2_1.png::CompressedTexture2D::8258103877208612087::1711690716::1711690716::1::::<><>::
-house_autotile_3_0.png::CompressedTexture2D::1889409998510678774::1711690716::1711690716::1::::<><>::
-house_autotile_3_1.png::CompressedTexture2D::5701278276139676040::1711690716::1711690716::1::::<><>::
-house_autotile_4_0.png::CompressedTexture2D::1275285354834789020::1711690716::1711690716::1::::<><>::
-house_autotile_4_1.png::CompressedTexture2D::3104738123978325425::1711690716::1711690716::1::::<><>::
-house_autotile_5_0.png::CompressedTexture2D::7210377573315911249::1711690716::1711690716::1::::<><>::
-house_autotile_5_1.png::CompressedTexture2D::4167523429181047149::1711690716::1711690716::1::::<><>::
-house_autotile_6_0.png::CompressedTexture2D::8538260613301262472::1711690716::1711690716::1::::<><>::
-house_autotile_6_1.png::CompressedTexture2D::6407597797945796411::1711690716::1711690716::1::::<><>::
-house_autotile_8_0.png::CompressedTexture2D::738360118072295552::1711690716::1711690716::1::::<><>::
-house_autotile_8_1.png::CompressedTexture2D::9104879303301311716::1711690716::1711690716::1::::<><>::
-house_autotile_9_0.png::CompressedTexture2D::3229776065262024420::1711690716::1711690716::1::::<><>::
-house_autotile_9_1.png::CompressedTexture2D::5761596130735517056::1711690716::1711690716::1::::<><>::
-house_autotile_10_0.png::CompressedTexture2D::6747531824939581421::1711690716::1711690716::1::::<><>::
-house_autotile_10_1.png::CompressedTexture2D::6210926402138937536::1711690716::1711690716::1::::<><>::
-house_autotile_11_0.png::CompressedTexture2D::651498720309946738::1711690716::1711690716::1::::<><>::
-house_autotile_11_1.png::CompressedTexture2D::9175782159637956469::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_5.png::CompressedTexture2D::456704882701916746::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_9.png::CompressedTexture2D::4420051938345299779::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_10.png::CompressedTexture2D::1438832178768437825::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_11.png::CompressedTexture2D::2962279599986664823::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_12.png::CompressedTexture2D::8401028720917162701::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_13.png::CompressedTexture2D::5578240160941982942::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_15.png::CompressedTexture2D::5033017235563681412::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_16.png::CompressedTexture2D::2654012857086860026::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_17.png::CompressedTexture2D::8091356841584349824::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_18.png::CompressedTexture2D::7103198285533276475::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_19.png::CompressedTexture2D::676324035082733698::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_20.png::CompressedTexture2D::7044198396811670171::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_21.png::CompressedTexture2D::8356390119095102057::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_22.png::CompressedTexture2D::8240916551191491527::1711690716::1711690716::1::::<><>::
-wall_dungeon_autotile_23.png::CompressedTexture2D::7925294574860686544::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/legacy/::1711690716
-::res://Images/dungeon-pack-full_version/rpgmaker/::1711690716
-::res://Images/dungeon-pack-full_version/rpgmaker/MV/::1711690716
-::res://Images/dungeon-pack-full_version/rpgmaker/MV/characters/::1711690716
-!$_srw_free_traps1.png::CompressedTexture2D::7699875086727396403::1711690716::1711690716::1::::<><>::
-!_srw_free_doors2.png::CompressedTexture2D::9074265735703144721::1711690716::1711690716::1::::<><>::
-$_srw_free_campfire.png::CompressedTexture2D::5086085293369871867::1711690716::1711690716::1::::<><>::
-$_srw_free_coin.png::CompressedTexture2D::2516761365189136307::1711690716::1711690716::1::::<><>::
-$_srw_free_fire.png::CompressedTexture2D::8737133555564389804::1711690716::1711690716::1::::<><>::
-$_srw_free_icons1.png::CompressedTexture2D::8309254042768531626::1711690716::1711690716::1::::<><>::
-$_srw_free_icons2.png::CompressedTexture2D::1121268270387909966::1711690716::1711690716::1::::<><>::
-$_srw_lavafall_effects.png::CompressedTexture2D::1489877176354924010::1711690716::1711690716::1::::<><>::
-$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::2117460987583618028::1711690716::1711690716::1::::<><>::
-$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::8270148531958566367::1711690716::1711690716::1::::<><>::
-$_srw_waterfall_effects.png::CompressedTexture2D::3391615566046078184::1711690716::1711690716::1::::<><>::
-_srw_character_1.png::CompressedTexture2D::1146224623190540581::1711690716::1711690716::1::::<><>::
-_srw_character_2.png::CompressedTexture2D::3123394454636874002::1711690716::1711690716::1::::<><>::
-_srw_cristals.png::CompressedTexture2D::647863674707323152::1711690716::1711690716::1::::<><>::
-_srw_free_character_0.png::CompressedTexture2D::259263537616409914::1711690716::1711690716::1::::<><>::
-_srw_free_chests.png::CompressedTexture2D::7444462436564953635::1711690716::1711690716::1::::<><>::
-_srw_free_monsters_0.png::CompressedTexture2D::2848806732086737215::1711690716::1711690716::1::::<><>::
-_srw_free_switches.png::CompressedTexture2D::3879002405386383161::1711690716::1711690716::1::::<><>::
-_srw_free_torches.png::CompressedTexture2D::6901793647586776640::1711690716::1711690716::1::::<><>::
-_srw_kart.png::CompressedTexture2D::3405252998054923304::1711690716::1711690716::1::::<><>::
-_srw_monsters_1.png::CompressedTexture2D::4892331874828937380::1711690716::1711690716::1::::<><>::
-_srw_monsters_2.png::CompressedTexture2D::2717873165951720605::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/rpgmaker/MV/tilesets/::1711690716
-_srw_dungeon_A1.png::CompressedTexture2D::482417243628979017::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A2.png::CompressedTexture2D::7894081008251750539::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A4.png::CompressedTexture2D::3788439780159191240::1711690716::1711690716::1::::<><>::
-_srw_tileset_0.png::CompressedTexture2D::2464454385123478832::1711690716::1711690716::1::::<><>::
-_srw_tileset_1.png::CompressedTexture2D::2279437194198149150::1711690716::1711690716::1::::<><>::
-_srw_tileset_2.png::CompressedTexture2D::8087488483690042895::1711690716::1711690716::1::::<><>::
-_srw_tileset_3.png::CompressedTexture2D::1076847085799431693::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/rpgmaker/MZ/::1711690716
-::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/::1711690716
-!$_srw_free_traps1.png::CompressedTexture2D::7505395250569698364::1711690716::1711690716::1::::<><>::
-!_srw_free_doors2.png::CompressedTexture2D::6573079739121810856::1711690716::1711690716::1::::<><>::
-$_srw_free_campfire.png::CompressedTexture2D::3090491072087117105::1711690716::1711690716::1::::<><>::
-$_srw_free_coin.png::CompressedTexture2D::1875599446902747405::1711690716::1711690716::1::::<><>::
-$_srw_free_fire.png::CompressedTexture2D::3743349128318485969::1711690716::1711690716::1::::<><>::
-$_srw_free_icons1.png::CompressedTexture2D::3521257385766798402::1711690716::1711690716::1::::<><>::
-$_srw_free_icons2.png::CompressedTexture2D::2942737785651576095::1711690716::1711690716::1::::<><>::
-$_srw_lavafall_effects.png::CompressedTexture2D::6644496636907341711::1711690716::1711690716::1::::<><>::
-$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::2388891350203467196::1711690716::1711690716::1::::<><>::
-$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::483952852467980752::1711690716::1711690716::1::::<><>::
-$_srw_waterfall_effects.png::CompressedTexture2D::3413652427248468143::1711690716::1711690716::1::::<><>::
-_srw_character_1.png::CompressedTexture2D::8989054975122852272::1711690716::1711690716::1::::<><>::
-_srw_character_2.png::CompressedTexture2D::4987417905491580947::1711690716::1711690716::1::::<><>::
-_srw_cristals.png::CompressedTexture2D::8252045641436452427::1711690716::1711690716::1::::<><>::
-_srw_free_character_0.png::CompressedTexture2D::2282231300549955733::1711690716::1711690716::1::::<><>::
-_srw_free_chests.png::CompressedTexture2D::2751207972996664599::1711690716::1711690716::1::::<><>::
-_srw_free_monsters_0.png::CompressedTexture2D::2706827861736270505::1711690716::1711690716::1::::<><>::
-_srw_free_switches.png::CompressedTexture2D::996928395643251733::1711690716::1711690716::1::::<><>::
-_srw_free_torches.png::CompressedTexture2D::389182559880523958::1711690716::1711690716::1::::<><>::
-_srw_kart.png::CompressedTexture2D::2765566536959050297::1711690716::1711690716::1::::<><>::
-_srw_monsters_1.png::CompressedTexture2D::1986318095006599932::1711690716::1711690716::1::::<><>::
-_srw_monsters_2.png::CompressedTexture2D::537049482871963403::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/::1711690716
-_srw_dungeon_A1.png::CompressedTexture2D::7474343314896195457::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A2.png::CompressedTexture2D::5851439482453141017::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A4.png::CompressedTexture2D::4321063856807184454::1711690716::1711690716::1::::<><>::
-_srw_tileset_0.png::CompressedTexture2D::3507273394841390364::1711690716::1711690716::1::::<><>::
-_srw_tileset_1.png::CompressedTexture2D::2981491496147251569::1711690716::1711690716::1::::<><>::
-_srw_tileset_2.png::CompressedTexture2D::4731953617699350844::1711690716::1711690716::1::::<><>::
-_srw_tileset_3.png::CompressedTexture2D::8743851459571252022::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/rpgmaker/VXace/::1711690716
-::res://Images/dungeon-pack-full_version/rpgmaker/VXace/characters/::1711690716
-!$_srw_free_traps1.png::CompressedTexture2D::1986697484036834590::1711690716::1711690716::1::::<><>::
-!_srw_free_doors2.png::CompressedTexture2D::2411172820572406138::1711690716::1711690716::1::::<><>::
-$_srw_free_campfire.png::CompressedTexture2D::4773177529260450607::1711690716::1711690716::1::::<><>::
-$_srw_free_coin.png::CompressedTexture2D::7560290541492003707::1711690716::1711690716::1::::<><>::
-$_srw_free_fire.png::CompressedTexture2D::4807423578321105108::1711690716::1711690716::1::::<><>::
-$_srw_free_icons1.png::CompressedTexture2D::6771723391308658875::1711690716::1711690716::1::::<><>::
-$_srw_free_icons2.png::CompressedTexture2D::1955965546088304::1711690716::1711690716::1::::<><>::
-$_srw_lavafall_effects.png::CompressedTexture2D::7443685405035798102::1711690716::1711690716::1::::<><>::
-$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::4340589237033338861::1711690716::1711690716::1::::<><>::
-$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::6716987700683977820::1711690716::1711690716::1::::<><>::
-$_srw_waterfall_effects.png::CompressedTexture2D::1516339126243141101::1711690716::1711690716::1::::<><>::
-_srw_character_1.png::CompressedTexture2D::1078925898273467129::1711690716::1711690716::1::::<><>::
-_srw_character_2.png::CompressedTexture2D::865868709822152880::1711690716::1711690716::1::::<><>::
-_srw_cristals.png::CompressedTexture2D::4183586438788322486::1711690716::1711690716::1::::<><>::
-_srw_free_character_0.png::CompressedTexture2D::1797906338673240518::1711690716::1711690716::1::::<><>::
-_srw_free_chests.png::CompressedTexture2D::7649934275713612368::1711690716::1711690716::1::::<><>::
-_srw_free_monsters_0.png::CompressedTexture2D::4834985798673656081::1711690716::1711690716::1::::<><>::
-_srw_free_switches.png::CompressedTexture2D::8246502483116562459::1711690716::1711690716::1::::<><>::
-_srw_free_torches.png::CompressedTexture2D::5454100116412088369::1711690716::1711690716::1::::<><>::
-_srw_kart.png::CompressedTexture2D::313026899256577451::1711690716::1711690716::1::::<><>::
-_srw_monsters_1.png::CompressedTexture2D::5650590226463210600::1711690716::1711690716::1::::<><>::
-_srw_monsters_2.png::CompressedTexture2D::2140220195910375763::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/rpgmaker/VXace/tilesets/::1711690716
-_srw_dungeon_A1.png::CompressedTexture2D::8459337352661689258::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A2.png::CompressedTexture2D::2976150408959400497::1711690716::1711690716::1::::<><>::
-_srw_dungeon_A4.png::CompressedTexture2D::1592933571537977820::1711690716::1711690716::1::::<><>::
-_srw_tileset_0.png::CompressedTexture2D::728691643743783596::1711690716::1711690716::1::::<><>::
-_srw_tileset_1.png::CompressedTexture2D::860671367100031292::1711690716::1711690716::1::::<><>::
-_srw_tileset_2.png::CompressedTexture2D::5835332166907416575::1711690716::1711690716::1::::<><>::
-_srw_tileset_3.png::CompressedTexture2D::2140813601978456019::1711690716::1711690716::1::::<><>::
-::res://Images/dungeon-pack-full_version/sprite/::1711690716
-character_1.png::CompressedTexture2D::2043479128935463947::1711690716::1711690716::1::::<><>::
-character_2.png::CompressedTexture2D::411087580235869833::1711690716::1711690716::1::::<><>::
-cristals.png::CompressedTexture2D::5180806894319334327::1711690716::1711690716::1::::<><>::
-free_campfire.png::CompressedTexture2D::5576117261375883257::1711690716::1711690716::1::::<><>::
-free_character_0.png::CompressedTexture2D::7534513893339797674::1711690716::1711690716::1::::<><>::
-free_chests.png::CompressedTexture2D::1978167676120929309::1711690716::1711690716::1::::<><>::
-free_coin.png::CompressedTexture2D::9029139711861558602::1711690716::1711690716::1::::<><>::
-free_doors2.png::CompressedTexture2D::4409468927407846202::1711690716::1711690716::1::::<><>::
-free_fire.png::CompressedTexture2D::2102253525059079490::1711690716::1711690716::1::::<><>::
-free_icons1.png::CompressedTexture2D::8323135889563967211::1711690716::1711690716::1::::<><>::
-free_icons2.png::CompressedTexture2D::6016813034915002991::1711690716::1711690716::1::::<><>::
-free_monsters_0.png::CompressedTexture2D::7674391419174766258::1711690716::1711690716::1::::<><>::
-free_switches.png::CompressedTexture2D::2267031181887200202::1711690716::1711690716::1::::<><>::
-free_torches.png::CompressedTexture2D::2918245074221803973::1711690716::1711690716::1::::<><>::
-free_traps1.png::CompressedTexture2D::37422646149946621::1711690716::1711690716::1::::<><>::
-kart.png::CompressedTexture2D::6049176622960156446::1711690716::1711690716::1::::<><>::
-lavafall_effects.png::CompressedTexture2D::8789441703638295866::1711690716::1711690716::1::::<><>::
-monsters_1.png::CompressedTexture2D::7240454293741392590::1711690716::1711690716::1::::<><>::
-monsters_2.png::CompressedTexture2D::4669765951498723423::1711690716::1711690716::1::::<><>::
-poisoned1_waterfall_effects.png::CompressedTexture2D::8546371866423834357::1711690716::1711690716::1::::<><>::
-poisoned2_waterfall_effects.png::CompressedTexture2D::2845239428329070010::1711690716::1711690716::1::::<><>::
-waterfall_effects.png::CompressedTexture2D::1234260344314898212::1711690716::1711690716::1::::<><>::
-::res://Images/TILESET VILLAGE TOP DOWN/::1711690716
-(THANK YOU).png::CompressedTexture2D::481929630878626378::1711690716::1711690716::1::::<><>::
-BRIDGE - DAY.png::CompressedTexture2D::6693136275848318075::1711690716::1711690716::1::::<><>::
-BRIDGE - NIGHT.png::CompressedTexture2D::8911386260104586292::1711690716::1711690716::1::::<><>::
-CHURCH - DAY.png::CompressedTexture2D::2824155765910731685::1711690716::1711690716::1::::<><>::
-CHURCH - NIGHT.png::CompressedTexture2D::893973799351653267::1711690716::1711690716::1::::<><>::
-FENCE 1 - DAY.png::CompressedTexture2D::7637849870134272262::1711690716::1711690716::1::::<><>::
-FENCE 1 - NIGHT.png::CompressedTexture2D::2563948442576078287::1711690716::1711690716::1::::<><>::
-FENCE 2 - DAY.png::CompressedTexture2D::853734232988253364::1711690716::1711690716::1::::<><>::
-FENCE 2 - NIGHT.png::CompressedTexture2D::8981280697015659298::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 1 - DAY.png::CompressedTexture2D::3533500962498123641::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 1 - NIGHT.png::CompressedTexture2D::7273073411135581339::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 2 - DAY.png::CompressedTexture2D::1397129175135884818::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 2 - NIGHT.png::CompressedTexture2D::1414529893978221534::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 3 - DAY.png::CompressedTexture2D::5932929437522495953::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 3 - NIGHT.png::CompressedTexture2D::5987760167151185288::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 4 - DAY.png::CompressedTexture2D::7577616739409072891::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 4 - NIGHT.png::CompressedTexture2D::4514900774347211230::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 5 - DAY.png::CompressedTexture2D::2788158365627554695::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 5 - NIGHT.png::CompressedTexture2D::6279066767233681525::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 6 - DAY.png::CompressedTexture2D::7456372359354571570::1711690716::1711690716::1::::<><>::
-GRASS DETAIL 6 - NIGHT.png::CompressedTexture2D::7808820923566508240::1711690716::1711690716::1::::<><>::
-GRASS TILE - DAY.png::CompressedTexture2D::5572198555371368439::1711690716::1711690716::1::::<><>::
-GRASS TILE - NIGHT.png::CompressedTexture2D::4606845499533698945::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 1 - DAY.png::CompressedTexture2D::1610282185019602890::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 1 - NIGHT.png::CompressedTexture2D::7157313349838311437::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 2 - DAY.png::CompressedTexture2D::5425678199916784708::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 2 - NIGHT.png::CompressedTexture2D::4294243461156418605::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 3 - DAY.png::CompressedTexture2D::2286658168921600767::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 3 - NIGHT.png::CompressedTexture2D::7664099330717507362::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 4 - DAY.png::CompressedTexture2D::2398340443097936131::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 4 - NIGHT.png::CompressedTexture2D::1138693146253166439::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 5 - DAY.png::CompressedTexture2D::2601920027623373752::1711690716::1711690716::1::::<><>::
-GROUND DETAIL 5 - NIGHT.png::CompressedTexture2D::3695114131855157892::1711690716::1711690716::1::::<><>::
-GROUND TILE - DAY.png::CompressedTexture2D::660722693911524871::1711690716::1711690716::1::::<><>::
-GROUND TILE - NIGHT.png::CompressedTexture2D::1465065629338359246::1711690716::1711690716::1::::<><>::
-HOUSE 1 - DAY.png::CompressedTexture2D::4450981032103295040::1711690716::1711690716::1::::<><>::
-HOUSE 1 - NIGHT.png::CompressedTexture2D::535763190726282252::1711690716::1711690716::1::::<><>::
-HOUSE 2 - DAY.png::CompressedTexture2D::1347213859174228856::1711690716::1711690716::1::::<><>::
-HOUSE 2 - NIGHT.png::CompressedTexture2D::735676709896878509::1711690716::1711690716::1::::<><>::
-PIT - DAY.png::CompressedTexture2D::8692601297463428495::1711690716::1711690716::1::::<><>::
-PIT - NIGHT.png::CompressedTexture2D::992010217711991088::1711690716::1711690716::1::::<><>::
-STAIRS - DAY.png::CompressedTexture2D::1516026544367633027::1711690716::1711690716::1::::<><>::
-STAIRS - NIGHT.png::CompressedTexture2D::2403129796159926415::1711690716::1711690716::1::::<><>::
-TERRAIN SET 1 - DAY.png::CompressedTexture2D::3645228110050015933::1711690716::1711690716::1::::<><>::
-TERRAIN SET 1 - NIGHT.png::CompressedTexture2D::8743532184956663738::1711690716::1711690716::1::::<><>::
-TERRAIN SET 2 - DAY.png::CompressedTexture2D::175729619584990060::1711690716::1711690716::1::::<><>::
-TERRAIN SET 2 - NIGHT.png::CompressedTexture2D::2725037148242894157::1711690716::1711690716::1::::<><>::
-TERRAIN SET 3 - DAY.png::CompressedTexture2D::8745054245819309392::1711690716::1711690716::1::::<><>::
-TERRAIN SET 3 - NIGHT.png::CompressedTexture2D::2990138129768773477::1711690716::1711690716::1::::<><>::
-TERRAIN SET 3 CURVES - DAY.png::CompressedTexture2D::3295283114913187171::1711690716::1711690716::1::::<><>::
-TERRAIN SET 3 CURVES - NIGHT.png::CompressedTexture2D::5453963493007741231::1711690716::1711690716::1::::<><>::
-TERRAIN SET 4 - DAY.png::CompressedTexture2D::54644820881109137::1711690716::1711690716::1::::<><>::
-TERRAIN SET 4 - NIGHT.png::CompressedTexture2D::9073631384594308564::1711690716::1711690716::1::::<><>::
-TERRAIN SET 4 CURVES - DAY.png::CompressedTexture2D::7900406451871201112::1711690716::1711690716::1::::<><>::
-TERRAIN SET 4 CURVES - NIGHT.png::CompressedTexture2D::5074493491538182720::1711690716::1711690716::1::::<><>::
-TERRAIN SET 5 - DAY.png::CompressedTexture2D::2915350319966562922::1711690716::1711690716::1::::<><>::
-TERRAIN SET 5 - NIGHT.png::CompressedTexture2D::9020793754270110250::1711690716::1711690716::1::::<><>::
-TREE 1 - DAY.png::CompressedTexture2D::2175158330480137233::1711690716::1711690716::1::::<><>::
-TREE 1 - NIGHT.png::CompressedTexture2D::8668756242357705969::1711690716::1711690716::1::::<><>::
-TREE 2 - DAY.png::CompressedTexture2D::1832481591983997956::1711690716::1711690716::1::::<><>::
-TREE 2 - NIGHT.png::CompressedTexture2D::4441772716541373747::1711690716::1711690716::1::::<><>::
-TREE 3 - DAY.png::CompressedTexture2D::5953350106953001741::1711690716::1711690716::1::::<><>::
-TREE 3 - NIGHT.png::CompressedTexture2D::1448996132079204425::1711690716::1711690716::1::::<><>::
-WATER DETAIL 1 - DAY.png::CompressedTexture2D::7487124008607859894::1711690716::1711690716::1::::<><>::
-WATER DETAIL 1 - NIGHT.png::CompressedTexture2D::8205100625898050268::1711690716::1711690716::1::::<><>::
-WATER DETAIL 2 - DAY.png::CompressedTexture2D::7423452681231294813::1711690716::1711690716::1::::<><>::
-WATER DETAIL 2 - NIGHT.png::CompressedTexture2D::398438550441413470::1711690716::1711690716::1::::<><>::
-WATER DETAIL 3 - DAY.png::CompressedTexture2D::977686007040991980::1711690716::1711690716::1::::<><>::
-WATER DETAIL 3 - NIGHT.png::CompressedTexture2D::5061813417561722375::1711690716::1711690716::1::::<><>::
-WATER DETAIL 4 - DAY.png::CompressedTexture2D::3572943018301583061::1711690716::1711690716::1::::<><>::
-WATER DETAIL 4 - NIGHT.png::CompressedTexture2D::6666007749480856586::1711690716::1711690716::1::::<><>::
-WATER DETAIL 5 - DAY.png::CompressedTexture2D::2970688236681565411::1711690716::1711690716::1::::<><>::
-WATER DETAIL 5 - NIGHT.png::CompressedTexture2D::4074507456728472002::1711690716::1711690716::1::::<><>::
-WATER TILE - DAY.png::CompressedTexture2D::942769915165572482::1711690716::1711690716::1::::<><>::
-WATER TILE - NIGHT.png::CompressedTexture2D::590272967542216611::1711690716::1711690716::1::::<><>::
-::res://Scenes/::1711693347
-Enemy_Attackbox.tscn::PackedScene::5901208274749509787::1711693347::0::1::::<><>::uid://toeor7p1wsw8::::res://Images/White_Square.png
-Game.tscn::PackedScene::2002682869684477134::1711693346::0::1::::<><>::res://Scripts/Game.gd<>uid://b8jgkpke1qbqv::::res://Scenes/Landscape/Dungeon.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://caqs5eoyufh4q::::res://Scenes/enemies/enemy_boss.tscn
-MainTesting.tscn::PackedScene::3688306941168941737::1711690716::0::1::::<><>::res://Scripts/MainTesting.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://cekbeijp5t485::::res://Scenes/enemies/enemy_melee.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemies/enemy_shooting.tscn
-Player.tscn::PackedScene::7298913571615276157::1711693346::0::1::::<><>::res://Scripts/Player.gd<>uid://dfl1lwr7bdxok::::res://Images/dungeon-pack-full_version/sprite/free_character_0.png<>uid://ddm286nc8ogo::::res://Images/overheat.png<>uid://8fjb1k1ned34::::res://Scenes/interfaces/Interface.tscn<>uid://nen4s5ex3yeu::::res://Images/overfreeze.png
-Player_Attackbox.tscn::PackedScene::8926965268458008429::1711693346::0::1::::<><>::
-Scene1.tscn::PackedScene::3613887776983679454::1711693345::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png
-slash.tscn::PackedScene::8618692205065793029::1711693345::0::1::::<><>::res://Scripts/Weapon.gd<>uid://dn3ng8avmiiwu::::res://Images/slash.png
-::res://Scenes/bullets/::1711693403
-bullet.tscn::PackedScene::2175616677712949428::1711693346::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
-fan_projectile.tscn::PackedScene::2455081124763473722::1711693346::0::1::::<><>::res://Scripts/FanProjectile.gd<>uid://cwmt1t285un1r::::res://Images/fan_shaped_projectile_thin.png
-swirling_projectile.tscn::PackedScene::8431318897583004145::1711693403::0::1::::<><>::res://Scripts/swirling_projectile.gd<>uid://dcwfba1trarp1::::res://Images/fan_shaped_swirling_projectile.png
-tracking_bullet.tscn::PackedScene::7332000844296329301::1711693347::0::1::::<><>::res://Scripts/tracking_bullet.gd<>uid://dopjsqtcutd4j::::res://Images/tracking_bullet_red.png
-::res://Scenes/enemies/::1711693346
-enemy_boss.tscn::PackedScene::4807018123976146670::1711693346::0::1::::<><>::res://Scripts/Boss.gd<>uid://4d42j6huu65t::::res://Images/dungeon-pack-full_version/sprite/character_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
-enemy_melee.tscn::PackedScene::5074308814459759244::1711693346::0::1::::<><>::res://Scripts/enemy_melee.gd<>uid://b7scmlt1khujf::::res://Images/dungeon-pack-full_version/sprite/monsters_2.png<>uid://nfjs2nfkfwrf::::res://Images/Sword_16.png
-enemy_shooting.tscn::PackedScene::420864599848190448::1711693346::0::1::::<><>::res://Scripts/enemy_shooting.gd<>uid://3kgmsmdrq0qi::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
-::res://Scenes/interfaces/::1711693346
-enemy_interface.tscn::PackedScene::4055446781977120032::1711693346::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
-HUD.tscn::PackedScene::7587991665159732108::1711693346::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>res://Scripts/ExitButton.gd<>uid://cf21hpjswxomx::::res://Images/Alex Logo.png
-Interface.tscn::PackedScene::2327103349808173585::1711693346::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
-::res://Scenes/Landscape/::1711693347
-DeathScene.tscn::PackedScene::4991366767970770331::1711693347::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/DeathScene.gd
-Dungeon.tscn::PackedScene::4721614886945768793::1711693346::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png<>uid://dhjefq66xp3g6::::res://Images/max-removebg-preview.png<>uid://b54q6j8f6oh0y::::res://Images/torch.png<>uid://c6nu4ayk6pwys::::res://Images/room-removebg-preview.png<>uid://duwmkt7ijue65::::res://Images/door.png
-StartingScene.tscn::PackedScene::7643595593479964908::1711693346::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/StartingScene.gd<>uid://dgdxd452t7r61::::res://Scenes/interfaces/HUD.tscn
-::res://Scenes/ParticleEffects/::1711690716
-Blood.tscn::PackedScene::8360622603557893904::1711690716::0::1::::<><>::
-::res://Scripts/::1711693400
-Boss.gd::GDScript::-1::1711691093::0::1::::<>CharacterBody2D<>::
-bullet.gd::GDScript::-1::1711690903::0::1::::<>CharacterBody2D<>::
-DeathScene.gd::GDScript::-1::1711690773::0::1::::<>TileMap<>::
-enemy_melee.gd::GDScript::-1::1711692603::0::1::::<>CharacterBody2D<>::
-enemy_shooting.gd::GDScript::-1::1711690773::0::1::::<>CharacterBody2D<>::
-ExitButton.gd::GDScript::-1::1711690773::0::1::::<>Button<>::
-FanProjectile.gd::GDScript::-1::1711690908::0::1::::<>CharacterBody2D<>::
-Game.gd::GDScript::-1::1711690773::0::1::::<>Node2D<>::
-HUD.gd::GDScript::-1::1711690774::0::1::::<>CanvasLayer<>::
-Interface.gd::GDScript::-1::1711690774::0::1::::<>Control<>::
-Player.gd::GDScript::-1::1711690774::0::1::::<>CharacterBody2D<>::
-StartButton.gd::GDScript::-1::1711690774::0::1::::<>Button<>::
-StartingScene.gd::GDScript::-1::1711690774::0::1::::<>TileMap<>::
-swirling_projectile.gd::GDScript::-1::1711693400::0::1::::<>CharacterBody2D<>::
-tracking_bullet.gd::GDScript::-1::1711690920::0::1::::<>CharacterBody2D<>::
-Weapon.gd::GDScript::-1::1711690774::0::1::::<>CharacterBody2D<>::
-::res://Sprites/::1711690716
+::res://::1711730490
+export_presets.cfg::TextFile::-1::1711685871::0::1::::<><>::
+README.md::TextFile::-1::1711685871::0::1::::<><>::
+::res://Images/::1711730457
+Alex Logo.png::CompressedTexture2D::5181115729906889855::1711685871::1711685871::1::::<><>::
+background box.png::CompressedTexture2D::7483259763432198840::1711685871::1711685871::1::::<><>::
+bullet_plasma_green.png::CompressedTexture2D::7255882150259797098::1711685871::1711685871::1::::<><>::
+DevGrid.png::CompressedTexture2D::8156765599892336669::1711685871::1711685871::1::::<><>::
+door.png::CompressedTexture2D::8609202744035208700::1711685871::1711685871::1::::<><>::
+enemy1.png::CompressedTexture2D::5360527862751234700::1711685871::1711685871::1::::<><>::
+fan_shaped_projectile.png::CompressedTexture2D::3918414934332300104::1711685871::1711685871::1::::<><>::
+fan_shaped_projectile_thin.png::CompressedTexture2D::6342969555169355033::1711685871::1711685871::1::::<><>::
+fan_shaped_swirling_projectile.png::CompressedTexture2D::7345361460753345996::1711685871::1711685871::1::::<><>::
+heart.png::CompressedTexture2D::5489380104434018292::1711685871::1711685871::1::::<><>::
+HeartsEmpty.png::CompressedTexture2D::4267803801439312490::1711685871::1711685871::1::::<><>::
+HeartsFull.png::CompressedTexture2D::6926348628409179450::1711685871::1711685871::1::::<><>::
+HUD_test_background.jpg::CompressedTexture2D::4022326866370549416::1711685871::1711685871::1::::<><>::
+HUD_Title.jpg::CompressedTexture2D::2732280133578981407::1711685871::1711685871::1::::<><>::
+HUD_Title_2.jpg::CompressedTexture2D::8284986679856515713::1711685871::1711685871::1::::<><>::
+ice.png::CompressedTexture2D::1143603074307138863::1711730455::1711730457::1::::<><>::
+icon.svg::CompressedTexture2D::1911281182880593071::1711685871::1711685871::1::::<><>::
+Knight.png::CompressedTexture2D::3099239591208202847::1711685871::1711685871::1::::<><>::
+max-removebg-preview.png::CompressedTexture2D::7669416042975053411::1711685871::1711685871::1::::<><>::
+max__15_-removebg-preview.png::CompressedTexture2D::717597159081607001::1711685871::1711685871::1::::<><>::
+melee_enemy.png::CompressedTexture2D::7166010426230624271::1711685871::1711685871::1::::<><>::
+overfreeze.png::CompressedTexture2D::921554579217907020::1711685671::1711688500::1::::<><>::
+overheat.png::CompressedTexture2D::217538266279044506::1711685671::1711688500::1::::<><>::
+room-removebg-preview.png::CompressedTexture2D::6976798596418256834::1711685871::1711685871::1::::<><>::
+slash.png::CompressedTexture2D::8130321365397850432::1711685871::1711685871::1::::<><>::
+Sword_16.png::CompressedTexture2D::923356891743580487::1711685871::1711688206::1::::<><>::
+test.jpg::CompressedTexture2D::7996697453835728455::1711685871::1711685871::1::::<><>::
+torch.png::CompressedTexture2D::4552980303154981062::1711685871::1711685871::1::::<><>::
+tracking_bullet_red.png::CompressedTexture2D::8173450995391074503::1711685871::1711685871::1::::<><>::
+White_Square.png::CompressedTexture2D::1362758129813042693::1711685871::1711688206::1::::<><>::
+::res://Images/dungeon-pack-full_version/::1711685871
+atlas.png::CompressedTexture2D::5851708527423639216::1711685871::1711685871::1::::<><>::
+LICENCE.txt::TextFile::-1::1711685871::0::1::::<><>::
+README.txt::TextFile::-1::1711685871::0::1::::<><>::
+VERSION.txt::TextFile::-1::1711685871::0::1::::<><>::
+::res://Images/dungeon-pack-full_version/autotiles/::1711685871
+free_lavafall_tiles2.png::CompressedTexture2D::5464903429422776561::1711685871::1711685871::1::::<><>::
+free_lava_tiles1.png::CompressedTexture2D::7558814434052855719::1711685871::1711685871::1::::<><>::
+free_waterfall_tiles1.png::CompressedTexture2D::3764905751888930155::1711685871::1711685871::1::::<><>::
+free_water_tiles1.png::CompressedTexture2D::2672508677406706151::1711685871::1711685871::1::::<><>::
+free_water_tiles2.png::CompressedTexture2D::3110772557500634862::1711685871::1711685871::1::::<><>::
+lavafall_tiles1.png::CompressedTexture2D::416174562419764319::1711685871::1711685871::1::::<><>::
+lavafall_tiles3.png::CompressedTexture2D::436747070562309134::1711685871::1711685871::1::::<><>::
+waterfall_tiles2.png::CompressedTexture2D::8931540263533615168::1711685871::1711685871::1::::<><>::
+waterfall_tiles3.png::CompressedTexture2D::8432064713360751275::1711685871::1711685871::1::::<><>::
+water_tiles3.png::CompressedTexture2D::4404167557931501101::1711685871::1711685871::1::::<><>::
+water_tiles4.png::CompressedTexture2D::397313342569885068::1711685871::1711685871::1::::<><>::
+water_tiles5.png::CompressedTexture2D::5489468600966114784::1711685871::1711685871::1::::<><>::
+water_tiles6.png::CompressedTexture2D::7301377458113323437::1711685871::1711685871::1::::<><>::
+water_tiles7.png::CompressedTexture2D::4452522281705728341::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/godot_autotiles/::1711685871
+anim_autotile_0.png::CompressedTexture2D::5055733315916430808::1711685871::1711685871::1::::<><>::
+anim_autotile_1.png::CompressedTexture2D::8225810494454737193::1711685871::1711685871::1::::<><>::
+anim_autotile_4.png::CompressedTexture2D::7879377891807387547::1711685871::1711685871::1::::<><>::
+anim_autotile_5.png::CompressedTexture2D::3557340490465143778::1711685871::1711685871::1::::<><>::
+anim_autotile_6.png::CompressedTexture2D::7444691226371315897::1711685871::1711685871::1::::<><>::
+anim_autotile_8.png::CompressedTexture2D::2702846935341856128::1711685871::1711685871::1::::<><>::
+anim_autotile_15.png::CompressedTexture2D::9188276116581657911::1711685871::1711685871::1::::<><>::
+anim_autotile_19.png::CompressedTexture2D::56240191585769008::1711685871::1711685871::1::::<><>::
+anim_autotile_23.png::CompressedTexture2D::403655007940826949::1711685871::1711685871::1::::<><>::
+anim_autotile_27.png::CompressedTexture2D::4411848919922293776::1711685871::1711685871::1::::<><>::
+anim_autotile_31.png::CompressedTexture2D::6900690070398302197::1711685871::1711685871::1::::<><>::
+free_anim_autotile_2.png::CompressedTexture2D::2647457015589349937::1711685871::1711685871::1::::<><>::
+free_anim_autotile_7.png::CompressedTexture2D::208778431423950237::1711685871::1711685871::1::::<><>::
+free_anim_autotile_9.png::CompressedTexture2D::9187102175050293358::1711685871::1711685871::1::::<><>::
+free_ground_autotile_2.png::CompressedTexture2D::4630475176875149710::1711685871::1711685871::1::::<><>::
+free_ground_autotile_13.png::CompressedTexture2D::6377392953444940741::1711685871::1711685871::1::::<><>::
+free_ground_autotile_17.png::CompressedTexture2D::7572470219099392144::1711685871::1711685871::1::::<><>::
+free_ground_autotile_20.png::CompressedTexture2D::1484766875938376376::1711685871::1711685871::1::::<><>::
+free_ground_autotile_21.png::CompressedTexture2D::79535082390512373::1711685871::1711685871::1::::<><>::
+free_ground_autotile_29.png::CompressedTexture2D::2762597251722669264::1711685871::1711685871::1::::<><>::
+free_ground_dungeon_autotile_8.png::CompressedTexture2D::1703220423337545576::1711685871::1711685871::1::::<><>::
+free_ground_dungeon_autotile_9.png::CompressedTexture2D::2854771983952350483::1711685871::1711685871::1::::<><>::
+free_ground_dungeon_autotile_14.png::CompressedTexture2D::8878884795074985355::1711685871::1711685871::1::::<><>::
+free_template_ground.png::CompressedTexture2D::2093098490570346356::1711685871::1711685871::1::::<><>::
+free_template_house.png::CompressedTexture2D::8718403431379698828::1711685871::1711685871::1::::<><>::
+free_template_wall.png::CompressedTexture2D::2241332875732290038::1711685871::1711685871::1::::<><>::
+free_template_waterfall.png::CompressedTexture2D::4074851345830201997::1711685871::1711685871::1::::<><>::
+free_wall_dungeon_autotile_8.png::CompressedTexture2D::767307458523299320::1711685871::1711685871::1::::<><>::
+free_wall_dungeon_autotile_14.png::CompressedTexture2D::3424703271298280404::1711685871::1711685871::1::::<><>::
+ground_autotile_0.png::CompressedTexture2D::8886538310176668911::1711685871::1711685871::1::::<><>::
+ground_autotile_1.png::CompressedTexture2D::632420367203217832::1711685871::1711685871::1::::<><>::
+ground_autotile_3.png::CompressedTexture2D::5231050357751618618::1711685871::1711685871::1::::<><>::
+ground_autotile_4.png::CompressedTexture2D::6084458107952301324::1711685871::1711685871::1::::<><>::
+ground_autotile_5.png::CompressedTexture2D::2321513670583495334::1711685871::1711685871::1::::<><>::
+ground_autotile_6.png::CompressedTexture2D::7850144071718565815::1711685871::1711685871::1::::<><>::
+ground_autotile_7.png::CompressedTexture2D::4834536337889222049::1711685871::1711685871::1::::<><>::
+ground_autotile_8.png::CompressedTexture2D::8574405513764197625::1711685871::1711685871::1::::<><>::
+ground_autotile_9.png::CompressedTexture2D::5979305690267490604::1711685871::1711685871::1::::<><>::
+ground_autotile_10.png::CompressedTexture2D::4662897431532435547::1711685871::1711685871::1::::<><>::
+ground_autotile_11.png::CompressedTexture2D::6121073718138697331::1711685871::1711685871::1::::<><>::
+ground_autotile_12.png::CompressedTexture2D::1641891778941424360::1711685871::1711685871::1::::<><>::
+ground_autotile_14.png::CompressedTexture2D::3705351278349489127::1711685871::1711685871::1::::<><>::
+ground_autotile_15.png::CompressedTexture2D::2882185079166755076::1711685871::1711685871::1::::<><>::
+ground_autotile_16.png::CompressedTexture2D::4925943913638507711::1711685871::1711685871::1::::<><>::
+ground_autotile_18.png::CompressedTexture2D::3561568352898156057::1711685871::1711685871::1::::<><>::
+ground_autotile_19.png::CompressedTexture2D::9053910122378937991::1711685871::1711685871::1::::<><>::
+ground_autotile_22.png::CompressedTexture2D::5979359814370627763::1711685871::1711685871::1::::<><>::
+ground_autotile_23.png::CompressedTexture2D::7295373673435284732::1711685871::1711685871::1::::<><>::
+ground_autotile_24.png::CompressedTexture2D::2490543145615079096::1711685871::1711685871::1::::<><>::
+ground_autotile_25.png::CompressedTexture2D::6871026963412514480::1711685871::1711685871::1::::<><>::
+ground_autotile_26.png::CompressedTexture2D::8248620278083503889::1711685871::1711685871::1::::<><>::
+ground_autotile_27.png::CompressedTexture2D::949138248638630179::1711685871::1711685871::1::::<><>::
+ground_autotile_28.png::CompressedTexture2D::4409577197607337105::1711685871::1711685871::1::::<><>::
+ground_autotile_30.png::CompressedTexture2D::1710656134827439644::1711685871::1711685871::1::::<><>::
+ground_autotile_31.png::CompressedTexture2D::8122860257390541062::1711685871::1711685871::1::::<><>::
+ground_autotile_32.png::CompressedTexture2D::8098255184916784111::1711685871::1711685871::1::::<><>::
+ground_autotile_33.png::CompressedTexture2D::3166109069772254498::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_0.png::CompressedTexture2D::1681439146651398287::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_1.png::CompressedTexture2D::1103776594311493033::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_2.png::CompressedTexture2D::1612102138894165840::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_3.png::CompressedTexture2D::8122776574955900394::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_4.png::CompressedTexture2D::4117994159998979854::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_5.png::CompressedTexture2D::2102435970273194078::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_10.png::CompressedTexture2D::4629093279009238810::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_11.png::CompressedTexture2D::1187340807525195942::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_12.png::CompressedTexture2D::8858372777946390867::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_13.png::CompressedTexture2D::6684265857398287930::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_15.png::CompressedTexture2D::3285416370641571096::1711685871::1711685871::1::::<><>::
+ground_dungeon_autotile_16.png::CompressedTexture2D::7217757123161881432::1711685871::1711685871::1::::<><>::
+house_autotile_0_0.png::CompressedTexture2D::8129444433042846712::1711685871::1711685871::1::::<><>::
+house_autotile_0_1.png::CompressedTexture2D::8407954308748503084::1711685871::1711685871::1::::<><>::
+house_autotile_1_0.png::CompressedTexture2D::1285550393904380801::1711685871::1711685871::1::::<><>::
+house_autotile_1_1.png::CompressedTexture2D::8585572203450421434::1711685871::1711685871::1::::<><>::
+house_autotile_2_0.png::CompressedTexture2D::1614539135149546362::1711685871::1711685871::1::::<><>::
+house_autotile_2_1.png::CompressedTexture2D::8258103877208612087::1711685871::1711685871::1::::<><>::
+house_autotile_3_0.png::CompressedTexture2D::1889409998510678774::1711685871::1711685871::1::::<><>::
+house_autotile_3_1.png::CompressedTexture2D::5701278276139676040::1711685871::1711685871::1::::<><>::
+house_autotile_4_0.png::CompressedTexture2D::1275285354834789020::1711685871::1711685871::1::::<><>::
+house_autotile_4_1.png::CompressedTexture2D::3104738123978325425::1711685871::1711685871::1::::<><>::
+house_autotile_5_0.png::CompressedTexture2D::7210377573315911249::1711685871::1711685871::1::::<><>::
+house_autotile_5_1.png::CompressedTexture2D::4167523429181047149::1711685871::1711685871::1::::<><>::
+house_autotile_6_0.png::CompressedTexture2D::8538260613301262472::1711685871::1711685871::1::::<><>::
+house_autotile_6_1.png::CompressedTexture2D::6407597797945796411::1711685871::1711685871::1::::<><>::
+house_autotile_8_0.png::CompressedTexture2D::738360118072295552::1711685871::1711685871::1::::<><>::
+house_autotile_8_1.png::CompressedTexture2D::9104879303301311716::1711685871::1711685871::1::::<><>::
+house_autotile_9_0.png::CompressedTexture2D::3229776065262024420::1711685871::1711685871::1::::<><>::
+house_autotile_9_1.png::CompressedTexture2D::5761596130735517056::1711685871::1711685871::1::::<><>::
+house_autotile_10_0.png::CompressedTexture2D::6747531824939581421::1711685871::1711685871::1::::<><>::
+house_autotile_10_1.png::CompressedTexture2D::6210926402138937536::1711685871::1711685871::1::::<><>::
+house_autotile_11_0.png::CompressedTexture2D::651498720309946738::1711685871::1711685871::1::::<><>::
+house_autotile_11_1.png::CompressedTexture2D::9175782159637956469::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_5.png::CompressedTexture2D::456704882701916746::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_9.png::CompressedTexture2D::4420051938345299779::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_10.png::CompressedTexture2D::1438832178768437825::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_11.png::CompressedTexture2D::2962279599986664823::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_12.png::CompressedTexture2D::8401028720917162701::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_13.png::CompressedTexture2D::5578240160941982942::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_15.png::CompressedTexture2D::5033017235563681412::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_16.png::CompressedTexture2D::2654012857086860026::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_17.png::CompressedTexture2D::8091356841584349824::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_18.png::CompressedTexture2D::7103198285533276475::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_19.png::CompressedTexture2D::676324035082733698::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_20.png::CompressedTexture2D::7044198396811670171::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_21.png::CompressedTexture2D::8356390119095102057::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_22.png::CompressedTexture2D::8240916551191491527::1711685871::1711685871::1::::<><>::
+wall_dungeon_autotile_23.png::CompressedTexture2D::7925294574860686544::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/legacy/::1711685871
+::res://Images/dungeon-pack-full_version/rpgmaker/::1711685871
+::res://Images/dungeon-pack-full_version/rpgmaker/MV/::1711685871
+::res://Images/dungeon-pack-full_version/rpgmaker/MV/characters/::1711685871
+!$_srw_free_traps1.png::CompressedTexture2D::7699875086727396403::1711685871::1711685871::1::::<><>::
+!_srw_free_doors2.png::CompressedTexture2D::9074265735703144721::1711685871::1711685871::1::::<><>::
+$_srw_free_campfire.png::CompressedTexture2D::5086085293369871867::1711685871::1711685871::1::::<><>::
+$_srw_free_coin.png::CompressedTexture2D::2516761365189136307::1711685871::1711685871::1::::<><>::
+$_srw_free_fire.png::CompressedTexture2D::8737133555564389804::1711685871::1711685871::1::::<><>::
+$_srw_free_icons1.png::CompressedTexture2D::8309254042768531626::1711685871::1711685871::1::::<><>::
+$_srw_free_icons2.png::CompressedTexture2D::1121268270387909966::1711685871::1711685871::1::::<><>::
+$_srw_lavafall_effects.png::CompressedTexture2D::1489877176354924010::1711685871::1711685871::1::::<><>::
+$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::2117460987583618028::1711685871::1711685871::1::::<><>::
+$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::8270148531958566367::1711685871::1711685871::1::::<><>::
+$_srw_waterfall_effects.png::CompressedTexture2D::3391615566046078184::1711685871::1711685871::1::::<><>::
+_srw_character_1.png::CompressedTexture2D::1146224623190540581::1711685871::1711685871::1::::<><>::
+_srw_character_2.png::CompressedTexture2D::3123394454636874002::1711685871::1711685871::1::::<><>::
+_srw_cristals.png::CompressedTexture2D::647863674707323152::1711685871::1711685871::1::::<><>::
+_srw_free_character_0.png::CompressedTexture2D::259263537616409914::1711685871::1711685871::1::::<><>::
+_srw_free_chests.png::CompressedTexture2D::7444462436564953635::1711685871::1711685871::1::::<><>::
+_srw_free_monsters_0.png::CompressedTexture2D::2848806732086737215::1711685871::1711685871::1::::<><>::
+_srw_free_switches.png::CompressedTexture2D::3879002405386383161::1711685871::1711685871::1::::<><>::
+_srw_free_torches.png::CompressedTexture2D::6901793647586776640::1711685871::1711685871::1::::<><>::
+_srw_kart.png::CompressedTexture2D::3405252998054923304::1711685871::1711685871::1::::<><>::
+_srw_monsters_1.png::CompressedTexture2D::4892331874828937380::1711685871::1711685871::1::::<><>::
+_srw_monsters_2.png::CompressedTexture2D::2717873165951720605::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/rpgmaker/MV/tilesets/::1711685871
+_srw_dungeon_A1.png::CompressedTexture2D::482417243628979017::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A2.png::CompressedTexture2D::7894081008251750539::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A4.png::CompressedTexture2D::3788439780159191240::1711685871::1711685871::1::::<><>::
+_srw_tileset_0.png::CompressedTexture2D::2464454385123478832::1711685871::1711685871::1::::<><>::
+_srw_tileset_1.png::CompressedTexture2D::2279437194198149150::1711685871::1711685871::1::::<><>::
+_srw_tileset_2.png::CompressedTexture2D::8087488483690042895::1711685871::1711685871::1::::<><>::
+_srw_tileset_3.png::CompressedTexture2D::1076847085799431693::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/rpgmaker/MZ/::1711685871
+::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/::1711685871
+!$_srw_free_traps1.png::CompressedTexture2D::7505395250569698364::1711685871::1711685871::1::::<><>::
+!_srw_free_doors2.png::CompressedTexture2D::6573079739121810856::1711685871::1711685871::1::::<><>::
+$_srw_free_campfire.png::CompressedTexture2D::3090491072087117105::1711685871::1711685871::1::::<><>::
+$_srw_free_coin.png::CompressedTexture2D::1875599446902747405::1711685871::1711685871::1::::<><>::
+$_srw_free_fire.png::CompressedTexture2D::3743349128318485969::1711685871::1711685871::1::::<><>::
+$_srw_free_icons1.png::CompressedTexture2D::3521257385766798402::1711685871::1711685871::1::::<><>::
+$_srw_free_icons2.png::CompressedTexture2D::2942737785651576095::1711685871::1711685871::1::::<><>::
+$_srw_lavafall_effects.png::CompressedTexture2D::6644496636907341711::1711685871::1711685871::1::::<><>::
+$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::2388891350203467196::1711685871::1711685871::1::::<><>::
+$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::483952852467980752::1711685871::1711685871::1::::<><>::
+$_srw_waterfall_effects.png::CompressedTexture2D::3413652427248468143::1711685871::1711685871::1::::<><>::
+_srw_character_1.png::CompressedTexture2D::8989054975122852272::1711685871::1711685871::1::::<><>::
+_srw_character_2.png::CompressedTexture2D::4987417905491580947::1711685871::1711685871::1::::<><>::
+_srw_cristals.png::CompressedTexture2D::8252045641436452427::1711685871::1711685871::1::::<><>::
+_srw_free_character_0.png::CompressedTexture2D::2282231300549955733::1711685871::1711685871::1::::<><>::
+_srw_free_chests.png::CompressedTexture2D::2751207972996664599::1711685871::1711685871::1::::<><>::
+_srw_free_monsters_0.png::CompressedTexture2D::2706827861736270505::1711685871::1711685871::1::::<><>::
+_srw_free_switches.png::CompressedTexture2D::996928395643251733::1711685871::1711685871::1::::<><>::
+_srw_free_torches.png::CompressedTexture2D::389182559880523958::1711685871::1711685871::1::::<><>::
+_srw_kart.png::CompressedTexture2D::2765566536959050297::1711685871::1711685871::1::::<><>::
+_srw_monsters_1.png::CompressedTexture2D::1986318095006599932::1711685871::1711685871::1::::<><>::
+_srw_monsters_2.png::CompressedTexture2D::537049482871963403::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/::1711685871
+_srw_dungeon_A1.png::CompressedTexture2D::7474343314896195457::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A2.png::CompressedTexture2D::5851439482453141017::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A4.png::CompressedTexture2D::4321063856807184454::1711685871::1711685871::1::::<><>::
+_srw_tileset_0.png::CompressedTexture2D::3507273394841390364::1711685871::1711685871::1::::<><>::
+_srw_tileset_1.png::CompressedTexture2D::2981491496147251569::1711685871::1711685871::1::::<><>::
+_srw_tileset_2.png::CompressedTexture2D::4731953617699350844::1711685871::1711685871::1::::<><>::
+_srw_tileset_3.png::CompressedTexture2D::8743851459571252022::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/rpgmaker/VXace/::1711685871
+::res://Images/dungeon-pack-full_version/rpgmaker/VXace/characters/::1711685871
+!$_srw_free_traps1.png::CompressedTexture2D::1986697484036834590::1711685871::1711685871::1::::<><>::
+!_srw_free_doors2.png::CompressedTexture2D::2411172820572406138::1711685871::1711685871::1::::<><>::
+$_srw_free_campfire.png::CompressedTexture2D::4773177529260450607::1711685871::1711685871::1::::<><>::
+$_srw_free_coin.png::CompressedTexture2D::7560290541492003707::1711685871::1711685871::1::::<><>::
+$_srw_free_fire.png::CompressedTexture2D::4807423578321105108::1711685871::1711685871::1::::<><>::
+$_srw_free_icons1.png::CompressedTexture2D::6771723391308658875::1711685871::1711685871::1::::<><>::
+$_srw_free_icons2.png::CompressedTexture2D::1955965546088304::1711685871::1711685871::1::::<><>::
+$_srw_lavafall_effects.png::CompressedTexture2D::7443685405035798102::1711685871::1711685871::1::::<><>::
+$_srw_poisoned1_waterfall_effects.png::CompressedTexture2D::4340589237033338861::1711685871::1711685871::1::::<><>::
+$_srw_poisoned2_waterfall_effects.png::CompressedTexture2D::6716987700683977820::1711685871::1711685871::1::::<><>::
+$_srw_waterfall_effects.png::CompressedTexture2D::1516339126243141101::1711685871::1711685871::1::::<><>::
+_srw_character_1.png::CompressedTexture2D::1078925898273467129::1711685871::1711685871::1::::<><>::
+_srw_character_2.png::CompressedTexture2D::865868709822152880::1711685871::1711685871::1::::<><>::
+_srw_cristals.png::CompressedTexture2D::4183586438788322486::1711685871::1711685871::1::::<><>::
+_srw_free_character_0.png::CompressedTexture2D::1797906338673240518::1711685871::1711685871::1::::<><>::
+_srw_free_chests.png::CompressedTexture2D::7649934275713612368::1711685871::1711685871::1::::<><>::
+_srw_free_monsters_0.png::CompressedTexture2D::4834985798673656081::1711685871::1711685871::1::::<><>::
+_srw_free_switches.png::CompressedTexture2D::8246502483116562459::1711685871::1711685871::1::::<><>::
+_srw_free_torches.png::CompressedTexture2D::5454100116412088369::1711685871::1711685871::1::::<><>::
+_srw_kart.png::CompressedTexture2D::313026899256577451::1711685871::1711685871::1::::<><>::
+_srw_monsters_1.png::CompressedTexture2D::5650590226463210600::1711685871::1711685871::1::::<><>::
+_srw_monsters_2.png::CompressedTexture2D::2140220195910375763::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/rpgmaker/VXace/tilesets/::1711685871
+_srw_dungeon_A1.png::CompressedTexture2D::8459337352661689258::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A2.png::CompressedTexture2D::2976150408959400497::1711685871::1711685871::1::::<><>::
+_srw_dungeon_A4.png::CompressedTexture2D::1592933571537977820::1711685871::1711685871::1::::<><>::
+_srw_tileset_0.png::CompressedTexture2D::728691643743783596::1711685871::1711685871::1::::<><>::
+_srw_tileset_1.png::CompressedTexture2D::860671367100031292::1711685871::1711685871::1::::<><>::
+_srw_tileset_2.png::CompressedTexture2D::5835332166907416575::1711685871::1711685871::1::::<><>::
+_srw_tileset_3.png::CompressedTexture2D::2140813601978456019::1711685871::1711685871::1::::<><>::
+::res://Images/dungeon-pack-full_version/sprite/::1711685871
+character_1.png::CompressedTexture2D::2043479128935463947::1711685871::1711685871::1::::<><>::
+character_2.png::CompressedTexture2D::411087580235869833::1711685871::1711685871::1::::<><>::
+cristals.png::CompressedTexture2D::5180806894319334327::1711685871::1711685871::1::::<><>::
+free_campfire.png::CompressedTexture2D::5576117261375883257::1711685871::1711685871::1::::<><>::
+free_character_0.png::CompressedTexture2D::7534513893339797674::1711685871::1711685871::1::::<><>::
+free_chests.png::CompressedTexture2D::1978167676120929309::1711685871::1711685871::1::::<><>::
+free_coin.png::CompressedTexture2D::9029139711861558602::1711685871::1711685871::1::::<><>::
+free_doors2.png::CompressedTexture2D::4409468927407846202::1711685871::1711685871::1::::<><>::
+free_fire.png::CompressedTexture2D::2102253525059079490::1711685871::1711685871::1::::<><>::
+free_icons1.png::CompressedTexture2D::8323135889563967211::1711685871::1711685871::1::::<><>::
+free_icons2.png::CompressedTexture2D::6016813034915002991::1711685871::1711685871::1::::<><>::
+free_monsters_0.png::CompressedTexture2D::7674391419174766258::1711685871::1711685871::1::::<><>::
+free_switches.png::CompressedTexture2D::2267031181887200202::1711685871::1711685871::1::::<><>::
+free_torches.png::CompressedTexture2D::2918245074221803973::1711685871::1711685871::1::::<><>::
+free_traps1.png::CompressedTexture2D::37422646149946621::1711685871::1711685871::1::::<><>::
+kart.png::CompressedTexture2D::6049176622960156446::1711685871::1711685871::1::::<><>::
+lavafall_effects.png::CompressedTexture2D::8789441703638295866::1711685871::1711685871::1::::<><>::
+monsters_1.png::CompressedTexture2D::7240454293741392590::1711685871::1711685871::1::::<><>::
+monsters_2.png::CompressedTexture2D::4669765951498723423::1711685871::1711685871::1::::<><>::
+poisoned1_waterfall_effects.png::CompressedTexture2D::8546371866423834357::1711685871::1711685871::1::::<><>::
+poisoned2_waterfall_effects.png::CompressedTexture2D::2845239428329070010::1711685871::1711685871::1::::<><>::
+waterfall_effects.png::CompressedTexture2D::1234260344314898212::1711685871::1711685871::1::::<><>::
+::res://Images/TILESET VILLAGE TOP DOWN/::1711685871
+(THANK YOU).png::CompressedTexture2D::481929630878626378::1711685871::1711685871::1::::<><>::
+BRIDGE - DAY.png::CompressedTexture2D::6693136275848318075::1711685871::1711685871::1::::<><>::
+BRIDGE - NIGHT.png::CompressedTexture2D::8911386260104586292::1711685871::1711685871::1::::<><>::
+CHURCH - DAY.png::CompressedTexture2D::2824155765910731685::1711685871::1711685871::1::::<><>::
+CHURCH - NIGHT.png::CompressedTexture2D::893973799351653267::1711685871::1711685871::1::::<><>::
+FENCE 1 - DAY.png::CompressedTexture2D::7637849870134272262::1711685871::1711685871::1::::<><>::
+FENCE 1 - NIGHT.png::CompressedTexture2D::2563948442576078287::1711685871::1711685871::1::::<><>::
+FENCE 2 - DAY.png::CompressedTexture2D::853734232988253364::1711685871::1711685871::1::::<><>::
+FENCE 2 - NIGHT.png::CompressedTexture2D::8981280697015659298::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 1 - DAY.png::CompressedTexture2D::3533500962498123641::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 1 - NIGHT.png::CompressedTexture2D::7273073411135581339::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 2 - DAY.png::CompressedTexture2D::1397129175135884818::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 2 - NIGHT.png::CompressedTexture2D::1414529893978221534::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 3 - DAY.png::CompressedTexture2D::5932929437522495953::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 3 - NIGHT.png::CompressedTexture2D::5987760167151185288::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 4 - DAY.png::CompressedTexture2D::7577616739409072891::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 4 - NIGHT.png::CompressedTexture2D::4514900774347211230::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 5 - DAY.png::CompressedTexture2D::2788158365627554695::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 5 - NIGHT.png::CompressedTexture2D::6279066767233681525::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 6 - DAY.png::CompressedTexture2D::7456372359354571570::1711685871::1711685871::1::::<><>::
+GRASS DETAIL 6 - NIGHT.png::CompressedTexture2D::7808820923566508240::1711685871::1711685871::1::::<><>::
+GRASS TILE - DAY.png::CompressedTexture2D::5572198555371368439::1711685871::1711685871::1::::<><>::
+GRASS TILE - NIGHT.png::CompressedTexture2D::4606845499533698945::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 1 - DAY.png::CompressedTexture2D::1610282185019602890::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 1 - NIGHT.png::CompressedTexture2D::7157313349838311437::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 2 - DAY.png::CompressedTexture2D::5425678199916784708::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 2 - NIGHT.png::CompressedTexture2D::4294243461156418605::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 3 - DAY.png::CompressedTexture2D::2286658168921600767::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 3 - NIGHT.png::CompressedTexture2D::7664099330717507362::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 4 - DAY.png::CompressedTexture2D::2398340443097936131::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 4 - NIGHT.png::CompressedTexture2D::1138693146253166439::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 5 - DAY.png::CompressedTexture2D::2601920027623373752::1711685871::1711685871::1::::<><>::
+GROUND DETAIL 5 - NIGHT.png::CompressedTexture2D::3695114131855157892::1711685871::1711685871::1::::<><>::
+GROUND TILE - DAY.png::CompressedTexture2D::660722693911524871::1711685871::1711685871::1::::<><>::
+GROUND TILE - NIGHT.png::CompressedTexture2D::1465065629338359246::1711685871::1711685871::1::::<><>::
+HOUSE 1 - DAY.png::CompressedTexture2D::4450981032103295040::1711685871::1711685871::1::::<><>::
+HOUSE 1 - NIGHT.png::CompressedTexture2D::535763190726282252::1711685871::1711685871::1::::<><>::
+HOUSE 2 - DAY.png::CompressedTexture2D::1347213859174228856::1711685871::1711685871::1::::<><>::
+HOUSE 2 - NIGHT.png::CompressedTexture2D::735676709896878509::1711685871::1711685871::1::::<><>::
+PIT - DAY.png::CompressedTexture2D::8692601297463428495::1711685871::1711685871::1::::<><>::
+PIT - NIGHT.png::CompressedTexture2D::992010217711991088::1711685871::1711685871::1::::<><>::
+STAIRS - DAY.png::CompressedTexture2D::1516026544367633027::1711685871::1711685871::1::::<><>::
+STAIRS - NIGHT.png::CompressedTexture2D::2403129796159926415::1711685871::1711685871::1::::<><>::
+TERRAIN SET 1 - DAY.png::CompressedTexture2D::3645228110050015933::1711685871::1711685871::1::::<><>::
+TERRAIN SET 1 - NIGHT.png::CompressedTexture2D::8743532184956663738::1711685871::1711685871::1::::<><>::
+TERRAIN SET 2 - DAY.png::CompressedTexture2D::175729619584990060::1711685871::1711685871::1::::<><>::
+TERRAIN SET 2 - NIGHT.png::CompressedTexture2D::2725037148242894157::1711685871::1711685871::1::::<><>::
+TERRAIN SET 3 - DAY.png::CompressedTexture2D::8745054245819309392::1711685871::1711685871::1::::<><>::
+TERRAIN SET 3 - NIGHT.png::CompressedTexture2D::2990138129768773477::1711685871::1711685871::1::::<><>::
+TERRAIN SET 3 CURVES - DAY.png::CompressedTexture2D::3295283114913187171::1711685871::1711685871::1::::<><>::
+TERRAIN SET 3 CURVES - NIGHT.png::CompressedTexture2D::5453963493007741231::1711685871::1711685871::1::::<><>::
+TERRAIN SET 4 - DAY.png::CompressedTexture2D::54644820881109137::1711685871::1711685871::1::::<><>::
+TERRAIN SET 4 - NIGHT.png::CompressedTexture2D::9073631384594308564::1711685871::1711685871::1::::<><>::
+TERRAIN SET 4 CURVES - DAY.png::CompressedTexture2D::7900406451871201112::1711685871::1711685871::1::::<><>::
+TERRAIN SET 4 CURVES - NIGHT.png::CompressedTexture2D::5074493491538182720::1711685871::1711685871::1::::<><>::
+TERRAIN SET 5 - DAY.png::CompressedTexture2D::2915350319966562922::1711685871::1711685871::1::::<><>::
+TERRAIN SET 5 - NIGHT.png::CompressedTexture2D::9020793754270110250::1711685871::1711685871::1::::<><>::
+TREE 1 - DAY.png::CompressedTexture2D::2175158330480137233::1711685871::1711685871::1::::<><>::
+TREE 1 - NIGHT.png::CompressedTexture2D::8668756242357705969::1711685871::1711685871::1::::<><>::
+TREE 2 - DAY.png::CompressedTexture2D::1832481591983997956::1711685871::1711685871::1::::<><>::
+TREE 2 - NIGHT.png::CompressedTexture2D::4441772716541373747::1711685871::1711685871::1::::<><>::
+TREE 3 - DAY.png::CompressedTexture2D::5953350106953001741::1711685871::1711685871::1::::<><>::
+TREE 3 - NIGHT.png::CompressedTexture2D::1448996132079204425::1711685871::1711685871::1::::<><>::
+WATER DETAIL 1 - DAY.png::CompressedTexture2D::7487124008607859894::1711685871::1711685871::1::::<><>::
+WATER DETAIL 1 - NIGHT.png::CompressedTexture2D::8205100625898050268::1711685871::1711685871::1::::<><>::
+WATER DETAIL 2 - DAY.png::CompressedTexture2D::7423452681231294813::1711685871::1711685871::1::::<><>::
+WATER DETAIL 2 - NIGHT.png::CompressedTexture2D::398438550441413470::1711685871::1711685871::1::::<><>::
+WATER DETAIL 3 - DAY.png::CompressedTexture2D::977686007040991980::1711685871::1711685871::1::::<><>::
+WATER DETAIL 3 - NIGHT.png::CompressedTexture2D::5061813417561722375::1711685871::1711685871::1::::<><>::
+WATER DETAIL 4 - DAY.png::CompressedTexture2D::3572943018301583061::1711685871::1711685871::1::::<><>::
+WATER DETAIL 4 - NIGHT.png::CompressedTexture2D::6666007749480856586::1711685871::1711685871::1::::<><>::
+WATER DETAIL 5 - DAY.png::CompressedTexture2D::2970688236681565411::1711685871::1711685871::1::::<><>::
+WATER DETAIL 5 - NIGHT.png::CompressedTexture2D::4074507456728472002::1711685871::1711685871::1::::<><>::
+WATER TILE - DAY.png::CompressedTexture2D::942769915165572482::1711685871::1711685871::1::::<><>::
+WATER TILE - NIGHT.png::CompressedTexture2D::590272967542216611::1711685871::1711685871::1::::<><>::
+::res://Scenes/::1711730477
+Enemy_Attackbox.tscn::PackedScene::5901208274749509787::1711730299::0::1::::<><>::uid://toeor7p1wsw8::::res://Images/White_Square.png
+Game.tscn::PackedScene::2002682869684477134::1711730299::0::1::::<><>::res://Scripts/Game.gd<>uid://b8jgkpke1qbqv::::res://Scenes/Landscape/Dungeon.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://caqs5eoyufh4q::::res://Scenes/enemies/enemy_boss.tscn
+MainTesting.tscn::PackedScene::3688306941168941737::1711685871::0::1::::<><>::res://Scripts/MainTesting.gd<>uid://dl6wo6f7dwbit::::res://Images/test.jpg<>uid://cekbeijp5t485::::res://Scenes/enemies/enemy_melee.tscn<>uid://db8wbmnwmxtm8::::res://Scenes/Player.tscn<>uid://f84twyg3pf4k::::res://Scenes/enemies/enemy_shooting.tscn
+Player.tscn::PackedScene::7298913571615276157::1711730477::0::1::::<><>::res://Scripts/Player.gd<>uid://dfl1lwr7bdxok::::res://Images/dungeon-pack-full_version/sprite/free_character_0.png<>uid://ddm286nc8ogo::::res://Images/overheat.png<>uid://8fjb1k1ned34::::res://Scenes/interfaces/Interface.tscn<>uid://nen4s5ex3yeu::::res://Images/overfreeze.png
+Player_Attackbox.tscn::PackedScene::8926965268458008429::1711730299::0::1::::<><>::
+Scene1.tscn::PackedScene::3613887776983679454::1711730298::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png
+slash.tscn::PackedScene::8618692205065793029::1711730298::0::1::::<><>::res://Scripts/Weapon.gd<>uid://dn3ng8avmiiwu::::res://Images/slash.png
+::res://Scenes/bullets/::1711730299
+bullet.tscn::PackedScene::2175616677712949428::1711730299::0::1::::<><>::uid://dbm2k3wypad03::::res://Images/bullet_plasma_green.png<>res://Scripts/bullet.gd
+fan_projectile.tscn::PackedScene::2455081124763473722::1711730299::0::1::::<><>::res://Scripts/FanProjectile.gd<>uid://cwmt1t285un1r::::res://Images/fan_shaped_projectile_thin.png
+swirling_projectile.tscn::PackedScene::8431318897583004145::1711730299::0::1::::<><>::res://Scripts/swirling_projectile.gd<>uid://dcwfba1trarp1::::res://Images/fan_shaped_swirling_projectile.png
+tracking_bullet.tscn::PackedScene::7332000844296329301::1711730299::0::1::::<><>::res://Scripts/tracking_bullet.gd<>uid://dopjsqtcutd4j::::res://Images/tracking_bullet_red.png
+::res://Scenes/enemies/::1711730299
+enemy_boss.tscn::PackedScene::4807018123976146670::1711730299::0::1::::<><>::res://Scripts/Boss.gd<>uid://4d42j6huu65t::::res://Images/dungeon-pack-full_version/sprite/character_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
+enemy_melee.tscn::PackedScene::5074308814459759244::1711730299::0::1::::<><>::res://Scripts/enemy_melee.gd<>uid://b7scmlt1khujf::::res://Images/dungeon-pack-full_version/sprite/monsters_2.png<>uid://nfjs2nfkfwrf::::res://Images/Sword_16.png
+enemy_shooting.tscn::PackedScene::420864599848190448::1711730299::0::1::::<><>::res://Scripts/enemy_shooting.gd<>uid://3kgmsmdrq0qi::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png<>uid://bx1qu7c56boqq::::res://Scenes/interfaces/enemy_interface.tscn
+::res://Scenes/interfaces/::1711730299
+enemy_interface.tscn::PackedScene::4055446781977120032::1711730299::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
+HUD.tscn::PackedScene::7587991665159732108::1711730299::0::1::::<><>::res://Scripts/HUD.gd<>res://Scripts/StartButton.gd<>res://Scripts/ExitButton.gd<>uid://cf21hpjswxomx::::res://Images/Alex Logo.png
+Interface.tscn::PackedScene::2327103349808173585::1711730299::0::1::::<><>::res://Scripts/Interface.gd<>uid://b12mdtp5sagqs::::res://Images/HeartsEmpty.png<>uid://c5xf7kfew47qs::::res://Images/HeartsFull.png
+::res://Scenes/Landscape/::1711730299
+DeathScene.tscn::PackedScene::4991366767970770331::1711730299::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/DeathScene.gd
+Dungeon.tscn::PackedScene::4721614886945768793::1711730299::0::1::::<><>::uid://khuyq0lpg5a8::::res://Images/max__15_-removebg-preview.png<>uid://dhjefq66xp3g6::::res://Images/max-removebg-preview.png<>uid://b54q6j8f6oh0y::::res://Images/torch.png<>uid://c6nu4ayk6pwys::::res://Images/room-removebg-preview.png<>uid://duwmkt7ijue65::::res://Images/door.png
+StartingScene.tscn::PackedScene::7643595593479964908::1711730299::0::1::::<><>::uid://biqiy2d8suii8::::res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png<>uid://ber6wpmm3ym4::::res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png<>uid://b6vucpua2t2cj::::res://Images/TILESET VILLAGE TOP DOWN/GRASS TILE - NIGHT.png<>uid://b2gftee5viavt::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 2 - NIGHT.png<>uid://c88b51nakf4ej::::res://Images/TILESET VILLAGE TOP DOWN/GROUND DETAIL 1 - NIGHT.png<>uid://u4xof5rvipr7::::res://Images/TILESET VILLAGE TOP DOWN/GROUND TILE - NIGHT.png<>uid://ufhdonps62q1::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 2 - NIGHT.png<>uid://b5lb0ycqa3k7w::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 4 - NIGHT.png<>uid://cvpvku8t6m8d2::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 5 - NIGHT.png<>uid://c2mg8g6wb3iv8::::res://Images/TILESET VILLAGE TOP DOWN/BRIDGE - DAY.png<>uid://dpgv5q8f17q0x::::res://Images/dungeon-pack-full_version/godot_autotiles/anim_autotile_1.png<>uid://dyux8tx1lsrsh::::res://Images/dungeon-pack-full_version/godot_autotiles/ground_autotile_0.png<>uid://tguoeick5g13::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 2 - DAY.png<>uid://b4odaipaj6e8g::::res://Images/TILESET VILLAGE TOP DOWN/HOUSE 1 - DAY.png<>uid://creig1s8qty7::::res://Images/TILESET VILLAGE TOP DOWN/TERRAIN SET 2 - DAY.png<>uid://bgiboym0lwoor::::res://Images/TILESET VILLAGE TOP DOWN/CHURCH - DAY.png<>uid://bqlwik02v8o3r::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 1 - DAY.png<>uid://crkrsgu031cnw::::res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png<>res://Scripts/StartingScene.gd<>uid://dgdxd452t7r61::::res://Scenes/interfaces/HUD.tscn
+::res://Scenes/ParticleEffects/::1711685871
+Blood.tscn::PackedScene::8360622603557893904::1711685871::0::1::::<><>::
+::res://Scripts/::1711729895
+Boss.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+bullet.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+DeathScene.gd::GDScript::-1::1711729895::0::1::::<>TileMap<>::
+enemy_melee.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+enemy_shooting.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+ExitButton.gd::GDScript::-1::1711729895::0::1::::<>Button<>::
+FanProjectile.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+Game.gd::GDScript::-1::1711729895::0::1::::<>Node2D<>::
+HUD.gd::GDScript::-1::1711729895::0::1::::<>CanvasLayer<>::
+Interface.gd::GDScript::-1::1711729895::0::1::::<>Control<>::
+Player.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+StartButton.gd::GDScript::-1::1711729895::0::1::::<>Button<>::
+StartingScene.gd::GDScript::-1::1711729895::0::1::::<>TileMap<>::
+swirling_projectile.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+tracking_bullet.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+Weapon.gd::GDScript::-1::1711729895::0::1::::<>CharacterBody2D<>::
+::res://Sprites/::1711685871

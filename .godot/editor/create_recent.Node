@@ -1,12 +1,11 @@
+Sprite2D
+AnimationPlayer
 ProgressBar
 CollisionShape2D
 Timer
 CPUParticles2D
 SpinBox
-AnimationPlayer
-Sprite2D
 Area2D
-AnimationPlayer
 ColorRect
 Label
 CollisionPolygon2D

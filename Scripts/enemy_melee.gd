@@ -50,149 +50,149 @@ const HURTBOX_OFFSET = 100
 
 # Physics process method ran every frame
 func _physics_process(_delta):
-    if player:
-        attack()
+	if player:
+		attack()
 
-        if can_move:
-            move_and_animate()
+		if can_move:
+			move_and_animate()
 
 
 # Method to make the enemy take damage, and destroy node if health
 func take_damage(damage_amount):
-    # Spawn blood particles on enemy
-    var particle_instance = blood_particles.instantiate()
-    get_parent().add_child(particle_instance)
-    particle_instance.position = get_global_position()
-    particle_instance.restart()
+	# Spawn blood particles on enemy
+	var particle_instance = blood_particles.instantiate()
+	get_parent().add_child(particle_instance)
+	particle_instance.position = get_global_position()
+	particle_instance.restart()
 
-    # Subtract damage from health
-    health -= damage_amount
+	# Subtract damage from health
+	health -= damage_amount
 
-    # Call die method on health below 0
-    if health <= 0:
-        die()
+	# Call die method on health below 0
+	if health <= 0:
+		die()
 
 
 func attack():
-    # Check if enemy can attack and is alive
-    if can_attack and health > 0 and position.distance_to(player.global_position) <= attack_range:
-        # Disable attacking and movement
-        can_attack = false
-        can_move = false
+	# Check if enemy can attack and is alive
+	if can_attack and health > 0 and position.distance_to(player.global_position) <= attack_range:
+		# Disable attacking and movement
+		can_attack = false
+		can_move = false
 
-        # Create timer to handle attack cooldown
-        get_tree().create_timer(attack_cooldown).timeout.connect(func(): can_attack = true)
+		# Create timer to handle attack cooldown
+		get_tree().create_timer(attack_cooldown).timeout.connect(func(): can_attack = true)
 
-        # Stop animations
-        animation_player.stop()
+		# Stop animations
+		animation_player.stop()
 
-        # Show and position sword
-        sword_sprite.visible = true
-        if facing == "down":
-            sword_sprite.rotation_degrees = 45
-        elif facing == "up":
-            sword_sprite.rotation_degrees = 225
-        elif facing == "left":
-            sword_sprite.rotation_degrees = 135
-        elif facing == "right":
-            sword_sprite.rotation_degrees = 315
+		# Show and position sword
+		sword_sprite.visible = true
+		if facing == "down":
+			sword_sprite.rotation_degrees = 45
+		elif facing == "up":
+			sword_sprite.rotation_degrees = 225
+		elif facing == "left":
+			sword_sprite.rotation_degrees = 135
+		elif facing == "right":
+			sword_sprite.rotation_degrees = 315
 
-        # Create timer to launch attack
-        get_tree().create_timer(0.5).timeout.connect(func(): 
-            # Spawn in hurtbox and position
-            var hurtbox = hurtbox_scene.instantiate()
-            add_child(hurtbox)
+		# Create timer to launch attack
+		get_tree().create_timer(0.5).timeout.connect(func(): 
+			# Spawn in hurtbox and position
+			var hurtbox = hurtbox_scene.instantiate()
+			add_child(hurtbox)
 
-            # Spin sword sprite and position hurtbox
-            var tween = create_tween()
-            if facing == "down":
-                sword_sprite.rotation_degrees = 45
-                tween.tween_property(sword_sprite, "rotation", deg_to_rad(225), .5)
-                hurtbox.position = Vector2(0, HURTBOX_OFFSET)
-            elif facing == "up":
-                sword_sprite.rotation_degrees = 225
-                tween.tween_property(sword_sprite, "rotation", deg_to_rad(405), .5)
-                hurtbox.position = Vector2(0, -HURTBOX_OFFSET)
-            elif facing == "left":
-                sword_sprite.rotation_degrees = 135
-                tween.tween_property(sword_sprite, "rotation", deg_to_rad(315), .5)
-                hurtbox.position = Vector2(-HURTBOX_OFFSET, 0)
-            elif facing == "right":
-                sword_sprite.rotation_degrees = 315
-                tween.tween_property(sword_sprite, "rotation", deg_to_rad(495), .5)
-                hurtbox.position = Vector2(HURTBOX_OFFSET, 0)
+			# Spin sword sprite and position hurtbox
+			var tween = create_tween()
+			if facing == "down":
+				sword_sprite.rotation_degrees = 45
+				tween.tween_property(sword_sprite, "rotation", deg_to_rad(225), .5)
+				hurtbox.position = Vector2(0, HURTBOX_OFFSET)
+			elif facing == "up":
+				sword_sprite.rotation_degrees = 225
+				tween.tween_property(sword_sprite, "rotation", deg_to_rad(405), .5)
+				hurtbox.position = Vector2(0, -HURTBOX_OFFSET)
+			elif facing == "left":
+				sword_sprite.rotation_degrees = 135
+				tween.tween_property(sword_sprite, "rotation", deg_to_rad(315), .5)
+				hurtbox.position = Vector2(-HURTBOX_OFFSET, 0)
+			elif facing == "right":
+				sword_sprite.rotation_degrees = 315
+				tween.tween_property(sword_sprite, "rotation", deg_to_rad(495), .5)
+				hurtbox.position = Vector2(HURTBOX_OFFSET, 0)
 
-            # Deal damage and destroy hitbox
-            get_tree().create_timer(0.05).timeout.connect(func(): 
-                # Get colliding objects and deal damage
-                for node in hurtbox.get_overlapping_bodies():
-                    if node.is_in_group("Player"):
-                        print("HIT")
-                        node.take_damage(0.2)
+			# Deal damage and destroy hitbox
+			get_tree().create_timer(0.05).timeout.connect(func(): 
+				# Get colliding objects and deal damage
+				for node in hurtbox.get_overlapping_bodies():
+					if node.is_in_group("Player"):
+						print("HIT")
+						node.take_damage(0.2)
 
-                hurtbox.queue_free()
-            )
-        
-            # Timer to enable movement and hide sword
-            get_tree().create_timer(.5).timeout.connect(func(): 
-                can_move = true
-                sword_sprite.visible = false
-            )
-        )
+				hurtbox.queue_free()
+			)
+		
+			# Timer to enable movement and hide sword
+			get_tree().create_timer(.5).timeout.connect(func(): 
+				can_move = true
+				sword_sprite.visible = false
+			)
+		)
 
 
 # Method to kill the enemy
 func die():
-    queue_free()
+	queue_free()
 
 
 # Method to move the enemy
 func move_and_animate():
-    if player:
-        # Get the distance to the player and check if they are within the alert range
-        var distance_to_player = global_position.distance_to(player.global_position)
-        if distance_to_player <= alert_range and distance_to_player > stop_distance:
-            # Get the direction to the player
-            var direction = position.direction_to(player.global_position)
+	if player:
+		# Get the distance to the player and check if they are within the alert range
+		var distance_to_player = global_position.distance_to(player.global_position)
+		if distance_to_player <= alert_range and distance_to_player > stop_distance:
+			# Get the direction to the player
+			var direction = position.direction_to(player.global_position)
 
-            # Play correct animation
-            if (direction.x > 0 and abs(direction.x) > abs(direction.y)):
-                animation_player.play("walk_right")
-                facing = "right"
-            elif (direction.x < 0 and abs(direction.x) > abs(direction.y)):
-                animation_player.play("walk_left")
-                facing = "left"
-            elif direction.y > 0:
-                animation_player.play("walk_down")
-                facing = "down"
-            elif direction.y < 0:
-                animation_player.play("walk_up")
-                facing = "up"
+			# Play correct animation
+			if (direction.x > 0 and abs(direction.x) > abs(direction.y)):
+				animation_player.play("walk_right")
+				facing = "right"
+			elif (direction.x < 0 and abs(direction.x) > abs(direction.y)):
+				animation_player.play("walk_left")
+				facing = "left"
+			elif direction.y > 0:
+				animation_player.play("walk_down")
+				facing = "down"
+			elif direction.y < 0:
+				animation_player.play("walk_up")
+				facing = "up"
 
-            # Set the velocity to the direction * the move speed
-            velocity = direction * move_speed
-            move_and_slide()
-        else:
-            # Play correct animation
-            if facing == "down":
-                animation_player.play("idle_down")
-            elif facing == "up":
-                animation_player.play("idle_up")
-            elif facing == "left":
-                animation_player.play("idle_left")
-            elif facing == "right":
-                animation_player.play("idle_right")
-    else:
-        # Play correct animation
-        if facing == "down":
-            animation_player.play("idle_down")
-        elif facing == "up":
-            animation_player.play("idle_up")
-        elif facing == "left":
-            animation_player.play("idle_left")
-        elif facing == "right":
-            animation_player.play("idle_right")
+			# Set the velocity to the direction * the move speed
+			velocity = direction * move_speed
+			move_and_slide()
+		else:
+			# Play correct animation
+			if facing == "down":
+				animation_player.play("idle_down")
+			elif facing == "up":
+				animation_player.play("idle_up")
+			elif facing == "left":
+				animation_player.play("idle_left")
+			elif facing == "right":
+				animation_player.play("idle_right")
+	else:
+		# Play correct animation
+		if facing == "down":
+			animation_player.play("idle_down")
+		elif facing == "up":
+			animation_player.play("idle_up")
+		elif facing == "left":
+			animation_player.play("idle_left")
+		elif facing == "right":
+			animation_player.play("idle_right")
 
-        # Set velocity to 0
-        velocity = Vector2.ZERO
-        move_and_slide()
+		# Set velocity to 0
+		velocity = Vector2.ZERO
+		move_and_slide()
