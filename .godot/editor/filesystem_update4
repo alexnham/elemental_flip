@@ -26,3 +26,8 @@ res://Scenes/swirling_projectile.tscn
 res://Scenes/tracking_bullet.tscn
 res://Scenes/enemy_shooting.gd
 res://Scripts/Game.gd
+res://Scripts/enemy_melee.gd
+res://Scripts/enemy_shooting.gd
+res://Scripts/Player.gd
+res://Scripts/bullet.gd
+res://Scripts/HUD.gd

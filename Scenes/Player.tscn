@@ -716,3 +716,10 @@ texture = ExtResource("6_bqcvu")
 hframes = 12
 vframes = 8
 frame = 1
+
+[node name="Kill_Count" type="TextEdit" parent="."]
+offset_left = 373.0
+offset_top = 252.0
+offset_right = 571.0
+offset_bottom = 316.0
+text = "Kills"

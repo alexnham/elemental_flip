@@ -18,6 +18,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if($Player.kills >= 10):
+		get_tree().change_scene_to_file("res://Scenes/BossFight.tscn")
 	if $Player.global_position.x < 0:
 		if(is_instance_valid(boss)):
 			$Boss.state = "FIRE"
@@ -94,9 +96,7 @@ func _process(delta):
 			timer = null
 	else:
 		progress.visible = false
-		
-	if(Input.is_action_just_pressed("Enter") and not is_instance_valid(boss)):
-		get_tree().change_scene_to_file("res://Scenes/Landscape/Win.tscn")
+
 
 func swap():
 	if($Player.global_position.x > 0):

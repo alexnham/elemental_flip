@@ -1,6 +1,4 @@
 extends CharacterBody2D
-
-var _mainChar
 #var bullet
 var _bulletScene
 var _projectileScene
@@ -17,14 +15,13 @@ signal shot
 var ui: Control
 
 var blood_particles = preload("res://Scenes/ParticleEffects/Blood.tscn")
-
+@onready var _mainChar = get_tree().get_first_node_in_group("Player")
 func _ready():
-	_mainChar = get_node("../Player")
 	#_bullet = get_node("Bullet")
 	_bulletScene = preload("res://Scenes/bullets/bullet.tscn")
 	reloadTime = get_node("ReloadTime")
 	
-	reloadTime.wait_time = 1
+	reloadTime.wait_time = 5
 	reloadTime.start()
 	#shot = false
 	#reloadTime.stop()
@@ -122,6 +119,7 @@ func _on_shot():
 	#if health <= 0:
 		#die(1)
 func die():
+	_mainChar.kills += 1
 	queue_free()
 
 

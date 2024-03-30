@@ -13,7 +13,7 @@ extends CharacterBody2D
 @export var dash_cooldown = 2.0;
 
 
-
+var kills = 0
 # Access the animation player
 @onready var animation_player_fire = get_node("AnimationPlayer");
 @onready var animation_player_ice = get_node("ice")
@@ -47,6 +47,9 @@ const DASH_TIME = 0.15
 # Hurtbox offset from player
 const HURTBOX_OFFSET = 75
 
+func _process(delta):
+	$Kill_Count.set_text("Kills: " + str(kills))
+	
 
 
 # Physics process ran each frame

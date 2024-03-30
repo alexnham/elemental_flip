@@ -192,3 +192,4 @@ offset = Vector2(15, -15)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_my58v")
+volume_db = -20.0

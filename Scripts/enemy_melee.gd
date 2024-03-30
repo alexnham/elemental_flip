@@ -71,6 +71,7 @@ func take_damage(damage_amount):
 
 	# Call die method on health below 0
 	if health <= 0:
+		player.kills += 1
 		die()
 
 

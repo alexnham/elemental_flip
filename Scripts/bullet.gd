@@ -8,7 +8,7 @@ var bulletTracking = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	main_char = get_node("../../Player")
+	main_char =  get_tree().get_first_node_in_group("Player")
 	
 	$BulletDisappearTime.wait_time = 10
 	$BulletDisappearTime.one_shot = true
