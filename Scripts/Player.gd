@@ -223,11 +223,14 @@ func player_dash():
 		get_tree().create_timer(DASH_TIME).timeout.connect(func(): 
 			is_dashing = false
 			set_collision_mask_value(2, true)
+			set_collision_mask_value(3, true)
+			set_collision_mask_value(3, true)
 			set_collision_layer_value(1, true)
 		)
 
 		# Disable collisions with enemy
-		set_collision_layer_value(1, false)
+		set_collision_mask_value(3, false)
+		set_collision_mask_value(4, false)
 
 		# Get particle emitter
 		var dash_particles = get_node("DashParticles")
