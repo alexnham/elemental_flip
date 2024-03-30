@@ -49,8 +49,9 @@ func _on_visible_on_screen_notifier_2d_screen_entered():
 
 
 func _on_area_2d_body_entered(body):
-	queue_free()
+
 	if body.is_in_group("Player"):
+		queue_free()
 		print("ouch")
 		main_char.take_damage(0.5)
 	#pass # Replace with function body.

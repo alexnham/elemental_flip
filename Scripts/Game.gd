@@ -16,7 +16,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 
-	if $Player.global_position.x > 0:
+	if $Player.global_position.x < 0:
 		if($Boss != null):
 			$Boss.state = "FIRE"
 			$Boss/fire_sprite.visible = true
@@ -31,11 +31,11 @@ func _process(delta):
 			$Player/Interface/TextureProgressBar.set_value(1000)
 			if($Player.movement_speed < 500):
 				$Player.set_speed(500)
-	elif $Player.global_position.x < 0:
+	elif $Player.global_position.x > 0:
 		if($Boss != null):
 			$Boss.state = "ICE"
 			$Boss/fire_sprite.visible = false
-		$Boss/ice_sprite.visible = true
+			$Boss/ice_sprite.visible = true
 		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() - 2)
 		$Player.state = "ICE"
 		
@@ -91,12 +91,12 @@ func _process(delta):
 
 func swap():
 	if($Player.global_position.x > 0):
-		$Player.global_position = Vector2($Player.global_position.x - 8400, $Player.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x - 8050, $Player.global_position.y)
 		if($Boss != null):
-			$Boss.global_position = Vector2($Boss.global_position.x - 8400, $Boss.global_position.y)
+			$Boss.global_position = Vector2($Boss.global_position.x - 8050, $Boss.global_position.y)
 	else:
-		$Player.global_position = Vector2($Player.global_position.x + 8400, $Player.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x + 8050, $Player.global_position.y)
 		if($Boss != null):
-			$Boss.global_position = Vector2($Boss.global_position.x + 8400, $Boss.global_position.y)
+			$Boss.global_position = Vector2($Boss.global_position.x + 8050, $Boss.global_position.y)
 	
 	

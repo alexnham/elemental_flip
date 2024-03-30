@@ -19,7 +19,6 @@ func _ready():
 	_mainChar = get_node("../Player")
 	#_bullet = get_node("Bullet")
 	_bulletScene = preload("res://Scenes/bullets/bullet.tscn")
-	_projectileScene = preload("res://Scenes/bullets/fan_projectile.tscn")
 	reloadTime = get_node("ReloadTime")
 	
 	reloadTime.wait_time = 1
@@ -87,6 +86,7 @@ func _on_reload_time_timeout():
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Slash"):
 		die_event.emit(1)
+
 	
 func _on_shot():
 	#if _bullet.global_position != global_position:
@@ -94,17 +94,8 @@ func _on_shot():
 	#shot = true
 	#add_child(_bullet)
 	#print("Added bullet to enemy shooting")
-	#pass # Replace with function body.
-	var randomNumber = randi_range(0, 1)
-	
 	var bullet
-	if randomNumber == 0:
-		bulletTracking = false
-		bullet = _projectileScene.instantiate()
-		
-	else:
-		bulletTracking = true
-		bullet = _bulletScene.instantiate()
+	bullet = _bulletScene.instantiate()
 	
 	add_child(bullet)
 	bullet.scale = Vector2(0.3,0.3)

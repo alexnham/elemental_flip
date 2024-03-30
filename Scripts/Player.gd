@@ -12,8 +12,7 @@ extends CharacterBody2D
 # The time between dashes
 @export var dash_cooldown = 2.0;
 
-# Get access to the players sprite
-@onready var player_sprite = get_node("Sprite2D")
+
 
 # Access the animation player
 @onready var animation_player_fire = get_node("AnimationPlayer");
@@ -210,7 +209,6 @@ func player_dash():
 		)
 
 		# Disable collisions with enemy
-		set_collision_mask_value(2, false)
 		set_collision_layer_value(1, false)
 
 		# Get particle emitter
