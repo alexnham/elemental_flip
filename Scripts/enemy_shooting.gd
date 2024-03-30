@@ -16,6 +16,7 @@ var ui: Control
 
 var blood_particles = preload("res://Scenes/ParticleEffects/Blood.tscn")
 @onready var _mainChar = get_tree().get_first_node_in_group("Player")
+
 func _ready():
 	#_bullet = get_node("Bullet")
 	_bulletScene = preload("res://Scenes/bullets/bullet.tscn")
@@ -38,13 +39,12 @@ func _ready():
 
 var speed = 1
 func _physics_process(delta):
-	var distance_to_player = global_position.distance_to(_mainChar.global_position)
-	if distance_to_player <= 200:
-		speed = 0
-	else:
-		speed = 1        
+	var distance_to_player = global_position.distance_to(_mainChar.global_position)      
+
 	# Shooting enemy move towards current position of main character
-	global_position = global_position.move_toward(_mainChar.global_position, speed)
+	if distance_to_player < 750:
+		global_position = global_position.move_toward(_mainChar.global_position, speed)
+		
 	#var direction = global_position.direction_to(_mainChar.global_position)
 	#velocity = direction * move_speed
 	#move_and_slide()
@@ -85,7 +85,9 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 
 func _on_reload_time_timeout():
 	#if _bullet.global_position != global_position:
-	emit_signal("shot")
+	var distance_to_player = global_position.distance_to(_mainChar.global_position)     
+	if distance_to_player < 750:
+		emit_signal("shot")
 	#print("Bullet global position = ", _bullet.global_position)
 
 	#pass # Replace with function body.
@@ -120,7 +122,7 @@ func _on_shot():
 		#die(1)
 func die():
 	var heartScene = preload("res://Scenes/health_pick_up.tscn")
-	var randomNumber = randi_range(1, 10)
+	var randomNumber = randi_range(1, 5)
 	if randomNumber == 1:
 		var heartNode = heartScene.instantiate()
 		get_parent().add_child(heartNode)
