@@ -49,6 +49,7 @@ const HURTBOX_OFFSET = 75
 
 func _process(delta):
 	$Kill_Count.set_text("Kills: " + str(kills))
+	$Interface.set_hearts(health)
 	
 
 
@@ -60,6 +61,7 @@ func _physics_process(_delta):
 
 	# Call move and slide for physics
 	move_and_slide();
+
 
 # Handles the players movement
 func player_movement():

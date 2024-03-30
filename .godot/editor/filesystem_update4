@@ -31,3 +31,5 @@ res://Scripts/enemy_shooting.gd
 res://Scripts/Player.gd
 res://Scripts/bullet.gd
 res://Scripts/HUD.gd
+res://Scripts/Boss.gd
+res://Scripts/health_pick_up.gd

@@ -55,7 +55,7 @@ func _physics_process(delta):
 
 
 func knockback_player():
-	if((player.global_position-global_position).length() < 300):
+	if((player.global_position-global_position).length() < 500):
 		knockback = true
 
 	

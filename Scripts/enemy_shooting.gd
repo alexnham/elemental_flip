@@ -119,6 +119,12 @@ func _on_shot():
 	#if health <= 0:
 		#die(1)
 func die():
+	var heartScene = preload("res://Scenes/health_pick_up.tscn")
+	var randomNumber = randi_range(1, 5)
+	if randomNumber == 1:
+		var heartNode = heartScene.instantiate()
+		get_parent().add_child(heartNode)
+		heartNode.global_position = global_position
 	_mainChar.kills += 1
 	queue_free()
 

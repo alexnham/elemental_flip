@@ -71,7 +71,6 @@ func take_damage(damage_amount):
 
 	# Call die method on health below 0
 	if health <= 0:
-		player.kills += 1
 		die()
 
 
@@ -145,6 +144,13 @@ func attack():
 
 # Method to kill the enemy
 func die():
+	player.kills += 1
+	var heartScene = preload("res://Scenes/health_pick_up.tscn")
+	var randomNumber = randi_range(1, 5)
+	if randomNumber == 1:
+		var heartNode = heartScene.instantiate()
+		get_parent().add_child(heartNode)
+		heartNode.global_position = global_position
 	queue_free()
 
 
