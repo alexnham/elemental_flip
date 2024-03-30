@@ -169,6 +169,7 @@ func take_damage(damage_amount):
 
 # Method to kill the enemy
 func die():
+	player.objective_state = "WIN"
 	queue_free()
 
 

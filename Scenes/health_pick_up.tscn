@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0qo88ancjrdh"]
+[gd_scene load_steps=3 format=3 uid="uid://b2rnyn7d2osyn"]
 
 [ext_resource type="Script" path="res://Scripts/health_pick_up.gd" id="1_1lgnh"]
 [ext_resource type="Texture2D" uid="uid://c5xf7kfew47qs" path="res://Images/HeartsFull.png" id="1_f6p4q"]

@@ -12,7 +12,7 @@ func _ready():
 	$Player/overfreeze.modulate = Color(1,1,1,0)
 	$Player/overheat.modulate = Color(1,1,1,0)
 	progress = $ProgressBar
-
+	$Player.objective_state = "BOSS"
 	boss = $Boss
 	pass # Replace with function body.
 
@@ -50,7 +50,7 @@ func _process(delta):
 
 
 
-	progress.position = $Player.position
+	progress.position = $Player.position-Vector2(150,0)
 	if($Player/Interface/TextureProgressBar.get_value() > 9000):
 		if(mod < 1):
 			mod += 0.005

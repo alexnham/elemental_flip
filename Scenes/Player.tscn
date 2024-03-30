@@ -717,9 +717,10 @@ hframes = 12
 vframes = 8
 frame = 1
 
-[node name="Kill_Count" type="TextEdit" parent="."]
-offset_left = 373.0
-offset_top = 252.0
-offset_right = 571.0
-offset_bottom = 316.0
-text = "Kills"
+[node name="Objective" type="TextEdit" parent="."]
+offset_left = 293.0
+offset_top = -305.0
+offset_right = 567.0
+offset_bottom = -270.0
+text = "Objective: Kill 0/50 Enemies"
+wrap_mode = 1

@@ -37,7 +37,7 @@ var slash_music = 0
 var direction = "down"
 
 var state = "FIRE"
-
+var objective_state = "KILL"
 # The amount you move in facing direction when slashing
 const SLASH_OFFSET_AMOUNT = 0
 
@@ -46,9 +46,16 @@ const DASH_TIME = 0.15
 
 # Hurtbox offset from player
 const HURTBOX_OFFSET = 75
-
+@onready var boss = get_tree().get_first_node_in_group("Boss")
 func _process(delta):
-	$Kill_Count.set_text("Kills: " + str(kills))
+	if(objective_state == "KILL"):
+		$Objective.set_text("Objective: Kill " + str(kills) + "/50 enemies")
+	elif(objective_state == "BOSS"):
+		$Objective.set_text("Objective: Kill The Boss")
+	elif(objective_state == "WIN"):
+		$Objective.set_text("Objective: Go To The Waterfall")
+		
+		
 	$Interface.set_hearts(health)
 	
 

@@ -1,14 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://3sd5n1kvegag"]
+[gd_scene load_steps=10 format=3 uid="uid://dv33ti0lasq5g"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_y672y"]
 [ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_eeetj"]
 [ext_resource type="PackedScene" uid="uid://s67gl0p0nter" path="res://Scenes/Dungeon.tscn" id="2_re0q5"]
 [ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="4_0rjg7"]
 [ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="5_752rp"]
-[ext_resource type="Texture2D" uid="uid://bwkl5k6tf8dvy" path="res://Images/Tutorial_Text_One.png" id="6_fnrk8"]
-[ext_resource type="Texture2D" uid="uid://di0aipb5daxhe" path="res://Images/Tutorial_Text_Two.png" id="7_optyw"]
-[ext_resource type="Texture2D" uid="uid://cgahnvhec3lis" path="res://Images/Tutorial_Text_Three.png" id="8_blwco"]
-[ext_resource type="PackedScene" uid="uid://d0qo88ancjrdh" path="res://Scenes/health_pick_up.tscn" id="9_u4d42"]
+[ext_resource type="Texture2D" uid="uid://ducf6ae3bqsuk" path="res://Images/Tutorial_Text_One.png" id="6_fnrk8"]
+[ext_resource type="Texture2D" uid="uid://c5fahft8446hx" path="res://Images/Tutorial_Text_Two.png" id="7_optyw"]
+[ext_resource type="Texture2D" uid="uid://cvcfk0iu86t2v" path="res://Images/Tutorial_Text_Three.png" id="8_blwco"]
+[ext_resource type="PackedScene" uid="uid://b2rnyn7d2osyn" path="res://Scenes/health_pick_up.tscn" id="9_u4d42"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y672y")

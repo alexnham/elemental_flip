@@ -64,7 +64,7 @@ position = Vector2(-4040, -3855)
 position = Vector2(-4506, -3628)
 
 [node name="Melee_Enemy7" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(-2498, -3855)
+position = Vector2(-2046, -3852)
 
 [node name="Melee_Enemy8" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(-4280, -3505)
@@ -93,23 +93,11 @@ position = Vector2(-5977, -696)
 [node name="Melee_Enemy16" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(-3998, -383)
 
-[node name="Melee_Enemy17" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(-4464, -156)
-
 [node name="Melee_Enemy18" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(-2456, -383)
 
-[node name="Melee_Enemy19" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(-4238, -33)
-
-[node name="Melee_Enemy20" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(-5577, -406)
-
 [node name="Melee_Enemy21" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(-3687, -645)
-
-[node name="Melee_Enemy22" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(-3831, -128)
 
 [node name="Melee_Enemy23" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(3837, -680)
@@ -126,23 +114,11 @@ position = Vector2(2153, -659)
 [node name="Melee_Enemy27" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(4132, -346)
 
-[node name="Melee_Enemy28" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3666, -119)
-
 [node name="Melee_Enemy29" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(5674, -346)
 
-[node name="Melee_Enemy30" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3892, 4)
-
 [node name="Melee_Enemy31" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(2553, -369)
-
-[node name="Melee_Enemy32" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4443, -608)
-
-[node name="Melee_Enemy33" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4299, -91)
 
 [node name="Melee_Enemy34" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(3840, -2304)
@@ -165,52 +141,202 @@ position = Vector2(3669, -1743)
 [node name="Melee_Enemy40" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(5677, -1970)
 
-[node name="Melee_Enemy41" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3895, -1620)
-
 [node name="Melee_Enemy42" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(2556, -1993)
-
-[node name="Melee_Enemy43" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4446, -2232)
-
-[node name="Melee_Enemy44" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4302, -1715)
-
-[node name="Melee_Enemy45" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3867, -4085)
-
-[node name="Melee_Enemy46" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4587, -4152)
 
 [node name="Melee_Enemy47" parent="Melee" instance=ExtResource("4_0rjg7")]
 position = Vector2(2475, -3441)
 
+[node name="Melee_Enemy17" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-4343, -2364)
+
+[node name="Melee_Enemy19" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-3623, -2431)
+
+[node name="Melee_Enemy20" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-5735, -1720)
+
+[node name="Melee_Enemy22" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-6027, -2343)
+
+[node name="Melee_Enemy28" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-4048, -2030)
+
+[node name="Melee_Enemy30" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-4514, -1803)
+
+[node name="Melee_Enemy62" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-5044, -7912)
+
+[node name="Melee_Enemy32" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2506, -2030)
+
+[node name="Melee_Enemy33" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-4288, -1680)
+
+[node name="Melee_Enemy56" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-5627, -2053)
+
+[node name="Melee_Enemy57" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-3737, -2292)
+
+[node name="Melee_Enemy58" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-3881, -1775)
+
+[node name="Melee_Enemy59" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2047, -2244)
+
+[node name="Melee_Enemy60" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2546, -4057)
+
+[node name="Melee_Enemy61" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2142, -4012)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy61" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy63" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2488, -3664)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy63" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy64" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-5872, -3994)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy64" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy65" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(-3525, -3631)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy65" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy45" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(3631, -4185)
+
+[node name="Melee_Enemy46" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4351, -4252)
+
 [node name="Melee_Enemy48" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(2183, -4064)
+position = Vector2(2239, -3541)
 
 [node name="Melee_Enemy49" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4162, -3751)
+position = Vector2(1947, -4164)
 
 [node name="Melee_Enemy50" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3696, -3524)
+position = Vector2(3926, -3851)
 
 [node name="Melee_Enemy51" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(5704, -3751)
+position = Vector2(3460, -3624)
 
 [node name="Melee_Enemy52" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(3922, -3401)
+position = Vector2(5920, -3848)
 
 [node name="Melee_Enemy53" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(2583, -3774)
+position = Vector2(3686, -3501)
 
 [node name="Melee_Enemy54" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4473, -4013)
+position = Vector2(2347, -3874)
 
 [node name="Melee_Enemy55" parent="Melee" instance=ExtResource("4_0rjg7")]
-position = Vector2(4329, -3496)
+position = Vector2(4237, -4113)
+
+[node name="Melee_Enemy66" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4093, -3596)
+
+[node name="Melee_Enemy67" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(5824, -4008)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy67" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy68" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(5478, -3660)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy68" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy69" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(2094, -3990)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy69" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy70" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4441, -3627)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy70" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy71" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(3744, -2453)
+
+[node name="Melee_Enemy72" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4464, -2520)
+
+[node name="Melee_Enemy73" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(2352, -1809)
+
+[node name="Melee_Enemy74" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(2060, -2432)
+
+[node name="Melee_Enemy75" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4039, -2119)
+
+[node name="Melee_Enemy77" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(6033, -2116)
+
+[node name="Melee_Enemy79" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(2460, -2142)
+
+[node name="Melee_Enemy80" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4350, -2381)
+
+[node name="Melee_Enemy81" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4206, -1864)
+
+[node name="Melee_Enemy82" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(5937, -2276)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy82" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy83" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(5591, -1928)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy83" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
+
+[node name="Melee_Enemy85" parent="Melee" instance=ExtResource("4_0rjg7")]
+position = Vector2(4554, -1895)
+
+[node name="Melee_Enemy7" parent="Melee/Melee_Enemy85" instance=ExtResource("4_0rjg7")]
+position = Vector2(-2498, -3855)
 
 [node name="Shooting" type="Node2D" parent="."]
+
+[node name="Enemy_Shooting37" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(-5842, -679)
+
+[node name="Enemy_Shooting16" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(2667, -4002)
+
+[node name="Enemy_Shooting21" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(3697, -3779)
+
+[node name="Enemy_Shooting22" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(4515, -3949)
+
+[node name="Enemy_Shooting23" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(5708, -3896)
+
+[node name="Enemy_Shooting24" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(5749, -3320)
+
+[node name="Enemy_Shooting25" parent="Shooting" instance=ExtResource("6_g3up4")]
+position = Vector2(2316, -4043)
 
 [node name="Enemy_Shooting" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(2270, -301)
@@ -257,9 +383,6 @@ position = Vector2(4888, -2144)
 [node name="Enemy_Shooting15" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(4089, -2342)
 
-[node name="Enemy_Shooting16" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(2483, -2003)
-
 [node name="Enemy_Shooting17" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(2372, -2432)
 
@@ -271,36 +394,6 @@ position = Vector2(5146, -2126)
 
 [node name="Enemy_Shooting20" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(4347, -2324)
-
-[node name="Enemy_Shooting21" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(2228, -3727)
-
-[node name="Enemy_Shooting22" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(2117, -4156)
-
-[node name="Enemy_Shooting23" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(5701, -3694)
-
-[node name="Enemy_Shooting24" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(4891, -3850)
-
-[node name="Enemy_Shooting25" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(4092, -4048)
-
-[node name="Enemy_Shooting26" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(2486, -3709)
-
-[node name="Enemy_Shooting27" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(2375, -4138)
-
-[node name="Enemy_Shooting28" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(5959, -3676)
-
-[node name="Enemy_Shooting29" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(5149, -3832)
-
-[node name="Enemy_Shooting30" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(4350, -4030)
 
 [node name="Enemy_Shooting31" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(-5731, -250)
@@ -319,9 +412,6 @@ position = Vector2(-3867, -571)
 
 [node name="Enemy_Shooting36" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(-5731, -250)
-
-[node name="Enemy_Shooting37" parent="Shooting" instance=ExtResource("6_g3up4")]
-position = Vector2(-5842, -679)
 
 [node name="Enemy_Shooting38" parent="Shooting" instance=ExtResource("6_g3up4")]
 position = Vector2(-2258, -217)

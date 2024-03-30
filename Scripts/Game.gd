@@ -25,7 +25,7 @@ func _process(delta):
 			$Boss.state = "FIRE"
 			$Boss/fire_sprite.visible = true
 			$Boss/ice_sprite.visible = false
-		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() + 2)
+		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() + 5)
 		$Player.state = "FIRE"
 
 		$Player/fire_sprite.visible = true
@@ -40,7 +40,7 @@ func _process(delta):
 			$Boss.state = "ICE"
 			$Boss/fire_sprite.visible = false
 			$Boss/ice_sprite.visible = true
-		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() - 2)
+		$Player/Interface/TextureProgressBar.set_value($Player/Interface/TextureProgressBar.get_value() - 5)
 		$Player.state = "ICE"
 		
 		$Player/ice_sprite.visible = true
