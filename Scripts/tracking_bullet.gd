@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 #signal hit
 var bulletVelocity = Vector2(1, 0)
-var speed = 100
+var speed = 300
 var main_char: CharacterBody2D
 var bulletTracking = false
 
@@ -53,7 +53,9 @@ func _on_area_2d_body_entered(body):
 	if body.is_in_group("Player"):
 		queue_free()
 		print("ouch")
-		main_char.take_damage(0.1)
+		main_char.take_damage(0.5)
+	else:
+		queue_free()
 	#pass # Replace with function body.
 
 

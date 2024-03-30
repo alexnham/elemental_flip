@@ -4,20 +4,22 @@ var state
 var timer
 var progress: ProgressBar
 var mod = 0
+var boss
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioStreamPlayer.play()
 	$Player/overfreeze.modulate = Color(1,1,1,0)
 	$Player/overheat.modulate = Color(1,1,1,0)
 	progress = $ProgressBar
-	progress.visible = false
-	pass # Replace with function body.
 
+	boss = $Boss
+	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
 	if $Player.global_position.x < 0:
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.state = "FIRE"
 			$Boss/fire_sprite.visible = true
 			$Boss/ice_sprite.visible = false
@@ -32,7 +34,7 @@ func _process(delta):
 			if($Player.movement_speed < 500):
 				$Player.set_speed(500)
 	elif $Player.global_position.x > 0:
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.state = "ICE"
 			$Boss/fire_sprite.visible = false
 			$Boss/ice_sprite.visible = true
@@ -52,12 +54,16 @@ func _process(delta):
 		if(mod < 1):
 			mod += 0.005
 			$Player/overheat.modulate = Color(1,1,1,mod)
+		if(not $burning.playing):
+			$burning.play()
 		$Player.take_damage(0.001)
 	elif($Player/Interface/TextureProgressBar.get_value() < 1000):
 		if(mod < 1):
 			mod += 0.005
 			$Player/overfreeze.modulate = Color(1,1,1,mod)
 		if($Player.movement_speed > 0):
+			if(not $freezing.playing):
+				$freezing.play()
 			$Player.set_speed($Player.movement_speed - 1)
 	else:
 		if(mod > 0 and str($Player/overfreeze.modulate) != "(1,1,1,0)" ):
@@ -88,15 +94,22 @@ func _process(delta):
 			timer = null
 	else:
 		progress.visible = false
+		
+	if(Input.is_action_just_pressed("Enter") and not is_instance_valid(boss)):
+		get_tree().change_scene_to_file("res://Scenes/Landscape/Win.tscn")
 
 func swap():
 	if($Player.global_position.x > 0):
 		$Player.global_position = Vector2($Player.global_position.x - 8050, $Player.global_position.y)
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.global_position = Vector2($Boss.global_position.x - 8050, $Boss.global_position.y)
 	else:
 		$Player.global_position = Vector2($Player.global_position.x + 8050, $Player.global_position.y)
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.global_position = Vector2($Boss.global_position.x + 8050, $Boss.global_position.y)
 	
 	
+
+func _on_audio_stream_player_finished():
+	$AudioStreamPlayer.play()
+	pass # Replace with function body.

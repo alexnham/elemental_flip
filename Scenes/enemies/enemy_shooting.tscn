@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/enemy_shooting.gd" id="1_7fl6s"]
 [ext_resource type="Texture2D" uid="uid://3kgmsmdrq0qi" path="res://Images/dungeon-pack-full_version/rpgmaker/MZ/characters/_srw_monsters_1.png" id="3_dsjkh"]
-[ext_resource type="PackedScene" uid="uid://bx1qu7c56boqq" path="res://Scenes/interfaces/enemy_interface.tscn" id="3_ye4jh"]
+[ext_resource type="AudioStream" uid="uid://bn3h6i888688r" path="res://sounds/ghost_noise.wav" id="4_ool4o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7fnvt"]
 size = Vector2(139.131, 133.565)
@@ -128,8 +128,8 @@ _data = {
 [node name="Enemy_Shooting" type="CharacterBody2D" groups=["Enemy"]]
 position = Vector2(584, 316)
 scale = Vector2(0.359375, 0.359375)
-collision_layer = 5
-collision_mask = 3
+collision_layer = 4
+collision_mask = 67
 script = ExtResource("1_7fl6s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -156,20 +156,14 @@ position = Vector2(147.478, 0)
 
 [node name="ReloadTime" type="Timer" parent="."]
 
-[node name="Interface" parent="." instance=ExtResource("3_ye4jh")]
-anchors_preset = 10
-anchor_bottom = 0.0
-offset_left = -175.304
-offset_top = 25.0434
-offset_right = -175.304
-offset_bottom = 25.0434
-grow_vertical = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_tl8m4")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ool4o")
+pitch_scale = 0.6
 
 [connection signal="shot" from="." to="." method="_on_shot"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]

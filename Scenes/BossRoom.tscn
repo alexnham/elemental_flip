@@ -1,32 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxq4pkxy501sx"]
+[gd_scene load_steps=2 format=3 uid="uid://dxq4pkxy501sx"]
 
-[ext_resource type="Script" path="res://Scripts/Boss_Room.gd" id="1_3piik"]
-[ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_dqpb5"]
-[ext_resource type="Texture2D" uid="uid://dgyseg6vkprjk" path="res://Images/fire_boss_room.jpeg" id="2_pvmli"]
 [ext_resource type="Texture2D" uid="uid://oeks5idoawmp" path="res://Images/ice_boss_room.jpeg" id="3_h27wa"]
-[ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="3_wjl2d"]
 
-[node name="BossRoom" type="Node2D"]
-script = ExtResource("1_3piik")
-
-[node name="FireBossRoom" type="Sprite2D" parent="."]
-position = Vector2(1945, -286)
-scale = Vector2(5, 5)
-texture = ExtResource("2_pvmli")
-
-[node name="IceBossRoom" type="Sprite2D" parent="."]
-position = Vector2(-2123, -306)
-scale = Vector2(5, 5)
+[node name="IceBossRoom" type="Sprite2D"]
+position = Vector2(-1182, -290)
 texture = ExtResource("3_h27wa")
-
-[node name="Player" parent="." instance=ExtResource("2_dqpb5")]
-position = Vector2(-2048, 104)
-
-[node name="Boss" parent="." instance=ExtResource("3_wjl2d")]
-position = Vector2(-2102, -1018)
-
-[node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = -1817.0
-offset_top = 645.0
-offset_right = -1498.0
-offset_bottom = 672.0

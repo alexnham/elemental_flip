@@ -48,11 +48,13 @@ func _on_visible_on_screen_notifier_2d_screen_entered():
 
 
 func _on_area_2d_body_entered(body):
-
+	
 	if body.is_in_group("Player"):
 		queue_free()
 		print("ouch")
-		main_char.take_damage(0.1)
+		main_char.take_damage(0.25)
+	else:
+		queue_free()
 	#pass # Replace with function body.
 
 
@@ -64,5 +66,8 @@ func _on_area_2d_area_entered(area):
 func _on_bullet_disappear_time_timeout():
 	print("Bullet timeout")
 	visible = false
+	queue_free()
+	
+func take_damage(amount):
 	queue_free()
 	#pass # Replace with function body.

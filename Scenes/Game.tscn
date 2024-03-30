@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://3sd5n1kvegag"]
+[gd_scene load_steps=9 format=3 uid="uid://3sd5n1kvegag"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_y672y"]
 [ext_resource type="PackedScene" uid="uid://db8wbmnwmxtm8" path="res://Scenes/Player.tscn" id="2_eeetj"]
 [ext_resource type="PackedScene" uid="uid://s67gl0p0nter" path="res://Scenes/Dungeon.tscn" id="2_re0q5"]
 [ext_resource type="PackedScene" uid="uid://cekbeijp5t485" path="res://Scenes/enemies/enemy_melee.tscn" id="4_0rjg7"]
-[ext_resource type="PackedScene" uid="uid://caqs5eoyufh4q" path="res://Scenes/enemies/enemy_boss.tscn" id="5_752rp"]
+[ext_resource type="AudioStream" uid="uid://cphsnmprxj0nu" path="res://sounds/dungeon.mp3" id="5_tmtkh"]
+[ext_resource type="PackedScene" uid="uid://f84twyg3pf4k" path="res://Scenes/enemies/enemy_shooting.tscn" id="6_g3up4"]
+[ext_resource type="AudioStream" uid="uid://bs8pl6cq8hjuy" path="res://sounds/fire_sound_effect.mp3" id="7_mqr7r"]
+[ext_resource type="AudioStream" uid="uid://dnfw071mus5dj" path="res://sounds/freezing.mp3" id="8_keskf"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y672y")
@@ -28,5 +31,20 @@ position = Vector2(4248, 22)
 [node name="Melee_Enemy2" parent="." instance=ExtResource("4_0rjg7")]
 position = Vector2(-4065, -168)
 
-[node name="Boss" parent="." instance=ExtResource("5_752rp")]
-position = Vector2(-4013, -4659)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tmtkh")
+
+[node name="Melee_Enemy3" parent="." instance=ExtResource("4_0rjg7")]
+position = Vector2(-4143, -4262)
+
+[node name="Enemy_Shooting" parent="." instance=ExtResource("6_g3up4")]
+position = Vector2(-3678, -4243)
+
+[node name="burning" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_mqr7r")
+volume_db = -20.0
+
+[node name="freezing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_keskf")
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

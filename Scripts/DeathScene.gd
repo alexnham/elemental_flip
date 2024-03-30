@@ -7,6 +7,8 @@ var timer2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioStreamPlayer.play()
+	$AudioStreamPlayer2.play()
 	timer = Timer.new()
 	timer.autostart = false
 	timer.wait_time = 2
@@ -31,3 +33,8 @@ func intro():
 func _on_continue_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Landscape/StartingScene.tscn")
 	
+
+
+func _on_audio_stream_player_2_finished():
+	$AudioStreamPlayer2.play()
+	pass # Replace with function body.

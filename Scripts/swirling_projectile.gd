@@ -21,7 +21,7 @@ func _ready():
 func _physics_process(delta):
 	if bulletTracking == true:
 		bulletVelocity = main_char.global_position - global_position
-	global_scale = global_scale + Vector2(0.01, 0.01) * delta * 40
+	global_scale = global_scale + Vector2(0.01, 0.01) * delta * 20
 	global_rotation = global_rotation + 0.1
 	# If node type is changed to area2d, then change move and collide to move towards
 	var collision_info = move_and_collide(bulletVelocity.normalized() * delta * speed)
@@ -54,6 +54,8 @@ func _on_area_2d_body_entered(body):
 		queue_free()
 		print("ouch")
 		main_char.take_damage(0.5)
+	else:
+		queue_free()
 	#pass # Replace with function body.
 
 
@@ -65,5 +67,8 @@ func _on_area_2d_area_entered(area):
 func _on_bullet_disappear_time_timeout():
 	print("Bullet timeout")
 	visible = false
+	queue_free()
+	
+func take_damage(amount):
 	queue_free()
 	#pass # Replace with function body.

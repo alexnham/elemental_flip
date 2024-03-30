@@ -1,10 +1,13 @@
-[gd_scene load_steps=37 format=3 uid="uid://db8wbmnwmxtm8"]
+[gd_scene load_steps=40 format=3 uid="uid://db8wbmnwmxtm8"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_hvesk"]
 [ext_resource type="Texture2D" uid="uid://dfl1lwr7bdxok" path="res://Images/dungeon-pack-full_version/sprite/free_character_0.png" id="1_ywdwt"]
 [ext_resource type="Texture2D" uid="uid://ddm286nc8ogo" path="res://Images/overheat.png" id="2_1nhby"]
+[ext_resource type="AudioStream" uid="uid://b4uuriqjxmc2q" path="res://sounds/sword3.mp3" id="2_eel7m"]
+[ext_resource type="AudioStream" uid="uid://cw77jtcblmk7g" path="res://sounds/sword2.wav" id="2_p6l54"]
 [ext_resource type="PackedScene" uid="uid://8fjb1k1ned34" path="res://Scenes/interfaces/Interface.tscn" id="3_5r4ts"]
 [ext_resource type="Texture2D" uid="uid://nen4s5ex3yeu" path="res://Images/overfreeze.png" id="3_do1ji"]
+[ext_resource type="AudioStream" uid="uid://cgldsnihb6lww" path="res://sounds/sword1.wav" id="3_juqem"]
 [ext_resource type="Texture2D" uid="uid://qj78f0cmxtkx" path="res://Images/ice.png" id="6_bqcvu"]
 
 [sub_resource type="Animation" id="Animation_sn1tu"]
@@ -246,33 +249,6 @@ size = Vector2(16, 30.6667)
 _data = [Vector2(0.0393258, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.197802), 0.0, 0.0, 0, 0]
 point_count = 2
 
-[sub_resource type="Animation" id="Animation_85rkd"]
-resource_name = "dash_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [10]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(-0.5),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [10]
-}
-
 [sub_resource type="Animation" id="Animation_pu5n0"]
 length = 0.001
 step = 0.05
@@ -301,6 +277,87 @@ tracks/1/keys = {
 "values": [1]
 }
 
+[sub_resource type="Animation" id="Animation_85rkd"]
+resource_name = "dash_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [10]
+}
+
+[sub_resource type="Animation" id="Animation_11w35"]
+resource_name = "dash_left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [22]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [22]
+}
+
+[sub_resource type="Animation" id="Animation_tfxe3"]
+resource_name = "dash_right"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [34]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [34]
+}
+
 [sub_resource type="Animation" id="Animation_82sk4"]
 resource_name = "dash_up"
 tracks/0/type = "value"
@@ -326,6 +383,114 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [46]
+}
+
+[sub_resource type="Animation" id="Animation_fr7hd"]
+resource_name = "slash_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [3, 4, 5]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 5, 1]
+}
+
+[sub_resource type="Animation" id="Animation_m0l6u"]
+resource_name = "slash_left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.1, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [15, 16, 17, 14]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [15, 16, 17, 13]
+}
+
+[sub_resource type="Animation" id="Animation_clyao"]
+resource_name = "slash_right"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [26, 27, 28, 29]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [27, 28, 29, 25]
+}
+
+[sub_resource type="Animation" id="Animation_n880g"]
+resource_name = "slash_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ice:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [39, 40, 41]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ice_sprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [39, 39, 40, 41, 38]
 }
 
 [sub_resource type="Animation" id="Animation_nve7w"]
@@ -357,33 +522,6 @@ tracks/1/keys = {
 "values": [1, 0, 1, 2]
 }
 
-[sub_resource type="Animation" id="Animation_fr7hd"]
-resource_name = "slash_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [3, 4, 5]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [3, 4, 5, 1]
-}
-
 [sub_resource type="Animation" id="Animation_0jg17"]
 resource_name = "walk_left"
 length = 0.8
@@ -411,60 +549,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [13, 12, 13, 14]
-}
-
-[sub_resource type="Animation" id="Animation_m0l6u"]
-resource_name = "slash_left"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.1, 0.1, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [15, 16, 17, 14]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [15, 16, 17, 13]
-}
-
-[sub_resource type="Animation" id="Animation_11w35"]
-resource_name = "dash_left"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.1),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [22]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [22]
 }
 
 [sub_resource type="Animation" id="Animation_ubhwj"]
@@ -496,60 +580,6 @@ tracks/1/keys = {
 "values": [25, 24, 25, 26]
 }
 
-[sub_resource type="Animation" id="Animation_clyao"]
-resource_name = "slash_right"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [26, 27, 28, 29]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [27, 28, 29, 25]
-}
-
-[sub_resource type="Animation" id="Animation_tfxe3"]
-resource_name = "dash_right"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [34]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [34]
-}
-
 [sub_resource type="Animation" id="Animation_66jyg"]
 resource_name = "walk_up"
 length = 0.8
@@ -579,33 +609,6 @@ tracks/1/keys = {
 "values": [37, 38, 37, 36]
 }
 
-[sub_resource type="Animation" id="Animation_n880g"]
-resource_name = "slash_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ice:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [39, 40, 41]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ice_sprite:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [39, 39, 40, 41, 38]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rqw6f"]
 _data = {
 "RESET": SubResource("Animation_pu5n0"),
@@ -625,11 +628,22 @@ _data = {
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 z_index = 5
-collision_layer = 3
 collision_mask = 62
 platform_floor_layers = 4294967040
 script = ExtResource("1_hvesk")
 dash_distance = 2000
+
+[node name="slash3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_eel7m")
+volume_db = -15.0
+
+[node name="slash2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_p6l54")
+volume_db = -15.0
+
+[node name="slash1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_juqem")
+volume_db = -15.0
 
 [node name="overheat" type="TextureRect" parent="."]
 offset_left = -571.0
@@ -669,6 +683,7 @@ shape = SubResource("RectangleShape2D_4h1k2")
 position_smoothing_speed = 10.0
 
 [node name="Interface" parent="." instance=ExtResource("3_5r4ts")]
+z_index = 11
 offset_left = -534.0
 offset_top = -247.0
 offset_right = -534.0

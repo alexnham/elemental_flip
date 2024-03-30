@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0nmuwjllw6xq"]
+
+[ext_resource type="Script" path="res://Scripts/tracking_bullet.gd" id="1_2x8n6"]
+[ext_resource type="Texture2D" uid="uid://dopjsqtcutd4j" path="res://Images/tracking_bullet_red.png" id="2_fvs3m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ilx0"]
+radius = 120.004
+
+[node name="TrackingBullet" type="CharacterBody2D" groups=["Enemy"]]
+position = Vector2(634, 322)
+collision_layer = 8
+collision_mask = 3
+script = ExtResource("1_2x8n6")
+
+[node name="BulletCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1ilx0")
+
+[node name="BulletSprite" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 1.19209e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_fvs3m")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(1.49999, 0.499989)
+scale = Vector2(12.45, 12.45)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 67
+
+[node name="BulletCollision" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_1ilx0")
+
+[node name="BulletDisappearTime" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="BulletDisappearTime" to="." method="_on_bullet_disappear_time_timeout"]

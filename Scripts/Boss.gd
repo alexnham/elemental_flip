@@ -9,6 +9,7 @@ var fanBulletScene
 var trackingBulletScene
 var meleeEnemyScene
 var shootingEnemyScene
+@onready var blood_particles = preload("res://Scenes/ParticleEffects/Blood.tscn")
 
 var trackingBulletCounts = 5
 var waveTimer
@@ -46,14 +47,7 @@ func _ready():
 
 func _physics_process(delta):
 	if(knockback):
-		if player.direction == "down":
-			player.velocity = Vector2(0, -1).normalized() * 5000
-		elif player.direction == "up":
-			player.velocity = Vector2(0, 1).normalized() * 5000
-		elif player.direction == "left":
-			player.velocity = Vector2(1, 0).normalized() * 5000
-		elif player.direction == "right":
-			player.velocity = Vector2(-1, 0).normalized() * 5000
+		player.velocity = Vector2(0, 1).normalized() * 5000
 		player.move_and_slide()
 		get_tree().create_timer(.1).timeout.connect(func(): knockback = false)
 			
@@ -81,19 +75,10 @@ func _on_visible_on_screen_notifier_2d_screen_entered():
 	
 
 func _on_wave_timer_timeout():
-	var currentWave = waveCount % 3
 	knockback_player()
-	if currentWave == 0:
-		print("Wave 1 started!")
-		Wave1()
-	elif currentWave == 1:
-		print("Wave 2 started!")
-		Wave2()
-	else:
-		print("Wave 3 started!")
-		Wave3()
-	
-	waveCount = waveCount + 1
+	var KnockbackTimer = get_node("KnockbackTimer")
+	KnockbackTimer.one_shot = true
+	KnockbackTimer.start()
 	
 	#pass # Replace with function body.
 
@@ -110,14 +95,12 @@ func Wave1():
 			enemyType = shootingEnemyScene.instantiate()
 		
 		get_parent().add_child(enemyType)
-		var randomSpawnPosition = randi_range(1, 4)
+		var randomSpawnPosition = randi_range(1, 3)
 		if randomSpawnPosition == 1:
-			enemyType.global_position = $Node2D/BulletSpawnUp.global_position
-		elif randomSpawnPosition == 2:
 			enemyType.global_position = $Node2D/BulletSpawnDown.global_position
-		elif randomSpawnPosition == 3:
+		elif randomSpawnPosition == 2:
 			enemyType.global_position = $Node2D/BulletSpawnLeft.global_position
-		elif randomSpawnPosition == 4:
+		elif randomSpawnPosition == 3:
 			enemyType.global_position = $Node2D/BulletSpawnRight.global_position
 			
 		enemyType.global_rotation = $Node2D.global_rotation
@@ -127,7 +110,7 @@ func Wave1():
 func Wave2():
 	var bulletScene = preload("res://Scenes/bullets/tracking_bullet.tscn")
 
-	for i in range(4):
+	for i in range(3):
 		if(state == "FIRE"):
 			animation_fire.play("shoot_tracking_bullet")
 		if(state == "ICE"):
@@ -136,12 +119,10 @@ func Wave2():
 		add_child(bullet)
 		
 		if i == 0:
-			bullet.global_position = $Node2D/BulletSpawnUp.global_position
-		elif i == 1:
 			bullet.global_position = $Node2D/BulletSpawnDown.global_position
-		elif i == 2:
+		elif i == 1:
 			bullet.global_position = $Node2D/BulletSpawnLeft.global_position
-		elif i == 3:
+		elif i == 2:
 			bullet.global_position = $Node2D/BulletSpawnRight.global_position
 		
 		bullet.scale = Vector2(0.3, 0.3)
@@ -153,7 +134,7 @@ func Wave2():
 	
 func Wave3():
 	var bulletScene = preload("res://Scenes/bullets/swirling_projectile.tscn")
-	for i in range(4):
+	for i in range(3):
 		if(state == "FIRE"):
 			animation_fire.play("shoot waves")
 		if(state == "ICE"):
@@ -162,12 +143,10 @@ func Wave3():
 		add_child(bullet)
 		
 		if i == 0:
-			bullet.global_position = $Node2D/BulletSpawnUp.global_position
-		elif i == 1:
 			bullet.global_position = $Node2D/BulletSpawnDown.global_position
-		elif i == 2:
+		elif i == 1:
 			bullet.global_position = $Node2D/BulletSpawnLeft.global_position
-		elif i == 3:
+		elif i == 2:
 			bullet.global_position = $Node2D/BulletSpawnRight.global_position
 		
 		bullet.scale = Vector2(0.3, 0.3)
@@ -178,7 +157,11 @@ func Wave3():
 	
 	#pass
 func take_damage(damage_amount):
-
+	$AudioStreamPlayer.play()
+	var particle_instance = blood_particles.instantiate()
+	get_parent().add_child(particle_instance)
+	particle_instance.position = get_global_position()
+	particle_instance.restart()
 	health -= damage_amount
 	$Interface.set_hearts(health)
 	if health <= 0:
@@ -187,3 +170,19 @@ func take_damage(damage_amount):
 # Method to kill the enemy
 func die():
 	queue_free()
+
+
+func _on_knockback_timer_timeout():
+	var currentWave = waveCount % 3
+	if currentWave == 0:
+		print("Wave 1 started!")
+		Wave1()
+	elif currentWave == 1:
+		print("Wave 2 started!")
+		Wave2()
+	else:
+		print("Wave 3 started!")
+		Wave3()
+	
+	waveCount = waveCount + 1
+	#pass # Replace with function body.

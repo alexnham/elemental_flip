@@ -29,7 +29,7 @@ extends CharacterBody2D
 
 # Represents the players current health
 var health = 5;
-
+var slash_music = 0
 # Reference to the hurtbox scene
 @onready var hurtbox_scene = preload("res://Scenes/Player_Attackbox.tscn")
 
@@ -169,7 +169,13 @@ func player_attack():
 			if(state == "ICE"):
 				animation_player_ice.play("slash_right")
 			velocity = Vector2(1, 0).normalized() * SLASH_OFFSET_AMOUNT
-
+		slash_music = (slash_music + 1) % 3
+		if(slash_music == 0):
+			$slash1.play()
+		if(slash_music == 1):
+			$slash2.play()
+		if(slash_music == 2):
+			$slash3.play()
 		# Spawn in hurtbox and position
 		var hurtbox = hurtbox_scene.instantiate()
 		add_child(hurtbox)

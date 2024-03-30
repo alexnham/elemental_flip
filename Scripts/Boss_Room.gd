@@ -4,20 +4,23 @@ var state
 var timer
 var progress: ProgressBar
 var mod = 0
+var boss
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioStreamPlayer.play()
 	$Player/overfreeze.modulate = Color(1,1,1,0)
 	$Player/overheat.modulate = Color(1,1,1,0)
 	progress = $ProgressBar
-	progress.visible = false
+
+	boss = $Boss
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
 	if $Player.global_position.x < 0:
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.state = "FIRE"
 			$Boss/fire_sprite.visible = true
 			$Boss/ice_sprite.visible = false
@@ -32,7 +35,7 @@ func _process(delta):
 			if($Player.movement_speed < 500):
 				$Player.set_speed(500)
 	elif $Player.global_position.x > 0:
-		if($Boss != null):
+		if(is_instance_valid(boss)):
 			$Boss.state = "ICE"
 			$Boss/fire_sprite.visible = false
 			$Boss/ice_sprite.visible = true
@@ -52,11 +55,15 @@ func _process(delta):
 		if(mod < 1):
 			mod += 0.005
 			$Player/overheat.modulate = Color(1,1,1,mod)
+		if(not $burning.playing):
+			$burning.play()
 		$Player.take_damage(0.001)
 	elif($Player/Interface/TextureProgressBar.get_value() < 1000):
 		if(mod < 1):
 			mod += 0.005
 			$Player/overfreeze.modulate = Color(1,1,1,mod)
+		if(not $freezing.playing):
+			$freezing.play()
 		if($Player.movement_speed > 0):
 			$Player.set_speed($Player.movement_speed - 1)
 	else:
@@ -88,15 +95,26 @@ func _process(delta):
 			timer = null
 	else:
 		progress.visible = false
+		
+	if(Input.is_action_just_pressed("Enter") and not is_instance_valid(boss)):
+		get_tree().change_scene_to_file("res://Scenes/Landscape/Win.tscn")
 
 func swap():
 	if($Player.global_position.x > 0):
-		$Player.global_position = Vector2($Player.global_position.x - 4050, $Player.global_position.y)
-		if($Boss != null):
-			$Boss.global_position = Vector2($Boss.global_position.x - 4050, $Boss.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x - 2500, $Player.global_position.y)
+		if(is_instance_valid(boss)):
+			$Boss.global_position = Vector2($Boss.global_position.x - 2500, $Boss.global_position.y)
 	else:
-		$Player.global_position = Vector2($Player.global_position.x + 4050, $Player.global_position.y)
-		if($Boss != null):
-			$Boss.global_position = Vector2($Boss.global_position.x + 4050, $Boss.global_position.y)
+		$Player.global_position = Vector2($Player.global_position.x + 2500, $Player.global_position.y)
+		if(is_instance_valid(boss)):
+			$Boss.global_position = Vector2($Boss.global_position.x + 2500, $Boss.global_position.y)
 	
 	
+
+
+func _on_end_game_body_entered(body):
+	if(not is_instance_valid(boss) and body.is_in_group("Player")):
+		$End_Game/end_game.visible = true
+		$End_Game/end_game2.visible = true
+	
+	pass # Replace with function body.

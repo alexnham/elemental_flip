@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://dg5u5xq8svwfc"]
+[gd_scene load_steps=41 format=3 uid="uid://dg5u5xq8svwfc"]
 
 [ext_resource type="Texture2D" uid="uid://biqiy2d8suii8" path="res://Images/dungeon-pack-full_version/rpgmaker/MZ/tilesets/_srw_tileset_1.png" id="1_wxebg"]
 [ext_resource type="Texture2D" uid="uid://ber6wpmm3ym4" path="res://Images/dungeon-pack-full_version/godot_autotiles/free_ground_autotile_21.png" id="2_2tjxv"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://crkrsgu031cnw" path="res://Images/TILESET VILLAGE TOP DOWN/GRASS DETAIL 3 - NIGHT.png" id="18_cbrqq"]
 [ext_resource type="Script" path="res://Scripts/StartingScene.gd" id="19_g1pc1"]
 [ext_resource type="PackedScene" uid="uid://dgdxd452t7r61" path="res://Scenes/interfaces/HUD.tscn" id="20_8fua3"]
+[ext_resource type="AudioStream" uid="uid://boeu83rnf1lir" path="res://sounds/home_screen_music.mp3" id="21_jxudi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5fqvb"]
 texture = ExtResource("1_wxebg")
@@ -2198,5 +2199,8 @@ offset_bottom = 214.0
 text = "Continue"
 
 [node name="HUD" parent="." instance=ExtResource("20_8fua3")]
+
+[node name="home_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_jxudi")
 
 [connection signal="pressed" from="ColorRect/Continue" to="." method="_on_continue_pressed"]

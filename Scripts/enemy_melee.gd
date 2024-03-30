@@ -59,6 +59,7 @@ func _physics_process(_delta):
 
 # Method to make the enemy take damage, and destroy node if health
 func take_damage(damage_amount):
+	$AudioStreamPlayer.play()
 	# Spawn blood particles on enemy
 	var particle_instance = blood_particles.instantiate()
 	get_parent().add_child(particle_instance)
@@ -128,7 +129,7 @@ func attack():
 				for node in hurtbox.get_overlapping_bodies():
 					if node.is_in_group("Player"):
 						print("HIT")
-						node.take_damage(0.2)
+						node.take_damage(0.5)
 
 				hurtbox.queue_free()
 			)

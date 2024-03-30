@@ -8,12 +8,15 @@ var normalBullet
 var bossBullet
 var reloadTime
 var bulletTracking = false
+var move_speed = 200
 #var shot
 
 var health: int = 3
 signal die_event
 signal shot
 var ui: Control
+
+var blood_particles = preload("res://Scenes/ParticleEffects/Blood.tscn")
 
 func _ready():
 	_mainChar = get_node("../Player")
@@ -25,23 +28,30 @@ func _ready():
 	reloadTime.start()
 	#shot = false
 	#reloadTime.stop()
-	ui = get_node("Interface")
+	#ui = get_node("Interface")
 	#reloadTime.start()
-	connect("die_event",die)
+	#connect("die_event",die)
 
-func die(amount: int) -> void:
-	health -= amount
-	if health <= 0:
-		queue_free()
-	ui.emit_signal("health_depleted", health)
+#func die(amount: int) -> void:
+	#health -= amount
+	#if health <= 0:
+		#queue_free()
+	#ui.emit_signal("health_depleted", health)
 
 
-var speed = 1.0
+var speed = 1
 func _physics_process(delta):
-
-	
+	var distance_to_player = global_position.distance_to(_mainChar.global_position)
+	if distance_to_player <= 200:
+		speed = 0
+	else:
+		speed = 1        
 	# Shooting enemy move towards current position of main character
 	global_position = global_position.move_toward(_mainChar.global_position, speed)
+	#var direction = global_position.direction_to(_mainChar.global_position)
+	#velocity = direction * move_speed
+	#move_and_slide()
+	
 	$AnimationPlayer.play("fire_down")
 	
 		#bulletTracking = false
@@ -84,8 +94,9 @@ func _on_reload_time_timeout():
 	#pass # Replace with function body.
 	
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Slash"):
-		die_event.emit(1)
+	take_damage(1)
+	#if body.is_in_group("Slash"):
+		#die_event.emit(1)
 
 	
 func _on_shot():
@@ -106,9 +117,25 @@ func _on_shot():
 	print("My name is: ", bullet.name)
 	
 	#pass
+#func take_damage(damage_amount):
+	#health -= damage_amount
+	#if health <= 0:
+		#die(1)
+func die():
+	queue_free()
+
+
 func take_damage(damage_amount):
+	$AudioStreamPlayer.play()
+	# Spawn blood particles on enemy
+	var particle_instance = blood_particles.instantiate()
+	get_parent().add_child(particle_instance)
+	particle_instance.position = get_global_position()
+	particle_instance.restart()
+
+	# Subtract damage from health
 	health -= damage_amount
+
+	# Call die method on health below 0
 	if health <= 0:
-		die(1)
-
-
+		die()

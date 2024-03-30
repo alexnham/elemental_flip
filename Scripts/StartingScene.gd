@@ -7,6 +7,7 @@ var timer2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$home_music.play()
 	connect("begin",intro)
 	timer = Timer.new()
 	timer.autostart = false
