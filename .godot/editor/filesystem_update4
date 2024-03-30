@@ -25,3 +25,5 @@ res://Scripts/bullet.gd
 res://Scripts/FanProjectile.gd
 res://Scripts/swirling_projectile.gd
 res://Scenes/Dungeon.tscn
+res://Scenes/BossRoom.tscn
+res://Scripts/Boss_Room.gd

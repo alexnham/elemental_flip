@@ -1,6 +1,6 @@
-AnimationPlayer
-Sprite2D
 ProgressBar
+Sprite2D
+AnimationPlayer
 CollisionShape2D
 Timer
 CPUParticles2D

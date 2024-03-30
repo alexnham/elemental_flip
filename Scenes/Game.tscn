@@ -14,7 +14,7 @@ position = Vector2(-5504, 470)
 scale = Vector2(2.5, 2.5)
 
 [node name="Player" parent="." instance=ExtResource("2_eeetj")]
-position = Vector2(-4069, 1124)
+position = Vector2(-3999, -3583)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 offset_left = -1817.0
@@ -29,4 +29,4 @@ position = Vector2(4248, 22)
 position = Vector2(-4065, -168)
 
 [node name="Boss" parent="." instance=ExtResource("5_752rp")]
-position = Vector2(-4062, -474)
+position = Vector2(-4013, -4659)

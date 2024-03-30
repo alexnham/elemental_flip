@@ -1888,12 +1888,16 @@ metadata/_edit_use_anchors_ = true
 [node name="Fire Dungeon" type="Node2D" parent="."]
 
 [node name="SpawnStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 255
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/SpawnStatic"]
 visible = false
 polygon = PackedVector2Array(528, 640, 672, 640, 672, 592, 721, 592, 721, 544, 769, 544, 769, 400, 816, 400, 816, 352, 864, 352, 864, 200, 864, 112, 672, 112, 672, -27, 672, -64, 688, -64, 688, 1, 880, 1, 877, 367, 831, 364, 832, 412, 781, 413, 783, 559, 734, 559, 736, 610, 686, 606, 686, 656, 512, 655, 512, 610, 460, 608, 464, 559, 415, 560, 415, 413, 367, 416, 367, 368, 317, 367, 323, 2, 512, 0, 512, -64, 528, -64, 529, 112, 336, 112, 336, 226, 336, 352, 384, 352, 384, 400, 432, 400, 432, 544, 480, 544, 480, 592, 528, 592)
 
 [node name="RoomAStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomAStatic"]
 visible = false
@@ -1904,6 +1908,8 @@ visible = false
 polygon = PackedVector2Array(624, -704, 624, -720, 672, -720, 672, -736, 688, -736, 688, -640, 913, -640, 912, -495, 1073, -495, 1072, -576, 1137, -576, 1137, -641, 1473, -640, 1473, -575, 1535, -576, 1536, -494, 1599, -495, 1599, -192, 1535, -192, 1536, -127, 1455, -128, 1457, -47, 1149, -48, 1151, -129, 1071, -129, 1071, -256, 911, -256, 911, -64, 687, -65, 687, -38, 672, -38, 672, -80, 897, -80, 897, -230, 897, -272, 1088, -272, 1088, -143, 1168, -143, 1168, -63, 1441, -63, 1441, -144, 1521, -144, 1521, -208, 1585, -208, 1585, -384, 1523, -384, 1523, -464, 1440, -464, 1440, -528, 1168, -528, 1168, -464, 1088, -464, 1088, -384, 896, -384, 896, -496, 896, -528, 672, -528, 672, -635, 672, -704)
 
 [node name="RoomBStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomBStatic"]
 visible = false
@@ -1915,6 +1921,8 @@ polygon = PackedVector2Array(528, -735, 528, -768, 471, -768, 387, -768, 320, -7
 
 [node name="RoomCStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/RoomCStatic"]
 visible = false
@@ -1931,6 +1939,8 @@ scale = Vector2(0.788756, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBStatic" type="StaticBody2D" parent="Fire Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToRoomBStatic"]
 visible = false
@@ -1949,6 +1959,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomCStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToRoomCStatic"]
 visible = false
@@ -1967,6 +1979,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToBossRoomStatic" type="StaticBody2D" parent="Fire Dungeon"]
 position = Vector2(0, -1410)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fire Dungeon/DoorToBossRoomStatic"]
 visible = false
@@ -1981,6 +1995,8 @@ polygon = PackedVector2Array(629, -704, 672, -704, 672, -715, 629, -715)
 position = Vector2(3212, 0)
 
 [node name="SpawnStatic" type="StaticBody2D" parent="Ice Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/SpawnStatic"]
 visible = false
@@ -1988,6 +2004,8 @@ position = Vector2(4, 0)
 polygon = PackedVector2Array(528, 640, 672, 640, 672, 592, 721, 592, 721, 544, 769, 544, 769, 400, 816, 400, 816, 352, 864, 352, 864, 200, 864, 112, 672, 112, 672, -27, 672, -64, 688, -64, 688, 1, 880, 1, 877, 367, 831, 364, 832, 412, 781, 413, 783, 559, 734, 559, 736, 610, 686, 606, 686, 656, 512, 655, 512, 610, 460, 608, 464, 559, 415, 560, 415, 413, 367, 416, 367, 368, 317, 367, 323, 2, 512, 0, 512, -64, 528, -64, 529, 112, 336, 112, 336, 226, 336, 352, 384, 352, 384, 400, 432, 400, 432, 544, 480, 544, 480, 592, 528, 592)
 
 [node name="RoomAStatic" type="StaticBody2D" parent="Ice Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomAStatic"]
 visible = false
@@ -1999,6 +2017,8 @@ position = Vector2(4, 0)
 polygon = PackedVector2Array(624, -704, 624, -720, 672, -720, 672, -736, 688, -736, 688, -640, 913, -640, 912, -495, 1073, -495, 1072, -576, 1137, -576, 1137, -641, 1473, -640, 1473, -575, 1535, -576, 1536, -494, 1599, -495, 1599, -192, 1535, -192, 1536, -128, 1455, -128, 1456, -48, 1149, -48, 1151, -129, 1071, -129, 1072, -272, 912, -272, 911, -64, 687, -65, 687, -38, 672, -38, 672, -80, 897, -80, 897, -230, 897, -287, 1088, -287, 1088, -144, 1168, -144, 1168, -64, 1440, -64, 1440, -144, 1520, -144, 1520, -208, 1584, -208, 1584, -384, 1520, -384, 1520, -464, 1440, -464, 1440, -528, 1168, -528, 1168, -464, 1088, -464, 1088, -384, 896, -384, 896, -496, 896, -528, 672, -528, 672, -635, 672, -704)
 
 [node name="RoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomBStatic"]
 visible = false
@@ -2012,6 +2032,8 @@ polygon = PackedVector2Array(528, -735, 528, -768, 471, -768, 387, -768, 320, -7
 
 [node name="RoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/RoomCStatic"]
 position = Vector2(4, 0)
@@ -2028,6 +2050,8 @@ scale = Vector2(0.788756, 0.568697)
 texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomBStatic" type="StaticBody2D" parent="Ice Dungeon"]
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomBStatic"]
 visible = false
@@ -2046,6 +2070,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToRoomCStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(0, -705)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToRoomCStatic"]
 visible = false
@@ -2064,6 +2090,8 @@ texture = ExtResource("9_eo6n6")
 
 [node name="DoorToBossRoomStatic" type="StaticBody2D" parent="Ice Dungeon"]
 position = Vector2(0, -1410)
+collision_layer = 2
+collision_mask = 109
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ice Dungeon/DoorToBossRoomStatic"]
 visible = false
