@@ -12,9 +12,28 @@
 [node name="Game" type="Node2D"]
 script = ExtResource("1_y672y")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tmtkh")
+
+[node name="burning" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_mqr7r")
+volume_db = -20.0
+
+[node name="freezing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_keskf")
+
 [node name="Dungeon" parent="." instance=ExtResource("2_re0q5")]
 position = Vector2(-5504, 470)
 scale = Vector2(2.5, 2.5)
+
+[node name="Melee_Enemy" parent="." instance=ExtResource("4_0rjg7")]
+position = Vector2(-4498, -4181)
+
+[node name="Melee_Enemy2" parent="." instance=ExtResource("4_0rjg7")]
+position = Vector2(-3615, -4256)
+
+[node name="Enemy_Shooting" parent="." instance=ExtResource("6_g3up4")]
+position = Vector2(-3893, -4191)
 
 [node name="Player" parent="." instance=ExtResource("2_eeetj")]
 position = Vector2(-3999, -3583)
@@ -24,27 +43,6 @@ offset_left = -1817.0
 offset_top = 645.0
 offset_right = -1498.0
 offset_bottom = 672.0
-
-[node name="Melee_Enemy" parent="." instance=ExtResource("4_0rjg7")]
-position = Vector2(4248, 22)
-
-[node name="Melee_Enemy2" parent="." instance=ExtResource("4_0rjg7")]
-position = Vector2(-4065, -168)
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_tmtkh")
-
-[node name="Melee_Enemy3" parent="." instance=ExtResource("4_0rjg7")]
-position = Vector2(-4143, -4262)
-
-[node name="Enemy_Shooting" parent="." instance=ExtResource("6_g3up4")]
-position = Vector2(-3678, -4243)
-
-[node name="burning" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_mqr7r")
-volume_db = -20.0
-
-[node name="freezing" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_keskf")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

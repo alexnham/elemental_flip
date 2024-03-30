@@ -1,5 +1,5 @@
+res://Scenes/Game.tscn
 res://Scenes/slash.tscn
-res://Scripts/Boss.gd
 res://Scenes/Scene1.tscn
 res://Scenes/Landscape/StartingScene.tscn
 res://Scenes/enemies/enemy_melee.tscn
@@ -8,7 +8,6 @@ res://Scenes/interfaces/Interface.tscn
 res://Scenes/interfaces/enemy_interface.tscn
 res://Scenes/enemies/enemy_shooting.tscn
 res://Scenes/enemies/enemy_boss.tscn
-res://Scenes/Game.tscn
 res://Scenes/Player_Attackbox.tscn
 res://Scenes/interfaces/HUD.tscn
 res://Scenes/Player.tscn
@@ -25,10 +24,5 @@ res://Scenes/BossFight.tscn
 res://Scenes/Landscape/DeathScene.tscn
 res://Scenes/swirling_projectile.tscn
 res://Scenes/tracking_bullet.tscn
-res://Scripts/Boss_Room.gd
-res://Scripts/enemy_melee.gd
-res://Scripts/tracking_bullet.gd
-res://Scripts/DeathScene.gd
+res://Scenes/enemy_shooting.gd
 res://Scripts/Game.gd
-res://Scripts/bullet.gd
-res://Scripts/FanProjectile.gd

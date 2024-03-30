@@ -49,7 +49,7 @@ func _process(delta):
 
 
 
-	progress.position = $Player.position
+	progress.position = $Player.position-Vector2(150,0)
 	if($Player/Interface/TextureProgressBar.get_value() > 9000):
 		if(mod < 1):
 			mod += 0.005

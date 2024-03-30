@@ -18,6 +18,7 @@ colors = PackedColorArray(1, 0, 0, 1, 1, 0, 0, 1)
 gradient = SubResource("Gradient_qxs1c")
 
 [node name="Interface" type="Control"]
+z_index = 20
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
