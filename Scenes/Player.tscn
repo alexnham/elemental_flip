@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://db8wbmnwmxtm8"]
+[gd_scene load_steps=41 format=3 uid="uid://db8wbmnwmxtm8"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_hvesk"]
 [ext_resource type="Texture2D" uid="uid://dfl1lwr7bdxok" path="res://Images/dungeon-pack-full_version/sprite/free_character_0.png" id="1_ywdwt"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://nen4s5ex3yeu" path="res://Images/overfreeze.png" id="3_do1ji"]
 [ext_resource type="AudioStream" uid="uid://cgldsnihb6lww" path="res://sounds/sword1.wav" id="3_juqem"]
 [ext_resource type="Texture2D" uid="uid://qj78f0cmxtkx" path="res://Images/ice.png" id="6_bqcvu"]
+[ext_resource type="AudioStream" uid="uid://cbnd30pg2k6ig" path="res://sounds/dash.wav" id="10_i8sdh"]
 
 [sub_resource type="Animation" id="Animation_sn1tu"]
 length = 0.001
@@ -724,3 +725,8 @@ offset_right = 567.0
 offset_bottom = -270.0
 text = "Objective: Kill 0/50 Enemies"
 wrap_mode = 1
+
+[node name="dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_i8sdh")
+volume_db = -20.0
+pitch_scale = 3.0

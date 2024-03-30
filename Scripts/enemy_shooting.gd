@@ -120,7 +120,7 @@ func _on_shot():
 		#die(1)
 func die():
 	var heartScene = preload("res://Scenes/health_pick_up.tscn")
-	var randomNumber = randi_range(1, 5)
+	var randomNumber = randi_range(1, 10)
 	if randomNumber == 1:
 		var heartNode = heartScene.instantiate()
 		get_parent().add_child(heartNode)

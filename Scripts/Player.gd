@@ -215,6 +215,7 @@ func player_attack():
 # Handles player dashing
 func player_dash():
 	if Input.is_action_pressed("dash") and can_dash and !is_dashing:
+		$dash.play()
 		# Handle cooldown
 		can_dash = false
 		get_tree().create_timer(dash_cooldown).timeout.connect(func(): can_dash = true)
@@ -282,6 +283,13 @@ func playing_slash():
 # Method to make the player take damage
 func take_damage(amount):
 	if(not is_dashing):
+		$fire_sprite.modulate = Color(1,0,0,1)
+		$ice_sprite.modulate = Color(1,0,0,1)
+		get_tree().create_timer(.2).timeout.connect(func(): 
+			$fire_sprite.modulate = Color(1,1,1,1)
+			$ice_sprite.modulate = Color(1,1,1,1)
+			
+			)
 		health -= amount
 	if health <= 0:
 		get_tree().change_scene_to_file("res://Scenes/Landscape/DeathScene.tscn")
